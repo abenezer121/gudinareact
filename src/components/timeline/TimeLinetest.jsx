@@ -1,9 +1,9 @@
 import { React } from 'react'
 const TimeLine2 = () => { 
     return (
-        <div className="container  mx-auto pb-10">
+        <div className="container bg-gray-200 mx-auto pb-10">
             <div className="relative wrap overflow-hidden p-10 h-full">
-                
+                <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" ></div>
  
                 <div className="mb-8 flex justify-between items-center w-full right-timeline">
                     <div className="order-1 w-5/12"></div>

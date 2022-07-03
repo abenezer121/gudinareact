@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className='w-full h-[70px] z-10 bg-slate-100 sticky top-0 z-50 shadow-sm  drop-shadow-lg'>
             
             
-             <div className='px-3 w-full flex justify-between items-center w-full h-full'>
+            <div className='px-3 w-full flex justify-between items-center w-full h-full'>
             <div className='px-3 w-full flex justify-between items-center w-full h-full'>
                 <div className='flex items-center '>
                     <ArrowsExpandIcon className='w-10' />
