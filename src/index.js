@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import allReducers from './redux/reducers';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
+import 'custom-cursor-react/dist/index.css';
 const store = createStore(allReducers)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
