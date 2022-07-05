@@ -5,6 +5,8 @@ import React from 'react';
 import AnimatedCursor from "react-animated-cursor"
 import NavBar from './components/NavBar';
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 function App() {
   return (
     <div className="w-full h-screen">
@@ -19,7 +21,11 @@ function App() {
     border: '3px solid #fff'
   }}
       />
-        <Home/>
+      <ParallaxProvider>
+            <NavBar/>
+           <Home/>
+      </ParallaxProvider>
+        
      
          
       
