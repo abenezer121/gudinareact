@@ -1,9 +1,12 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -16,3 +19,241 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.idiologyScroll {
+
+  overflow-y: auto;
+  
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide scrollbar for chrome, safari and opera */
+.idiologyScroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+ 
+
+
+ 
+ .super-box {
+  width: 110px; 
+   height: 110px;
+  
+ }
+
+  .box {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+   
+    overflow: hidden;
+    z-index: 2;
+ }
+ 
+ .downloadIcon{
+  opacity : 0;
+ }
+ .detailpagemainimage:hover .downloadIcon{
+  opacity: 1;
+  
+ }
+ .icon {
+          
+          
+          margin-top: 8px;
+          -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+          -webkit-transition-delay: 0.32s;
+                  transition-delay: 0.32s;
+          will-change: transform;
+          z-index: 1;
+ }
+ 
+
+ 
+
+ 
+ .super-box:hover .box {
+  
+ background-color: white;
+      -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   -webkit-transition-delay: 0.6s;
+           transition-delay: 0.7s;
+             overflow: hidden;
+         
+          
+
+ }
+ 
+
+ .super-box:hover .yeartext{
+    
+    color: black;
+       -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+
+ 
+ .super-box:hover .icon {
+    -webkit-transform: translateY(-48px) scale(1.4);
+      transform: translateY(-48px) scale(1.4);
+      z-index:2;
+   
+ }
+ 
+
+
+
+.hiddentext{
+    visibility: hidden;
+    transition: visibility 0.3s,  linear;
+}
+
+ .super-box:hover .hiddentext {
+  position: absolute;
+  width: 170px;
+  top: 111px;
+  visibility: visible;
+  opacity: 1;
+
+   display: inline;
+   font-size: 13px;
+   color: #5d6494;
+   line-height: 20px;
+   -webkit-transition: all 1s ease;
+   transition: all 1s ease;
+   -webkit-transition-delay: 1s;
+           transition-delay: 1s;
+ }
+
+
+ 
+
+  .item-wrapper {
+    position: relative;
+    border-radius: 4px;
+    max-width: 356px;
+   
+    margin: 0 auto 48px;
+    overflow: hidden;
+    background: #fff;
+   
+    box-shadow: 0 8px 24px rgba(163, 177, 191, 0.35);}
+
+      
+ 
+       
+
+    .hovertext,
+    .handle {
+      line-height: 48px;
+      color: white;
+      font-size: 14px;
+      height: 48px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+
+    .hovertext{
+         position: absolute;
+      bottom: 0;
+      
+      width: 100%;
+      text-align: left;
+      margin-left: 40px;
+      background: fade(#fff, 75);
+      transition: transform .3s ease-out;
+    }
+   
+
+    .handle {
+          background: rgb(55, 56, 133);
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          transform: translateY(100%);
+          transition: transform .3s ease-out;
+     
+    }
+
+    
+
+    .item-wrapper:hover p  {
+           transform: translateY(-100%);
+    }
+    
+    .item-wrapper:hover .handle  {
+        background-color: #5d6494;
+        transform: translateY(0%);
+    }
+
+
+
+
+
+.container{
+  width: 100%;
+  display:block;
+  overflow:hidden;
+  
+}
+.carousel{
+  display:block;
+  width: 100%;
+  height: 400px;
+  background: white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 10px;
+  margin: 0;
+  white-space: nowrap; 
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.item {
+    display: inline-block;
+    width: 380px;
+    margin: 0 10px;
+    height: 380px;
+    background: rgba(0, 0, 0, 0.05) no-repeat center center;
+    background-size: cover;
+    position:relative;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #dfdfdf;
+}
+.item div{
+  width: 100%;
+  top:10%;
+  position:absolute;
+  text-align:center;
+  font-size: 9em;
+  color: white;
+}
+.item h1{
+  top: 50%;
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 4em;
+}
+
+
+.ideologyText:hover{
+  color : white;
+
+     /* -webkit-transition: all 0.5s ease;
+   transition: all 1s ease;
+   -webkit-transition-delay: 0.5s;
+           transition-delay: 0.5s; */
+}
+
+

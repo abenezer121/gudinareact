@@ -3,16 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors: {
-      
-      'purple1': '#321473',
-      'purple2': "#251659",
-      'purple3': "#7569BF",
-      'purple4': "#C2BBF2",
-      'purple5': "#0FF2F2",
-
-    
-    },
+    extend: {
+     animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
+   }
   },
   plugins: [
     require('tailwind-scrollbar-hide')
