@@ -1,6 +1,6 @@
     import './App.css';
 import Home from './pages/Home';
-import React , {} from 'react';
+import React , { useEffect } from 'react';
 import AnimatedCursor from "react-animated-cursor"
 import NavBar from './components/NavBar';
 import Idiology from './pages/Idiology';
@@ -14,6 +14,8 @@ import { BrowserRouter as Router, Route, Routes  ,Link , useLocation} from 'reac
 import Gallary from './pages/Gallary';
 import Papers from './pages/Papers';
 import Footer from './components/Footer';
+import Aos from 'aos'
+  
 import IdiologyDescription from './pages/IdiologyDescription.';
 const pageVariant = {
   in: {
@@ -74,6 +76,12 @@ const Page2 = () => {
 
 
 function App() {
+  useEffect(() => { 
+    Aos.init({
+      duration: 2000,
+    }, [])
+    
+  }, []);
 
 const location = useLocation()
   return (
@@ -82,7 +90,7 @@ const location = useLocation()
     <AnimatePresence >
       
           <AnimatedCursor
-            color="255,255,255"
+            color="0,0,0"
             innerSize={8}
             outerSize={35}
             innerScale={1}
@@ -96,7 +104,7 @@ const location = useLocation()
       
         
         <Routes location={location} keys={location.pathname} >
-            <Route path="/page2" element={<Page2 />} />
+            <Route path="/detailthesis" element={<DetailThesis />} />
           <Route path="/" element={
             <motion.div
               className='w-full h-screen'

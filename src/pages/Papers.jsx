@@ -34,6 +34,7 @@ import gudinatumsa3 from "./../assets/gudinatumsa1.png";
 import { useInView } from "react-intersection-observer";
 import logo from "./../assets/logo.png";
 import DropDown from "../components/DropDown";
+import { Link } from 'react-router-dom';
 
 const Papers = () => {
   const [text, setText] = useState("INTRODUCTION");
@@ -109,8 +110,9 @@ const Papers = () => {
       Lorem ipsum
     </p>
   </div>
-  <div className="flex  justify-between px-6  pb-2">
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Preview</span>
+        <div className="flex  justify-between px-6  pb-2">
+          <Link to ="/detailthesis"> <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Preview</span></Link>
+   
     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Download</span>
 
   </div>

@@ -3,6 +3,12 @@ import { React, useState, useEffect, useRef } from "react";
 
 import gudinatumsa1 from "../assets/gudinatumsa1.JPG";
 import gudinatumsa4 from "../assets/gudinatumsa4.png";
+import bookcover1 from "../assets/bookcover1.jpg";
+import bookcover2 from "../assets/bookcover2.jpg";
+import bookcover3 from "../assets/bookcover3.jpg";
+import bookcover4 from "../assets/bookcover4.jpg";
+import bookcover5 from "../assets/bookcover5.jpg";
+import bookcover6 from "../assets/bookcover6.jpg";
 
 import years from "../assets/year.json";
 import {
@@ -82,10 +88,10 @@ const DetailThesis = () => {
     );
   };
 
-  const Cards = () => {
+  const Cards = (image) => {
     return (
       <div className="flex mt-10">
-                                        <img src={nature}  className="w-[40%] h-[15%]"/>
+                                        <img src={image}  className="h-[200px] w-[65%]"/>
                                         <div className="mx-5">
                                             <h1 className="text-xl">A guide to SlideShare Analytics</h1>
                                             <p>SlideShare</p>
@@ -120,10 +126,10 @@ const DetailThesis = () => {
                     />
                     <div className="flex flex-col mr-20  mix-blend-screen">
                       <h3
-                        className="text-8xl font-bold italic text-center  "
+                        className="text-8xl font-bold italic text-center text-white  "
                         style={{ fontFamily: "Odibee Sans" }}
                       >
-                        Archive
+                        Papers
                       </h3>
                      
                     </div>
@@ -141,7 +147,7 @@ const DetailThesis = () => {
             <div className=" w-[80%]  mx-auto mb-[40px]">
               <div className="grid md:grid-cols-1 lg:grid-cols-2 mx-10 ">
                 <div className="relative w-[100%] h-[60%] bg-red-200 detailpagemainimage">
-                    <img src={nature} className="h-full rounded-sm" alt="" />
+                    <img src={bookcover1} className="h-full rounded-sm " alt="" />
                     <div className="w-[80px] h-[60px] downloadIcon">
                          <DownloadIcon className="absolute bottom-10 right-5 mt-10 bg-green-200 w-[80px] h-[60px]  "/>
                     </div>
@@ -154,11 +160,11 @@ const DetailThesis = () => {
                 
                   
                     <h1 className="text-3xl font-bold mt-[-15px] ">Recommended</h1>
-                                      {Cards()}
-                                      {Cards()}
-                                      {Cards()}
-                                      {Cards()}
-                                      {Cards()}
+                                      {Cards(bookcover2)}
+                                      {Cards(bookcover3)}
+                                      {Cards(bookcover4)}
+                                      {Cards(bookcover5)}
+                                      {Cards(bookcover6)}
                                       
                 </div>
                 </div>

@@ -14,7 +14,7 @@ import gudinatumsa4 from "../assets/gudinatumsa4.png";
 import Footer from "../components/Footer";
 import HorizontalScroll from 'react-scroll-horizontal'
 import years from "./../assets/year.json"
-import Aos from 'aos'
+
 import {
   PhoneIcon,
   ArrowSmRightIcon,
@@ -72,9 +72,7 @@ const Home = () => {
 
   useEffect(() => {
 
-        Aos.init({
-      duration: 2000,
-    } , [])
+      
     if (fourthVisible) {
         setText("TimeLine");
         console.log(fourthVisible)
