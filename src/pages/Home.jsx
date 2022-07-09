@@ -14,7 +14,13 @@ import gudinatumsa4 from "../assets/gudinatumsa4.png";
 import Footer from "../components/Footer";
 import HorizontalScroll from 'react-scroll-horizontal'
 import years from "./../assets/year.json"
+import OwlCarousel from 'react-owl-carousel';
 
+import book1 from "../assets/book1.jpg";
+import book2 from "../assets/book2.jpg";
+import book3 from "../assets/book3.jpg";
+import book4 from "../assets/book4.jpg";
+import book5 from "../assets/book5.jpg";
 import {
   PhoneIcon,
   ArrowSmRightIcon,
@@ -63,20 +69,19 @@ const Home = () => {
   const [offsetY, setoffsetY] = useState(0);
   const [offsetXOther, setoffXOther] = useState(0);
   const [offsetYOther, setoffYOther] = useState(0);
-  const [yearsdata, setYoursData] = useState([]);
+
 
     
     
   const [value , setValue] = useState(false);
-  console.log(years.years)
+
 
   useEffect(() => {
 
       
     if (fourthVisible) {
         setText("TimeLine");
-        console.log(fourthVisible)
-      console.log(text);
+    
     }
     if (firstVisible) {
       setText("INTRODUCTION");
@@ -89,11 +94,11 @@ const Home = () => {
     const handleWindowMouseMove = (event) => {
       const x = (window.innerWidth - event.screenX * 3) / 90;
       const y = (window.innerHeight - event.screenY * 3) / 90;
-      setOffsetX(x);
-        setoffsetY(y);
+        // setOffsetX(x);
+        // setoffsetY(y);
 
-        setoffXOther(((window.innerWidth - event.screenX * 1) / 90))
-        setoffYOther(((window.innerHeight - event.screenY * 1) / 90))
+        // setoffXOther(((window.innerWidth - event.screenX * 1) / 90))
+        // setoffYOther(((window.innerHeight - event.screenY * 1) / 90))
 
     };
     window.addEventListener("mousemove", handleWindowMouseMove);
@@ -373,8 +378,14 @@ const Home = () => {
               </div>
               </div>
               
-               <div  className="w-full">
-                 <img src={ require("./../assets/slider.png")} />
+               <div  className="w-full h-[20%]">
+                             <OwlCarousel className='owl-carousel overflow-hidden'  margin={10} >
+                <div className='h-[500px] '>  <img src={book1} alt='book1' className="ml-[40px]"  /> </div>
+                <div className='h-[400px]'> <img src={book2} alt='book2' className="ml-[40px]" /> </div>
+                <div className='h-[400px]'> <img src={book3} alt='book3' className="ml-[40px]" /></div>
+                <div className='h-[400px]'> <img src={book4} alt='book3' className="ml-[40px]" /></div>
+                <div className='h-[400px]'> <img src={book5} alt='book3' className="ml-[40px]" /></div>
+            </OwlCarousel>
               </div> 
             <div className=" w-full  flex text-black bg-white relative m-auto">
               <div className="mx-auto my-10 w-[60%]   relative">

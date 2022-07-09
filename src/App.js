@@ -15,7 +15,7 @@ import Gallary from './pages/Gallary';
 import Papers from './pages/Papers';
 import Footer from './components/Footer';
 import Aos from 'aos'
-  
+import Page2 from './pages/Page2';
 import IdiologyDescription from './pages/IdiologyDescription.';
 const pageVariant = {
   in: {
@@ -32,47 +32,7 @@ const pageTransition = {
   duration: 0.5,
 }
 
-const Page1 = () => {
-  return (
-    
-    <motion.div
-      initial="out"
-      animate="in"
-      exit="out"
-      variants={pageVariant}
-      transition={pageTransition}
-    >
-       <div className='w-full h-full bg-red-200' style={{
-          height: '100vh',
-        width: '100vw',
-          overflow : 'hidden'
-        }}>
 
-          <p>This is page 1</p>
-          <Link to='/page2'>Go to page 2</Link>
-      
-    </div>
-    </motion.div>
-   
-   
-    );
-}
-
-
-const Page2 = () => {
-  return (
-    <div className='wrapper'>
-      <div className='item'></div>
-      <div className='item'></div>
-      <div className='item'></div>
-      <div className='item'></div>
-      <div className='item'></div>
-      
-    </div>
-   
-   
-    );
-}
 
 
 function App() {
@@ -103,9 +63,10 @@ const location = useLocation()
          <NavBar/> 
       
         
-        <Routes location={location} keys={location.pathname} >
-            <Route path="/detailthesis" element={<DetailThesis />} />
-          <Route path="/" element={
+      <Routes location={location} keys={location.pathname} >
+        <Route path="/page2" element={<Page2/>} />
+        <Route path="/detailthesis" element={<DetailThesis />} />
+        <Route path="/" element={
             <motion.div
               className='w-full h-screen'
                   initial="out"
@@ -114,9 +75,9 @@ const location = useLocation()
                   variants={pageVariant}
               transition={pageTransition}>
               <Home /> </motion.div>} />
-          <Route path="/archive" element={
+        <Route path="/archive" element={
             
-            <motion.div
+        <motion.div
                   initial="out"
                   animate="in"
                   exit="out"

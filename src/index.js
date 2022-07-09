@@ -11,6 +11,8 @@ import 'custom-cursor-react/dist/index.css';
 import { BrowserRouter as Router, Route, Routes  ,Link , useLocation} from 'react-router-dom' 
 import 'react-multi-carousel/lib/styles.css';
 import "aos/dist/aos.css";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 const store = createStore(allReducers)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
