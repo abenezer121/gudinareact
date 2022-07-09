@@ -265,7 +265,7 @@ const Home = () => {
           </div>
 
           {/*  */}
-          <div ref={third} className="text-black bg-white">
+          <div ref={third} className="text-black bg-white lifeimages">
             <div className=" w-full  flex  relative m-auto text-black bg-white bg-slate-300">
                 
               <div className="mx-auto my-10 w-[60%]  relative  ">
