@@ -1,6 +1,6 @@
-export const home = (data) => {
+export const setAuthor = (data) => {
     return {
-        type: "HOME",
+        type: "AUTHOR",
         payload: {
             authorName : data
         }

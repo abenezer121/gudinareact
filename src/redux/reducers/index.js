@@ -7,7 +7,6 @@ import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
    
-
     navigation: navigationReducer,
     author : authorReducer
     

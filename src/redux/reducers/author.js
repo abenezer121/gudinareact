@@ -1,5 +1,5 @@
 const initialState = ({
-    author :   ""
+    author :   "All"
 })
 
 const authorReducer = (state = initialState, action) => { 
@@ -12,3 +12,5 @@ const authorReducer = (state = initialState, action) => {
             return state;
     }
 }
+
+export default authorReducer

@@ -1,33 +1,39 @@
 import React from 'react'
-import OwlCarousel from 'react-owl-carousel';
-
-import book1 from "../assets/book1.jpg";
-import book2 from "../assets/book2.jpg";
-import book3 from "../assets/book3.jpg";
-import book4 from "../assets/book4.jpg";
-import book5 from "../assets/book5.jpg";
+import gudinatumsa from "./../assets/gudinatumsa1.png";
+import face1 from "./../assets/face1.jpg"
+import face2 from "./../assets/face2.jpg"
+import face3 from "./../assets/face3.jpg"
 
 const Page2 = () => { 
 
-    return(
-        <div className='w-full h-screen bg-red-200 '>
-            <OwlCarousel className='owl-carousel' loop margin={10} nav>
-                <div class=''>
-                        <img src={book1} alt='book1' className='w-full h-full'/>
-                </div>
-                <div class=''>
-                        <img src={book1} alt='book2' className='w-full h-full'/>
-                </div>
-                <div class=''>
-                        <img src={book1} alt='book3' className='w-full h-full'/>
-                </div>
-                <div class=''>
-                        <img src={book1} alt='book4' className='w-full h-full'/>
-                </div>
-                <div class=''>
-                        <img src={book1} alt='book5' className='w-full h-full'/>
-                </div>
-            </OwlCarousel>
+    return(            
+        <div className='w-full h-screen bg-slate-300'>
+                <div className='w-[80%] mx-auto'>
+                        <div className='flex flex-row md:flex-cols h-full items-center'>
+                                    <div className='w-[30%]'>
+                                        <h1 className='text-6xl'>Gudina Tumsa</h1> 
+                                        <h3 className='mt-10 text-lg'> In relation with others</h3>
+                                        <p className='mt-10'>jonny  has been responsibe for bringing coneptsto life for client such as Nintendo, Estee Lauder, Oxfam , Scribner , Sony and many others. His ork has been recognised by one show, ADC Webby Awards abd Cannes Lions When jonny isnt busy educating people on the difference between fonts and typefaces, he can be found takng part in competitive tickling competitionsacross the UK </p>  
+                                    </div>
+                                    <div className='w-[70%] flex     items-center mx-auto'>
+                                        <div className='ml-[200px]'>
+                                          <img src = {gudinatumsa} className=' hidden md:flex mt-[100px] h-[700px]'/>  
+                                        </div>
+                                        <div className='flex flex-col items-center  mt-20 space-y-10'>
+                                                <div class="relative w-24 h-24">
+                                                        <img class="rounded-full border border-gray-100 shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+                                                </div>
+                                                <div class="relative w-24 h-24">
+                                                        <img class="rounded-full border border-gray-100 shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+                                                </div>
+                                                <div class="relative w-24 h-24">
+                                                        <img class="rounded-full border border-gray-100 shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+                                                </div>
+                                        </div>
+                                   </div>
+                        </div>
+                       
+                </div>   
         </div>
     )
 }

@@ -74,22 +74,21 @@ const Home = () => {
     
     
   const [value , setValue] = useState(false);
-
+  console.log(years.years)
 
   useEffect(() => {
 
       
     if (fourthVisible) {
         setText("TimeLine");
-    
+        console.log(fourthVisible)
+      console.log(text);
     }
     if (firstVisible) {
       setText("INTRODUCTION");
     } else if (secondVisible) {
       setText("CHILDHOOD");
-    } else if (thirdVisible) {
-      setText("EARLY LIFE");
-    }
+    } 
 
     const handleWindowMouseMove = (event) => {
       const x = (window.innerWidth - event.screenX * 3) / 90;
@@ -270,9 +269,8 @@ const Home = () => {
           </div>
 
           {/*  */}
-          <div ref={third} className="text-black bg-white lifeimages">
+          <div  className="text-black bg-white lifeimages">
             <div className=" w-full  flex  relative m-auto text-black bg-white bg-slate-300">
-                
               <div className="mx-auto my-10 w-[60%]  relative  ">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                   <div className="mx-20">
@@ -378,15 +376,15 @@ const Home = () => {
               </div>
               </div>
               
-               <div  className="w-full h-[20%]">
-                             <OwlCarousel className='owl-carousel overflow-hidden'  margin={10} >
-                <div className='h-[500px] '>  <img src={book1} alt='book1' className="ml-[40px]"  /> </div>
-                <div className='h-[400px]'> <img src={book2} alt='book2' className="ml-[40px]" /> </div>
-                <div className='h-[400px]'> <img src={book3} alt='book3' className="ml-[40px]" /></div>
-                <div className='h-[400px]'> <img src={book4} alt='book3' className="ml-[40px]" /></div>
-                <div className='h-[400px]'> <img src={book5} alt='book3' className="ml-[40px]" /></div>
-            </OwlCarousel>
-              </div> 
+              <div  className="w-full h-[20%]">
+                    <OwlCarousel className='owl-carousel overflow-hidden'  margin={10} >
+                        <div className='h-[500px] '>  <img src={book1} alt='book1' className="ml-[40px] mr-[20px]"  /></div>
+                        <div className='h-[400px]'> <img src={book1} alt='book2' className="ml-[60px] " /> </div>
+                        <div className='h-[400px]'> <img src={book1} alt='book3' className="ml-[80px]" /></div>
+                        <div className='h-[400px]'> <img src={book1} alt='book3' className="ml-[100px]" /></div>
+                        <div className='h-[400px]'> <img src={book1} alt='book3' className="ml-[120px]" /></div>
+                    </OwlCarousel>
+            </div> 
             <div className=" w-full  flex text-black bg-white relative m-auto">
               <div className="mx-auto my-10 w-[60%]   relative">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">

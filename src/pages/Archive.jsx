@@ -19,11 +19,8 @@ import book5 from "../assets/book5.jpg";
 
 import years from "./../assets/year.json";
 import {
-  PhoneIcon,
-  ArrowSmRightIcon,
+
   ArrowDownIcon,
-  AcademicCapIcon,
-  PlusIcon,
   SearchIcon,
   AdjustmentsIcon,
 } from "@heroicons/react/outline";
@@ -36,6 +33,7 @@ import gudinatumsa3 from "./../assets/gudinatumsa1.png";
 import { useInView } from "react-intersection-observer";
 import logo from "./../assets/logo.png";
 import DropDown from "../components/DropDown";
+import { useSelector , useDispatch} from 'react-redux'
 
 const Archive = () => {
   const [text, setText] = useState("INTRODUCTION");
@@ -51,7 +49,8 @@ const Archive = () => {
   const [search , setSearch] = useState("")
   const [value, setValue] = useState(false);
   const [filter, setFilter] = useState("");
-  
+
+  const authorState = useSelector(state => state.author)
 
   useEffect(() => {
     if (fourthVisible) {
@@ -79,46 +78,54 @@ const Archive = () => {
     };
   });
 
-  setTimeout(() => {
-    setValue(false);
-  }, 1000);
+  
+  const sort = (e) => { 
+   
+    if (e.type == "Date") {
+        // data = data.sort((a, b) => (new Date(b.date).getTime() || -Infinity) - (new Date(a.date).getTime() || -Infinity));
+        
+      for (let i = 0; i < data.length; i++){
+        for (let j = 0; j < data.length; j++){
+          if (new Date(data[i].uploadDate) > new Date(data[j].uploadDate)){
+            let temp = data[i]
+            data[i] = data[j]
+            data[j] = temp
+          }
+        }
+      }
+    }
+    if (e.type == "Popular") {
+      for (let i = 0; i < data.length; i++){
+        for (let j = 0; j < data.length; j++){
+          if (data[i].popular > data[j].popular){
+            let temp = data[i]
+            data[i] = data[j]
+            data[j] = temp
+          }
+        }
+      } 
+    }
+    setFilter(e.type)
+  }
 
-  const dot = (color) => {
-    return (
-      <div className={`w-[10px] h-[10px] rounded-full ${color} mt-3`}></div>
-    );
-  };
-  const dash = (color) => {
-    return (
-      <div
-        className={`w-[30px] h-[4px]  -rotate-12  ${color} m-auto mt-4 mb-4`}
-      ></div>
-    );
-  };
 
   const ArchiveCard = (image , title , book , bookname) => {
     return (
-      <div className="max-w-sm rounded overflow-hidden shadow-lg w-[90%] mt-5">
-  <img className="w-full" src={image} alt="Sunset in the mountains"/>
-  <div className="px-6 py-1">
-          <div className="font-bold text-xl mb-1">{ title}</div>
-    <p className="text-gray-700 text-base">
-           {bookname}
-    </p>
-  </div>
-  <div className="flex  justify-between px-6  pb-2">
-         
-        <a href={book} without rel="noopener noreferrer" target="_blank">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Preview</span>
-        </a>
-        <a href={book} download>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Download</span>
-        </a>
-    
-
-  </div>
-</div>
-    
+          <div className="max-w-sm rounded overflow-hidden shadow-lg w-[90%] mt-5">
+              <img className="w-full" src={image} alt="Sunset in the mountains"/>
+              <div className="px-6 py-1">
+                  <div className="font-bold text-xl mb-1">{ title}</div>
+                  <p className="text-gray-700 text-base"> {bookname}</p>
+              </div>
+              <div className="flex  justify-between px-6  pb-2">      
+                  <a href={book} without rel="noopener noreferrer" target="_blank">
+                      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Preview</span>
+                  </a>
+                  <a href={book} download>
+                      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Download</span>
+                  </a>
+              </div>
+          </div>  
     );
   };
 
@@ -176,10 +183,13 @@ const Archive = () => {
               <div className="flex">
                 
                   <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-2 w-[70%] ml-[100px]  ">
-                    {
-                      data.map((item, index) => { 
-                        if (item.bookName.toLowerCase().includes(search)  || search == "") {
-                          return ArchiveCard(item.image, item.author, item.book, item.bookName)
+              {
+                data.map((item, index) => {
+                        if (item.bookName.toLowerCase().includes(search) || search == "") {
+                          if (item.author.toLowerCase() == authorState.author.toLowerCase() || authorState.author == "All") {
+                            return ArchiveCard(item.image, item.author, item.book, item.bookName)
+                          }
+                          return "";
                         }
                         return ""
                       })
@@ -201,16 +211,15 @@ const Archive = () => {
                         <p className="text-base font-bold">Refine by</p>
                    
                       </div>
-
-                      <Choice name={"Popular"} />
-                      <Choice name={"Date"} />
-                    
+                      <div onClick={(e) => { sort({type : "Popular"}); }}><Choice name={"Popular"} /></div>
+                      <div onClick={(e) => { sort({type : "Date"}); }}><Choice  name={"Date"} /></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
+      </div>
+      
             <Footer/>
         </>
    
