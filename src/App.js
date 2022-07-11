@@ -16,6 +16,7 @@ import Papers from './pages/Papers';
 import Footer from './components/Footer';
 import Aos from 'aos'
 import Page2 from './pages/Page2';
+import RelationToOthers from "./pages/RelationToOthers"
 import IdiologyDescription from './pages/IdiologyDescription.';
 const pageVariant = {
   in: {
@@ -49,7 +50,7 @@ const location = useLocation()
     
     <AnimatePresence >
       
-          <AnimatedCursor
+          {/* <AnimatedCursor
             color="0,0,0"
             innerSize={8}
             outerSize={35}
@@ -59,7 +60,7 @@ const location = useLocation()
             outerStyle={{
               border: '3px solid #fff'
             }}
-      />
+      /> */}
          <NavBar/> 
       
         
@@ -96,6 +97,20 @@ const location = useLocation()
                className='w-full h-screen'
               transition={pageTransition}>
               <Idiology />
+              </motion.div>
+            
+        } />
+        
+
+        <Route path="/relationtoothers" element={
+            <motion.div
+                  initial="out"
+                  animate="in"
+                  exit="out"
+              variants={pageVariant}
+               className='w-full h-screen'
+              transition={pageTransition}>
+              <RelationToOthers />
               </motion.div>
             
           } />

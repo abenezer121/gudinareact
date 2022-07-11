@@ -1,10 +1,9 @@
 import React from 'react'
 import gudinatumsa from "./../assets/gudinatumsa1.png";
-import face1 from "./../assets/face1.jpg"
-import face2 from "./../assets/face2.jpg"
-import face3 from "./../assets/face3.jpg"
-
-const Page2 = () => { 
+import martin from "./../assets/martin.jpg"
+import bonhoeffer1 from "./../assets/bonhoeffer1.jpg"
+import abiy2 from "./../assets/drabiy2.jpg"
+const RelationToOthers = () => { 
 
     return(            
         <div className='w-full h-screen bg-slate-300'>
@@ -21,15 +20,15 @@ const Page2 = () => {
                                         </div>
                                         <div className='flex flex-col w-full  items-center  mt-20 space-y-10'>
                                                 <div class="w-full flex justify-between">
-                                                        <img class="md:mx-auto w-24 h-24 rounded-full border border-gray-100 shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+                                                        <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={martin} alt="user image" />
                                                         <p className='md:hidden'>First one</p>
                                                 </div>
                                                 <div class="w-full flex justify-between">
-                                                        <img class="md:mx-auto w-24 h-24 rounded-full border border-gray-100 shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+                                                            <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={abiy2} alt="user image" />
                                                         <p className='md:hidden'>First one</p>
                                                 </div>
                                                 <div class="w-full  flex justify-between">
-                                                        <img class="md:mx-auto w-24 h-24 rounded-full border border-gray-100 shadow-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt="user image" />
+                                                        <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={bonhoeffer1} alt="user image" />
                                                         <p className='md:hidden'>First one</p>
                                                 </div>
                                         </div>
@@ -40,4 +39,4 @@ const Page2 = () => {
         </div>
     )
 }
-export default Page2;
+export default RelationToOthers;

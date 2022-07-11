@@ -9,6 +9,8 @@ import {useLocation} from 'react-router-dom';
 import Footer from "../components/Footer";
 const IdiologyDescription = (props) => { 
     const location = useLocation()
+
+    
     return (
         <div className="w-full h-full">
             <div className="flex f-full justify-between items-center w-full py-10">
@@ -19,17 +21,12 @@ const IdiologyDescription = (props) => {
             </div>
             <div className="w-full">
                 <div className="w-[35%] mt-[100px] mx-auto md:mr-[400px]">
-                    <h1 className="text-4xl font-medium">{ location.state.ti}</h1>
+                    <h1 className="text-4xl font-medium">{ location.state.title}</h1>
                     <p className="text-base">
                         Gudina Tumsa’s final writing is about  the Responsibility of a Christian in a Given Society. He firmly states that writing a Christian’s main responsibility is to serve the Lord Jesus Christ and to know God’s will throughout every action in their life “A Christian should stay in prayer for guidance, so that he/she knows the will of God for any action he/she may take.” (Witness and Discipleship Pg.10) Many Chrsitans acknowledge and agree with the fact that serving the purpose of the Gospel is our ultimate purpose. But Gudina Tumsa also advocated for individuals to serve their country to their maximum capability. He believed that a christian was born in a specific country to serve and better it. He stated “The Christian should invest his / her money, time, knowledge and life, as well as anything else he may treasure, in the interest of his / her country.” (Pg.7 Wittenss and Discipleship). In general a Chrsitan has a responsibility to the Physical/Spiritual and God/Country.</p>
                 </div>
             </div>
-            <QuoteCarousel quote={[
-                "We have not been given a choice as to where we should be born we believe that God has placed us where we are to do His will.",
-                "In my opinion a Christian has to make a choice only when he's faced with the demand not to confess Christ as Lord, and when he / she is denied the right to teach in his name.",
-                "To be a Christian is not to be a hero to make a history for oneself. A Christian goes as a lamb to be slaughtered only when he / she knows that it is in the complete Accord with the will of God who has called him to his service."
-
-            ]} />
+            <QuoteCarousel quote={location.state.quote} />
            	  <div className="w-full">
                 <div className="w-[30%] mt-[100px] mx-auto">
                     <p className="text-base">
