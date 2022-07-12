@@ -108,9 +108,23 @@ const Idiology = () => {
                 </div>
                 {
                   idiology.map((item, index) => {
+                    
                     return (
-                      <Link to="/idiologydescription" state={{
-                        title: item.title, quote: item.quote
+                      <Link to="/description" state={{
+                        data: JSON.stringify({
+                          title: item.title,
+                          backToText: "Back To Idiology",
+                          backToLink : "/idiology", 
+                          quote: item.quote,
+                          paragrah: item.paragraph,
+                          sideText: "OTHER TOPICS",
+                          sideArray: [
+                                  "Cost of Discipleship",
+                                  "GT on Politics/Economics",
+                                  "Holistic Theology"
+                            ]
+                        })
+                        
                         
                     }}><div data-aos={item.fadeAnimation}>{titleText(item.title)}</div></Link>
                     

@@ -15,9 +15,10 @@ import Gallary from './pages/Gallary';
 import Papers from './pages/Papers';
 import Footer from './components/Footer';
 import Aos from 'aos'
+import RelationToOthers from './pages/RelationToOthers';
 import Page2 from './pages/Page2';
-import RelationToOthers from "./pages/RelationToOthers"
-import IdiologyDescription from './pages/IdiologyDescription.';
+
+import Description from './pages/Description';
 const pageVariant = {
   in: {
     opacity: 1,
@@ -65,8 +66,14 @@ const location = useLocation()
       
         
       <Routes location={location} keys={location.pathname} >
-        <Route path="/page2" element={<Page2/>} />
+        <Route path="/page2" element={<Page2 />} />
+        
         <Route path="/detailthesis" element={<DetailThesis />} />
+
+       
+        
+
+        
         <Route path="/" element={
             <motion.div
               className='w-full h-screen'
@@ -75,9 +82,11 @@ const location = useLocation()
                   exit="out"
                   variants={pageVariant}
               transition={pageTransition}>
-              <Home /> </motion.div>} />
+            <Home /> </motion.div>} />
+        
+
         <Route path="/archive" element={
-            
+        
         <motion.div
                   initial="out"
                   animate="in"
@@ -139,7 +148,7 @@ const location = useLocation()
               </motion.div>
             
           } />
-<Route path="/idiologydescription" element={
+<Route path="/description" element={
             <motion.div
                   initial="out"
                   animate="in"
@@ -147,7 +156,7 @@ const location = useLocation()
               variants={pageVariant}
                className='w-full h-full'
               transition={pageTransition}>
-               <IdiologyDescription />
+               <Description />
               </motion.div>
             
           } />

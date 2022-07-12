@@ -25,6 +25,21 @@ code {
 
 
 
+
+
+
+
+/* .ant-carousel .slick-dots li   {
+   width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: #141414;
+}
+
+ .ant-carousel li.slick-dots li.slick-active button    {
+    background: #0fa55f;
+}  */
+
 .idiologyScroll {
 
   overflow-y: auto;
@@ -95,12 +110,14 @@ code {
 
  }
  
-
- .super-box:hover .yeartext{
+.yeartext {
+  color : white;
+}
+.super-box:hover .yeartext{
     
     color: black;
-       -webkit-transition-delay: 0.32s;
-           transition-delay: 0.32s;
+    -webkit-transition-delay: 0.32s;
+    transition-delay: 0.32s;
  }
 
 

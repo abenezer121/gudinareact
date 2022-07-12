@@ -3,6 +3,7 @@ import gudinatumsa from "./../assets/gudinatumsa1.png";
 import martin from "./../assets/martin.jpg"
 import bonhoeffer1 from "./../assets/bonhoeffer1.jpg"
 import abiy2 from "./../assets/drabiy2.jpg"
+import { Link } from 'react-router-dom';
 const RelationToOthers = () => { 
 
     return(            
@@ -14,23 +15,81 @@ const RelationToOthers = () => {
                                         <h3 className='mt-10 text-lg'> In relation with others</h3>
                                         <p className='mt-10'>jonny  has been responsibe for bringing coneptsto life for client such as Nintendo, Estee Lauder, Oxfam , Scribner , Sony and many others. His ork has been recognised by one show, ADC Webby Awards abd Cannes Lions When jonny isnt busy educating people on the difference between fonts and typefaces, he can be found takng part in competitive tickling competitionsacross the UK </p>  
                                     </div>
+
+                                       
+                                    
+
                                     <div className='w-[100%] md:w-[70%] flex     items-center '>
                                         <div className='hidden md:flex md:ml-[200px]'>
                                           <img src = {gudinatumsa} className=' hidden md:flex mt-[100px] h-[700px]'/>  
                                         </div>
-                                        <div className='flex flex-col w-full  items-center  mt-20 space-y-10'>
-                                                <div class="w-full flex justify-between">
+                                            <div className='flex flex-col w-full  items-center  mt-20 space-y-10'>
+                                                      <Link to="/description" state={{
+                                                            data: JSON.stringify({
+                                                                title: "Relation With   martin luther king",
+                                                                backToLink : "/relationtoothers", 
+                                                                backToText : "Back To Relations",
+                                                                quote: ["q1", "q2", "q3"],
+                                                                paragrah: ["p1", "p2", "p3"],
+                                                                sideText: "OTHER PEOPLE",
+                                                                sideArray: [
+                                                                            "Prime minster Dr Abiy",
+                                                                            "Dietrich Bonhoeffer",
+                                                                            "martin luther king"
+                                                                ]
+                                                })
+                                                
+                                                    }}>
+                                                            <div class="w-full flex justify-between">
                                                         <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={martin} alt="user image" />
                                                         <p className='md:hidden'>First one</p>
-                                                </div>
-                                                <div class="w-full flex justify-between">
+                                                            </div>
+                                                            
+                                                    </Link>
+                                                      <Link to="/description" state={{
+                                                            data: JSON.stringify({
+                                                                title: "Relation With Prime minister  Dr. Abiy",
+                                                                backToLink : "/relationtoothers", 
+                                                                backToText : "Back To Relations",
+                                                                quote: ["q1", "q2", "q3"],
+                                                                paragrah: ["p1", "p2", "p3"],
+                                                                sideText: "OTHER PEOPLE",
+                                                                 sideArray: [
+                                                                            "Prime minster Dr Abiy",
+                                                                            "Dietrich Bonhoeffer",
+                                                                            "martin luther king"
+                                                                ]
+                                                                
+                                                })
+                                                
+                                                    }}>
+                                                         <div class="w-full flex justify-between">
                                                             <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={abiy2} alt="user image" />
                                                         <p className='md:hidden'>First one</p>
-                                                </div>
-                                                <div class="w-full  flex justify-between">
+                                                </div>    
+                                                    </Link>
+                                                      <Link to="/description" state={{
+                                                            data: JSON.stringify({
+                                                                title: "Relation With Dietrich Bonhoeffer",
+                                                                backToText: "Back To Relations",
+                                                                backToLink : "/relationtoothers", 
+                                                                quote: ["q1", "q2", "q3"],
+                                                                paragrah: ["p1", "p2", "p3"],
+                                                                sideText: "OTHER PEOPLE",
+                                                                sideArray: [
+                                                                            "Prime minster Dr Abiy",
+                                                                            "Dietrich Bonhoeffer",
+                                                                            "martin luther king"
+                                                                ]
+                                                })
+                                                
+                                    }}><div class="w-full  flex justify-between">
                                                         <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={bonhoeffer1} alt="user image" />
                                                         <p className='md:hidden'>First one</p>
-                                                </div>
+                                                </div></Link>
+                                                
+                                               
+                                                
                                         </div>
                                    </div>
                         </div>

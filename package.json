@@ -36,6 +36,7 @@
     "react-scroll-horizontal": "^1.6.6",
     "react-scroll-motion": "^0.3.0",
     "react-scroll-parallax": "^3.2.0",
+    "react-slick": "^0.29.0",
     "react-spring": "^9.4.5",
     "react-youtube": "^9.0.3",
     "redux": "^4.2.0",

@@ -118,9 +118,10 @@ const Navbar = () => {
                     <ul className='hidden md:flex space-x-4'>
                       <Link to='/'><li className={ 'text-black-800 text-sm uppercase '} > Home</li></Link>
                       <Link to='/idiology'> <li className={'text-black-800 text-sm uppercase'}> His Idiology</li></Link>
-                      <Link to='/relationtoothers'><li className={ 'text-black-800 text-sm uppercase' } >In Relation to other</li></Link>
+                      <Link to='/relationtoothers'><li className={ 'text-black-800 text-sm uppercase' } >Relation to other</li></Link>
                       <Link to='/papers'><li className={ 'text-black-800 text-sm uppercase' } >Papers</li></Link>
-                      <Link to='/archive'><li className={'text-black-800 text-sm uppercase'} >Archive</li></Link>
+                <Link to='/archive'><li className={'text-black-800 text-sm uppercase'} >Archive</li></Link>
+                <Link to='/gallery'><li className={'text-black-800 text-sm uppercase'} >Gallery</li></Link>
  
                     </ul>
                                 <div onClick={handleClick} className='md:hidden'>
