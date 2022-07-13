@@ -1,0 +1,8 @@
+.mousecursor{
+    position : absolute;
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50%;
+    pointer-events: none;
+}

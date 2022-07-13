@@ -51,7 +51,8 @@ const location = useLocation()
     
     <AnimatePresence >
       
-           <AnimatedCursor
+      <AnimatedCursor
+       
             color="0,0,0"
             innerSize={8}
             outerSize={35}
@@ -61,6 +62,7 @@ const location = useLocation()
             outerStyle={{
               border: '3px solid #fff'
             }}
+        
       /> 
          <NavBar/> 
       

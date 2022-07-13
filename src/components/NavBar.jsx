@@ -5,14 +5,9 @@ import { useSelector , useDispatch} from 'react-redux'
 import logo from "./../assets/logo.png"
 import { Link } from 'react-router-dom';
 import {Button , Modal} from "antd"
+import ModalContact from "./ModalContact"
 
-import {
-    FaFacebook,
-    FaInstagram,
-    FaTwitter,
-    FaYoutube
-    
-} from 'react-icons/fa'
+
  function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -32,19 +27,19 @@ const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-    const [nav, setNav] = useState(false);
-    const [search , setSearch] = useState(false)
-    const handleClick = () => setNav(!nav)
-    const searchClick = () => setSearch(!search)
-    const navState = useSelector(state => state.navigation)
+  const [nav, setNav] = useState(false);
+  const [search , setSearch] = useState(false)
+  const handleClick = () => setNav(!nav)
+  const searchClick = () => setSearch(!search)
+  const navState = useSelector(state => state.navigation)
   const dispatch = useDispatch()
   const [contactVisible, setContactVisible] = useState(false);
-    const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
-    
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-
-    setPrevScrollPos(currentScrollPos);
+  const handleContactVisible = () => setContactVisible(false);
+  const handleScroll = debounce(() => {
+      const currentScrollPos = window.pageYOffset;
+        
+      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
   }, 100);
 
   useEffect(() => {
@@ -66,52 +61,8 @@ const Navbar = () => {
   return (
     <div className='w-full overflow-hidden'>
       
-      <Modal
-        
-        visible={contactVisible}
-        onOk={() => setContactVisible(false)}
-        onCancel={() => setContactVisible(false)}
-        width="94%"
-        
-        style={{
-          
-          position: "absolute",
-          top:   "50px",
-          left: "50px",
-          height : "600px"
-       
-        }}
-        footer={null}
-       
-      >
-        <div>
-          <div className='w-[80%] mx-auto'>
-            <div className='flex flex-col w-full'>
-              <div className='text-center  mt-60  w-full'>
-                  <p className='text-center text-2xl'>Contact us</p>
-                  <p className='text-center text-7xl font-bold '>hello@Gt Legacy.com</p>
-              </div>
-              
-              
-              <div className='mt-60 mb-20 mx-auto'>
-                <p className=' text-center text-sm font-medium uppercase'>social</p>
-                <div className='mx-auto text-center  flex  space-x-5 '>
-                  
-                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaFacebook className='text-2xl hover:text-3xl' /></a>
-                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaInstagram className='text-2xl hover:text-3xl' /></a>
-                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaTwitter className='text-2xl hover:text-3xl' /></a>
-                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaYoutube className='text-2xl hover:text-3xl'/></a>
-                    
-                    
-                    
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-         
-      </Modal>
-        
+
+      <ModalContact visible={contactVisible} setContact = {()=>{handleContactVisible()}} />
         <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }} className='w-full h-[80px]  z-10 bg-transparent fixed top-0 text-white pt-11'>
             <div className='px-3 w-full flex justify-between items-center w-full h-full'>
               <div className='px-3 w-full flex justify-between items-center w-full h-full'>
