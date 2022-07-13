@@ -47,13 +47,13 @@ const Idiology = () => {
 
 
     const handleWindowMouseMove = (event) => {
-      const x = (window.innerWidth - event.screenX * 3) / 90;
-      const y = (window.innerHeight - event.screenY * 3) / 90;
-      setOffsetX(x);
-      setoffsetY(y);
+      // const x = (window.innerWidth - event.screenX * 3) / 90;
+      // const y = (window.innerHeight - event.screenY * 3) / 90;
+      // setOffsetX(x);
+      // setoffsetY(y);
 
-      setoffXOther((window.innerWidth - event.screenX * 1) / 90);
-      setoffYOther((window.innerHeight - event.screenY * 1) / 90);
+      // setoffXOther((window.innerWidth - event.screenX * 1) / 90);
+      // setoffYOther((window.innerHeight - event.screenY * 1) / 90);
     };
     window.addEventListener("mousemove", handleWindowMouseMove);
 
@@ -80,7 +80,7 @@ const Idiology = () => {
           }}>
                 <div className='flex flex-col h-full items-center'>
                     <div className=' my-auto flex'>
-                        <p className='text-9xl my-auto text-white'    style={{ fontFamily: "Odibee Sans", fontSize :'350px' }}>Idiology</p>
+                        <p className='text-9xl my-auto text-white'    style={{ fontFamily: "Odibee Sans", fontSize :'350px' }}>Ideology</p>
                         {/* <img src={gudinatumsa4}  style={{
                         
                         transform: `translateY(${offsetY}px) translateX(${offsetX}px)`,

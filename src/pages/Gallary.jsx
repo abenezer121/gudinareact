@@ -5,7 +5,7 @@ import gallary2 from "../assets/gallary2.jpg";
 import gallary3 from "../assets/gallary3.jpg";
 import gallary4 from "../assets/gallary4.jpg";
 import './gallery.css'
-
+import Footer from "../components/Footer";
 import {
   XIcon
    
@@ -70,7 +70,7 @@ const Gallary = () => {
                 <div className='w-full h-[60%] bg-[#321473]'>
                 <div className='flex flex-col h-full items-center'>
                     <div className=' my-auto flex'>
-                        <p className='text-6xl my-auto text-white'    style={{ fontFamily: "Odibee Sans" }}>Gallary</p>
+                        <p className='text-6xl my-auto text-white'    style={{ fontFamily: "Odibee Sans" }}>Gallery</p>
                         <img src={gudinatumsa4}  style={{
                         
                         transform: `translateY(${offsetY}px) translateX(${offsetX}px)`,
@@ -78,7 +78,7 @@ const Gallary = () => {
                     </div>
                 </div>
             </div> 
-                <div className='w-[100%] md:w-[70%] mx-auto'>
+                <div className='w-[100%] md:w-[70%] mx-auto mb-10'>
                   
                 <div className='gallery mt-[100px]'>
                     {data.map((item , index)=> { 
@@ -91,7 +91,7 @@ const Gallary = () => {
              
             </div>
                 </div>
-                
+                <Footer/>
 
             </div>
            
@@ -107,6 +107,3 @@ const Gallary = () => {
 
 export default Gallary
 
-/*
-
-*/

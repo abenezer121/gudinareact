@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/outline";
 import logo from "./../assets/logo.png";
+import slider from "./../assets/slider.png";
+
 import { Link } from "react-router-dom";
 import QuoteCarousel from "../components/Carousel/QuoteCarousel";
 import { useLocation } from "react-router-dom";
@@ -72,8 +74,12 @@ const Description = () => {
                                         </div>
                                 </div>
                         </div>
-                  </div>
-                          <div className="w-full">
+      </div>
+      <div className="w-full">
+        <img src = {slider}/>
+
+      </div>
+                          <div className="w-full mt-10">
                         <div className="w-[90%] md:w-[70%] mx-auto">
                                 <div className=" grid grid-cols-1 md:grid-cols-10 ">
                                         <div className="hidden md:block  col-span-2 ">

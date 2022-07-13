@@ -3,12 +3,15 @@ import gudinatumsa from "./../assets/gudinatumsa1.png";
 import martin from "./../assets/martin.jpg"
 import bonhoeffer1 from "./../assets/bonhoeffer1.jpg"
 import abiy2 from "./../assets/drabiy2.jpg"
+import { relationData } from './relationdata/index'
+import gudinatumsa1 from "./../assets/gudinatumsa1.JPG"
 import { Link } from 'react-router-dom';
+import Footer from "../components/Footer";
 const RelationToOthers = () => { 
 
     return(            
         <div className='w-full h-screen bg-slate-300'>
-                <div className='w-[80%] mx-auto '>
+                <div className='w-[80%] mx-auto mb-12'>
                         <div className='flex flex-col md:flex-row md:flex-cols h-full items-center pt-20'>
                                     <div className='w-[100%] md:w-[30%]'>
                                         <h1 className='text-6xl'>Gudina Tumsa</h1> 
@@ -19,74 +22,42 @@ const RelationToOthers = () => {
                                        
                                     
 
-                                    <div className='w-[100%] md:w-[70%] flex     items-center '>
+                                    <div className='w-[100%] md:w-[90%] flex     items-center '>
                                         <div className='hidden md:flex md:ml-[200px]'>
-                                          <img src = {gudinatumsa} className=' hidden md:flex mt-[100px] h-[700px]'/>  
+                                          <img src = {gudinatumsa1} className=' hidden md:flex mt-[100px] h-[500px] w-[2100px]'/>  
                                         </div>
-                                            <div className='flex flex-col w-full  items-center  mt-20 space-y-10'>
-                                                      <Link to="/description" state={{
-                                                            data: JSON.stringify({
-                                                                title: "Relation With   martin luther king",
-                                                                backToLink : "/relationtoothers", 
-                                                                backToText : "Back To Relations",
-                                                                quote: ["q1", "q2", "q3"],
-                                                                paragrah: ["p1", "p2", "p3"],
-                                                                sideText: "OTHER PEOPLE",
-                                                                sideArray: [
-                                                                            "Prime minster Dr Abiy",
-                                                                            "Dietrich Bonhoeffer",
-                                                                            "martin luther king"
-                                                                ]
-                                                })
+                        <div className='flex flex-col w-full  items-center  mt-20 space-y-10'>
+                            {
+                                relationData.map((item, index) => { 
+
+                                    return (
+                                        <Link to="/description" state={{
+                                            data: JSON.stringify({
+                                                title: item.title,
+                                                backToLink: "/relationtoothers",
+                                                backToText: "Back To Relations",
+                                                quote: item.quote,
+                                                paragrah: item.paragraph,
+                                                sideText: "OTHER PEOPLE",
+                                                sideArray: [
+                                                    "Prime minster Dr Abiy",
+                                                    "Dietrich Bonhoeffer",
+                                                    "martin luther king"
+                                                ]
+                                            })
                                                 
-                                                    }}>
-                                                            <div class="w-full flex justify-between">
-                                                        <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={martin} alt="user image" />
-                                                        <p className='md:hidden'>First one</p>
-                                                            </div>
+                                        }}>
+                                            <div class="w-full flex justify-between">
+                                                <img class="hover:opacity-80 md:mx-auto w-[150px] h-[150px] rounded-full border border-gray-100 shadow-sm" src={item.photo} alt="user image" />
+                                                <p className='md:hidden'>Martin Luther King</p>
+                                            </div>
                                                             
-                                                    </Link>
-                                                      <Link to="/description" state={{
-                                                            data: JSON.stringify({
-                                                                title: "Relation With Prime minister  Dr. Abiy",
-                                                                backToLink : "/relationtoothers", 
-                                                                backToText : "Back To Relations",
-                                                                quote: ["q1", "q2", "q3"],
-                                                                paragrah: ["p1", "p2", "p3"],
-                                                                sideText: "OTHER PEOPLE",
-                                                                 sideArray: [
-                                                                            "Prime minster Dr Abiy",
-                                                                            "Dietrich Bonhoeffer",
-                                                                            "martin luther king"
-                                                                ]
-                                                                
-                                                })
-                                                
-                                                    }}>
-                                                         <div class="w-full flex justify-between">
-                                                            <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={abiy2} alt="user image" />
-                                                        <p className='md:hidden'>First one</p>
-                                                </div>    
-                                                    </Link>
-                                                      <Link to="/description" state={{
-                                                            data: JSON.stringify({
-                                                                title: "Relation With Dietrich Bonhoeffer",
-                                                                backToText: "Back To Relations",
-                                                                backToLink : "/relationtoothers", 
-                                                                quote: ["q1", "q2", "q3"],
-                                                                paragrah: ["p1", "p2", "p3"],
-                                                                sideText: "OTHER PEOPLE",
-                                                                sideArray: [
-                                                                            "Prime minster Dr Abiy",
-                                                                            "Dietrich Bonhoeffer",
-                                                                            "martin luther king"
-                                                                ]
-                                                })
-                                                
-                                    }}><div class="w-full  flex justify-between">
-                                                        <img class="md:mx-auto w-25 h-25 rounded-full border border-gray-100 shadow-sm" src={bonhoeffer1} alt="user image" />
-                                                        <p className='md:hidden'>First one</p>
-                                                </div></Link>
+                                        </Link>
+                                    )
+                                })
+                            }
+                                                     
+                                                    
                                                 
                                                
                                                 
@@ -94,7 +65,8 @@ const RelationToOthers = () => {
                                    </div>
                         </div>
                        
-                </div>   
+            </div>   
+            <Footer/>
         </div>
     )
 }

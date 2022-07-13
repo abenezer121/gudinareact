@@ -89,17 +89,21 @@ const Navbar = () => {
             <div className='flex flex-col w-full'>
               <div className='text-center  mt-60  w-full'>
                   <p className='text-center text-2xl'>Contact us</p>
-                  <p className='text-center text-7xl font-bold '>hello@toyfight.co</p>
+                  <p className='text-center text-7xl font-bold '>hello@Gt Legacy.com</p>
               </div>
               
               
               <div className='mt-60 mb-20 mx-auto'>
                 <p className=' text-center text-sm font-medium uppercase'>social</p>
                 <div className='mx-auto text-center  flex  space-x-5 '>
-                    <FaFacebook className='text-2xl' />
-                    <FaInstagram className='text-2xl' />
-                    <FaTwitter className='text-2xl' />
-                    <FaYoutube className='text-2xl'/>
+                  
+                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaFacebook className='text-2xl hover:text-3xl' /></a>
+                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaInstagram className='text-2xl hover:text-3xl' /></a>
+                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaTwitter className='text-2xl hover:text-3xl' /></a>
+                  <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer"><FaYoutube className='text-2xl hover:text-3xl'/></a>
+                    
+                    
+                    
                 </div>
               </div>
             </div>
@@ -108,7 +112,7 @@ const Navbar = () => {
          
       </Modal>
         
-        <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }} className='w-full h-[80px]  z-10 bg-transparent fixed top-0 text-white'>
+        <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }} className='w-full h-[80px]  z-10 bg-transparent fixed top-0 text-white pt-11'>
             <div className='px-3 w-full flex justify-between items-center w-full h-full'>
               <div className='px-3 w-full flex justify-between items-center w-full h-full'>
                   <div className='flex items-center '>
@@ -116,12 +120,12 @@ const Navbar = () => {
                   </div>
                   <div className='flex items-center h-full'>
                     <ul className='hidden md:flex space-x-4'>
-                      <Link to='/'><li className={ 'text-black-800 text-sm uppercase '} > Home</li></Link>
-                      <Link to='/idiology'> <li className={'text-black-800 text-sm uppercase'}> His Idiology</li></Link>
-                      <Link to='/relationtoothers'><li className={ 'text-black-800 text-sm uppercase' } >Relation to other</li></Link>
-                      <Link to='/papers'><li className={ 'text-black-800 text-sm uppercase' } >Papers</li></Link>
-                <Link to='/archive'><li className={'text-black-800 text-sm uppercase'} >Archive</li></Link>
-                <Link to='/gallery'><li className={'text-black-800 text-sm uppercase'} >Gallery</li></Link>
+                      <Link to='/'><li  className={ 'text-white font-bold hover:text-white text-sm uppercase '} > Home</li></Link>
+                      <Link to='/idiology'> <li className={'text-white font-bold hover:text-white text-sm uppercase'}> His Idiology</li></Link>
+                      <Link to='/relationtoothers'><li className={ 'text-white font-bold hover:text-white text-sm uppercase' } >In Relation to other</li></Link>
+                      <Link to='/papers'><li className={ 'text-white font-bold hover:text-white text-sm uppercase' } >Papers</li></Link>
+                      <Link to='/archive'><li className={'text-white font-bold hover:text-white text-sm uppercase'} >Archive</li></Link>
+                      <Link to='/gallery'><li className={'text-white font-bold hover:text-white text-sm uppercase'} >Gallery</li></Link>
  
                     </ul>
                                 <div onClick={handleClick} className='md:hidden'>
@@ -129,7 +133,7 @@ const Navbar = () => {
                             </div>
                             </div>
                             <div className='hidden md:flex'>
-                                <p className={ 'text-black-800 text-sm  mr-5 uppercase'} onClick={() => setContactVisible(true)}>Contact</p>
+                                <p className={ 'text-black  text-sm  mr-5 uppercase  px-4  py-2 bg-white  hover:bg-black'} onClick={() => setContactVisible(true)}>Contact</p>
                             </div>
                         
                     </div> 

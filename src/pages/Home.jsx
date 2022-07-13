@@ -221,7 +221,7 @@ const Home = () => {
             <div className="my-auto w-[60%]" >
               <div className=" mx-auto my-10   relative">
                 <p  data-aos="fade-up"
-                  className="text-lg text-center"
+                  className="text-lg text-center text-white"
                   style={{
                     transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                   }}
