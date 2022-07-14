@@ -1,25 +1,16 @@
 import { React, useState, useEffect, useRef } from "react";
 
 
-import gudinatumsa1 from "../assets/gudinatumsa1.JPG";
-import gudinatumsa4 from "../assets/gudinatumsa4.png";
-import bookcover1 from "../assets/bookcover1.jpg";
-import bookcover2 from "../assets/bookcover2.jpg";
-import bookcover3 from "../assets/bookcover3.jpg";
-import bookcover4 from "../assets/bookcover4.jpg";
-import bookcover5 from "../assets/bookcover5.jpg";
-import bookcover6 from "../assets/bookcover6.jpg";
+import gudinatumsa4 from "../assets/image/gudinatumsa4.png";
+import bookcover1 from "../assets/image/bookcover1.jpg";
+import bookcover2 from "../assets/image/bookcover2.jpg";
+import bookcover3 from "../assets/image/bookcover3.jpg";
+import bookcover4 from "../assets/image/bookcover4.jpg";
+import bookcover5 from "../assets/image/bookcover5.jpg";
+import bookcover6 from "../assets/image/bookcover6.jpg";
+import years from "./../assets/data/year.json";
+import {ArrowDownIcon,DownloadIcon} from "@heroicons/react/outline";
 
-import years from "../assets/year.json";
-import {
-  PhoneIcon,
-  ArrowSmRightIcon,
-  ArrowDownIcon,
-  DownloadIcon
-} from "@heroicons/react/outline";
-
-
-import nature from "./../assets/nature.jpg";
 
 import { useInView } from "react-intersection-observer";
 

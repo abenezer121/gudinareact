@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import { SearchIcon , MenuIcon, XIcon , ArrowsExpandIcon } from "@heroicons/react/outline";
 import { useSelector , useDispatch} from 'react-redux'
-import logo from "./../assets/logo.png"
+import logo from "./../../assets/image/logo.png"
 import { Link } from 'react-router-dom';
 import {Button , Modal} from "antd"
-import ModalContact from "./ModalContact"
+import ModalContact from "../ModalContact/ModalContact"
 
 
  function debounce(func, wait, immediate) {

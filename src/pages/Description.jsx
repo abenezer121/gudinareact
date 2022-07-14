@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/outline";
-import logo from "./../assets/logo.png";
-import slider from "./../assets/slider.png";
+import logo from "./../assets/image/logo.png";
+import slider from "./../assets/image/slider.png";
 
 import { Link } from "react-router-dom";
 import QuoteCarousel from "../components/Carousel/QuoteCarousel";
 import { useLocation } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 const ReadMore = ( props ) => {
 

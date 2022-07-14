@@ -1,39 +1,19 @@
 import { React, useState, useEffect, useRef } from "react";
 
-import TimeLine3 from "../components/timeline/TimeLine3";
-import TimeLine2 from "../components/timeline/TimeLine2/TimeLine2";
-import TimeLine1 from "../components/timeline/TimeLine1";
+import { useSelector , useDispatch} from 'react-redux'
 import Choice from "../components/Filter/Choice/Choice";
-import ministry from "../assets/ministry.jpg";
-import funeral from "../assets/funeral.JPG";
-import gudinatumsa1 from "../assets/gudinatumsa1.JPG";
-import gudinatumsa4 from "../assets/archivebackgorund.png";
-//import gudinatumsa4 from "../assets/gudinatumsa4.png";
-import { data , Authors } from "./bookdata/index"
-import HorizontalScroll from "react-scroll-horizontal";
-import book1 from "../assets/book1.jpg";
-import book2 from "../assets/book2.jpg";
-import book3 from "../assets/book3.jpg";
-import book4 from "../assets/book4.jpg";
-import book5 from "../assets/book5.jpg";
-
-import years from "./../assets/year.json";
+import gudinatumsa4 from "../assets/image/archivebackgorund.png";
+import { data , Authors } from "./../assets/data/bookdata/index"
 import {
 
   ArrowDownIcon,
   SearchIcon,
   AdjustmentsIcon,
 } from "@heroicons/react/outline";
-import Footer from "../components/Footer";
-import { ChipIcon, SupportIcon } from "@heroicons/react/solid";
-import Dash from "../components/Carousel/Dash";
-import Carousel from "../components/Carousel/Carousel";
-import nature from "./../assets/nature.jpg";
-import gudinatumsa3 from "./../assets/gudinatumsa1.png";
+import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
-import logo from "./../assets/logo.png";
-import DropDown from "../components/DropDown";
-import { useSelector , useDispatch} from 'react-redux'
+import DropDown from "../components/DropDown/DropDown";
+
 
 const Archive = () => {
   const [text, setText] = useState("INTRODUCTION");

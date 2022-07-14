@@ -4,46 +4,21 @@
 import { React, useState, useEffect, useRef } from "react";
 
 import TimeLine3 from "../components/timeline/TimeLine3";
-import TimeLine2 from "../components/timeline/TimeLine2/TimeLine2";
-import TimeLine1 from "../components/timeline/TimeLine1";
-import Choice from "../components/Filter/Choice/Choice";
-import ministry from "../assets/ministry.jpg";
-import funeral from "../assets/funeral.JPG";
-import gudinatumsa1 from "../assets/gudinatumsa1.JPG";
-import gudinatumsa4 from "../assets/gudinatumsa4.png";
-import Footer from "../components/Footer";
+import ministry from "../assets/image/ministry.jpg";
+import funeral from "../assets/image/funeral.JPG";
+import gudinatumsa1 from "../assets/image/gudinatumsa1.JPG";
+import gudinatumsa4 from "../assets/image/gudinatumsa4.png";
+import Footer from "../components/Footer/Footer";
 import HorizontalScroll from 'react-scroll-horizontal'
-import years from "./../assets/year.json"
+import years from "./../assets/data/year.json"
 import OwlCarousel from 'react-owl-carousel';
-
-import book1 from "../assets/book1.jpg";
-import book2 from "../assets/book2.jpg";
-import book3 from "../assets/book3.jpg";
-import book4 from "../assets/book4.jpg";
-import book5 from "../assets/book5.jpg";
-import {
-  PhoneIcon,
-  ArrowSmRightIcon,
-  ArrowDownIcon,
-  AcademicCapIcon,
-  PlusIcon,
-   
-                          
-} from "@heroicons/react/outline";
- 
-
-import { ChipIcon, SupportIcon } from "@heroicons/react/solid";
-import Dash from "../components/Carousel/Dash";
-import Carousel from "../components/Carousel/Carousel";
-import nature from "./../assets/nature.jpg";
-import gudinatumsa3 from "./../assets/gudinatumsa1.png";
+import book1 from "../assets/image/book1.jpg";
+import {ArrowDownIcon,} from "@heroicons/react/outline";
+import nature from "./../assets/image/nature.jpg";
 import { useInView } from "react-intersection-observer";
-import logo from "./../assets/logo.png"
-
-import YouTube from "react-youtube";
 import getYouTubeID from "get-youtube-id";
 
-    const TimeLineElement = (props) => {
+const TimeLineElement = (props) => {
     return (
          <div className="super-box  flex flex-col items-center justify-center   ">
               <div className="box flex flex-col items-center">
@@ -55,7 +30,7 @@ import getYouTubeID from "get-youtube-id";
           
         </div>
       )
-    }
+}
 
 const Home = () => {
   const [text, setText] = useState("INTRODUCTION");

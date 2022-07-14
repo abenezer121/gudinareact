@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa'
 import {Button , Modal} from "antd"
 
-import './cursor.css'
+import './../../assets/css/cursor.css'
 const ModalContact = (props) => { 
    const [position, setPosition] = useState({x: 0, y: 0});
 

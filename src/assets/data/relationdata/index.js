@@ -1,6 +1,6 @@
-import martin from "./../../assets/martin.jpg"
-import bonhoeffer1 from "./../../assets/bonhoeffer1.jpg"
-import abiy2 from "./../../assets/drabiy2.jpg"
+import martin from "./../../image/martin.jpg"
+import bonhoeffer1 from "./../../image/bonhoeffer1.jpg"
+import abiy2 from "./../../image/drabiy2.jpg"
 
 export let relationData = [
     {

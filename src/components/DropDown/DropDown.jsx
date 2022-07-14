@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Dropdown, Menu, message, Space, Tooltip } from 'antd';
 import { ChevronDownIcon} from "@heroicons/react/outline";
 import { useSelector , useDispatch} from 'react-redux'
-import { setAuthor } from './../redux/actions/authorAction.js'
+import { setAuthor } from './../../redux/actions/authorAction.js'
 
 
 

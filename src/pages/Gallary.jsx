@@ -1,11 +1,11 @@
 import React , {useEffect , useState} from 'react'
-import gudinatumsa4 from "../assets/gudinatumsa4.png";
-import gallary1 from "../assets/gallary1.jpg";
-import gallary2 from "../assets/gallary2.jpg";
-import gallary3 from "../assets/gallary3.jpg";
-import gallary4 from "../assets/gallary4.jpg";
-import './gallery.css'
-import Footer from "../components/Footer";
+import gudinatumsa4 from "../assets/image/gudinatumsa4.png";
+import gallary1 from "../assets/image/gallary1.jpg";
+import gallary2 from "../assets/image/gallary2.jpg";
+import gallary3 from "../assets/image/gallary3.jpg";
+import gallary4 from "../assets/image/gallary4.jpg";
+import './../assets/css/gallery.css'
+import Footer from "../components/Footer/Footer";
 import {
   XIcon
    

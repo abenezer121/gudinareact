@@ -1,14 +1,11 @@
 import { React, useState, useEffect, useRef } from "react";
-
-
-
-import idiologyBackground from "./../assets/idiologybackground.png";
-
+import idiologyBackground from "./../assets/image/idiologybackground.png";
+import { useSelector, useDispatch } from 'react-redux'
 import { useInView } from "react-intersection-observer";
 import { Link } from 'react-router-dom';
-import Footer from "../components/Footer";
-import { useSelector, useDispatch } from 'react-redux'
-import {idiology} from "./idiologydata/index"
+import Footer from "../components/Footer/Footer";
+import { idiology } from "./../assets/data/idiologydata/index"
+
 const  titleText = (text) => {
     return (
         

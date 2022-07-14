@@ -1,12 +1,8 @@
 import React from 'react'
-import gudinatumsa from "./../assets/gudinatumsa1.png";
-import martin from "./../assets/martin.jpg"
-import bonhoeffer1 from "./../assets/bonhoeffer1.jpg"
-import abiy2 from "./../assets/drabiy2.jpg"
-import { relationData } from './relationdata/index'
-import gudinatumsa1 from "./../assets/gudinatumsa1.JPG"
+import { relationData } from './../assets/data/relationdata/index'
+import gudinatumsa1 from "./../assets/image/gudinatumsa1.JPG"
 import { Link } from 'react-router-dom';
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 const RelationToOthers = () => { 
 
     return(            

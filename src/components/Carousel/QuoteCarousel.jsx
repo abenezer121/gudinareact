@@ -1,6 +1,6 @@
 import { Carousel } from 'antd';
 //  <img className='w-full h-full object-cover mix-blend-overlay' src={nature} alt="/" />
-import nature from './../../assets/nature.jpg';
+import nature from './../../assets/image/nature.jpg';
 const contentStyle = {
   height: '200px',
  

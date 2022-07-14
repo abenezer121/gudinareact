@@ -1,10 +1,10 @@
 import { React , useState , useEffect , useRef } from 'react'
 import Dash from './Dash';
 import { ArrowLeftIcon, ArrowRightIcon, PlayIcon } from '@heroicons/react/outline';
-import nature from "../../assets/nature.jpg"
-import nature2 from "../../assets/nature2.jpg";
-import nature3 from "../../assets/nature3.jpg";
-import video from '../../assets/video.webm';
+import nature from "../../assets/image/nature.jpg"
+import nature2 from "../../assets/image/nature2.jpg";
+import nature3 from "../../assets/image/nature3.jpg";
+import video from '../../assets/image/video.webm';
 
 const Carousel = (props) => {
     const [position, setPosition] = useState(0);
