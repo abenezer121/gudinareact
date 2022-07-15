@@ -3,11 +3,8 @@ import { Carousel } from 'antd';
 import nature from './../../assets/image/nature.jpg';
 const contentStyle = {
   height: '200px',
- 
- 
-    textAlign: 'center',
-     background: '#364d79',
-  //  //  backgroundImage: 'url(' + nature + ')',
+  textAlign: 'center',
+  background: '#364d79',
 };
 
 const QuoteCarousel = (props) => {
@@ -19,9 +16,15 @@ const QuoteCarousel = (props) => {
     <Carousel afterChange={onChange}>
           {
               props.quote.map((item, index) => { 
-                  return <div className=' ' >
-                         <h3 style={contentStyle} className="pt-10 text-3xl font-medium object-fill ">{ item}</h3>
-                      </div>
+                  return      <div className="h-[230px]   flex items-center  relative  bg-[#364d79]"   >
+                    
+                                    <div className="relative z-1 mt-10  ">
+                                          <h3
+                                              className="text-4xl font-bold  text-center text-white "
+                                              style={{
+                                              fontFamily: "Odibee Sans"}}> { "\""} { item}{ "\""} </h3>
+                                    </div>
+                              </div>
               })
           }
       

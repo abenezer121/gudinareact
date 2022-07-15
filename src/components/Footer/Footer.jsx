@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 import {
     FaFacebook,
     FaInstagram,
@@ -8,30 +6,87 @@ import {
     FaYoutube
     
 } from 'react-icons/fa'
-
+import { idiology } from "./../../assets/data/idiologydata/index"
+import { relationData } from './../../assets/data/relationdata/index'
+import {Link} from "react-router-dom"
 const Footer = () => {
     return (
         <div className='w-full bg-[#1e2025] relative py-10 '>
             <div className='grid grid-cols-2 md:grid-cols-4 mx-20 py-10'>
                 <div>
-                    <h1 className='font-semibold text-lg text-[#524b4b]'>Where To Buy</h1>
-                    <p className='text-white font-medium'>See Authorized Retailers</p>
+                    <h1 className='font-semibold text-lg text-[#524b4b]'>Location</h1>
+                    
+                    <p className='text-white font-medium'>Address- Ethiopia Addis Ababa, Bole Kifle</p>
+                        <p className='text-white font-medium'>Ketema Woreda 07 House No.999</p>
                 </div>
                 <div>
                     
-                     <h1 className='font-semibold text-lg text-[#524b4b]'>Sorry Rewards</h1>
-                    <p className='text-white font-medium'>Join Now</p>
+                     <h1 className='font-semibold text-lg text-[#524b4b]'>Relation To Others</h1>
+                    {
+                           
+                                relationData.map((item, index) => { 
+
+                                    return (
+                                        <Link to="/description" state={{
+                                            data: JSON.stringify({
+                                                title: item.title,
+                                                backToLink: "/relationtoothers",
+                                                backToText: "Back To Relations",
+                                                quote: item.quote,
+                                                paragrah: item.paragraph,
+                                                sideText: "OTHER PEOPLE",
+                                                sideArray: [
+                                                    "Prime minster Dr Abiy",
+                                                    "Dietrich Bonhoeffer",
+                                                    "martin luther king"
+                                                ]
+                                            })
+                                                
+                                        }}>
+                                            <p className='text-white  hover:font-bold'>{item.title}</p>
+                                                            
+                                        </Link>
+                                    )
+                                })
+                            
+                    }
 
                 </div>
                 <div>
               
-                    <h1 className='font-semibold text-lg text-[#524b4b]'>News & Info</h1>
-                    <p className='text-white font-medium'>Press Releases</p>
-                    <p className='text-white font-medium'>About Sony</p>
-                    <p className='text-white font-medium'>Product Support</p>
-                    <p className='text-white font-medium'>Product Manual</p>
-                    <p className='text-white font-medium'>Product Registration</p>
-                    <p className='text-white font-medium'>News letter sign up</p>
+                    <h1 className='font-semibold text-lg text-[#524b4b]'>Ideology</h1>
+                        {
+                        idiology.map((item, index) => {
+                                
+                                if (index < 6) {
+                                    return (
+                                    <Link to="/description" state={{
+                                        data: JSON.stringify({
+                                        title: item.title,
+                                        backToText: "Back To Idiology",
+                                        backToLink : "/idiology", 
+                                        quote: item.quote,
+                                        paragrah: item.paragraph,
+                                        sideText: "OTHER TOPICS",
+                                        sideArray: [
+                                                "Cost of Discipleship",
+                                                "GT on Politics/Economics",
+                                                "Holistic Theology"
+                                            ]
+                                        })
+                                        
+                                        
+                                        }}><p className='text-white  hover:font-bold'>{item.title}</p></Link>
+                                
+                                    )
+                                } else {
+                                    return ("")
+                                }
+                    
+                  })
+                }
+                    
+                  
                 </div>
                 <div>
                 
@@ -45,32 +100,7 @@ const Footer = () => {
 
             </div>
             
-                <div className='absolute right-0 bottom-5 mr-10 flex space-x-5 '>
-                                <h1 className='text-white font-medium'>For Professionals</h1>
-                                <h1 className='text-white font-medium'>Careers</h1>
-                                <h1 className='text-white font-medium'>Contact us</h1>
-                                <h1 className='text-white font-medium'>Comppny Info</h1>
-                <h1 className='text-white font-medium'>Voluntary recall</h1>
-                    <div className="flex space-x-10">
-                    <FaFacebook style={{
-                        width: '25px',
-                        height: '25px',
-                    }} className=" text-white"/>
-                        <FaInstagram style={{
-                        width: '25px',
-                        height: '25px',
-                    }} className=" text-white"/>
-                        <FaTwitter style={{
-                        width: '25px',
-                        height: '25px',
-                    }}  className=" text-white"/>
-                        <FaYoutube style={{
-                        width: '25px',
-                        height: '25px',
-                    }}  className=" text-white"/>
-                    </div> 
-               
-            </div>
+                
            
           </div>  
         );

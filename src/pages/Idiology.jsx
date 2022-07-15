@@ -78,10 +78,7 @@ const Idiology = () => {
                 <div className='flex flex-col h-full items-center'>
                     <div className=' my-auto flex'>
                         <p className='text-9xl my-auto text-white'    style={{ fontFamily: "Odibee Sans", fontSize :'350px' }}>Ideology</p>
-                        {/* <img src={gudinatumsa4}  style={{
-                        
-                        transform: `translateY(${offsetY}px) translateX(${offsetX}px)`,
-                      }} /> */}
+                     
                     </div>
                 </div>
             </div> 

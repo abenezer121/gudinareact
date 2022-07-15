@@ -12,7 +12,6 @@ import Footer from "../components/Footer/Footer";
 import HorizontalScroll from 'react-scroll-horizontal'
 import years from "./../assets/data/year.json"
 import OwlCarousel from 'react-owl-carousel';
-import book1 from "../assets/image/book1.jpg";
 import {ArrowDownIcon,} from "@heroicons/react/outline";
 import nature from "./../assets/image/nature.jpg";
 import { useInView } from "react-intersection-observer";
@@ -24,6 +23,7 @@ import homepage4 from "./../assets/image/HomePagePictures/homepage4.jpg";
 import homepage5 from "./../assets/image/HomePagePictures/homepage5.jpg";
 import homepage6 from "./../assets/image/HomePagePictures/homepage6.jpg";
 import homepage7 from "./../assets/image/HomePagePictures/homepage7.jpg";
+
 const TimeLineElement = (props) => {
     return (
          <div className="super-box  flex flex-col items-center justify-center   ">
@@ -148,8 +148,8 @@ const Home = () => {
             ref={first}
             className="h-full w-full  flex flex-col text-white bg-[#321473]  "
             >
-              {(firstVisible == true ) ?
-               <p className="fixed top-1/2 -rotate-90 capitalize text-white">{text}</p>: <p className="fixed top-1/2 -rotate-90 text-black capitalize">{text}</p>}
+              {/* {(firstVisible == true ) ?
+               <p className="fixed top-1/2 -rotate-90 capitalize text-white">{text}</p>: <p className="fixed top-1/2 -rotate-90 text-black capitalize">{text}</p>} */}
             
             <div className="my-auto">
               <div className=" mx-auto my-10 w-[70%] h-[30%]  relative">
@@ -186,12 +186,12 @@ const Home = () => {
                 </div>
               </div>
               <ArrowDownIcon className="w-7 h-7 text-white absolute bottom-0 mb-20 left-1/2 text-center animate-bounce " />
-              <div className=" fixed right-0 top-1/2  flex flex-col mr-10">
+              {/* <div className=" fixed right-0 top-1/2  flex flex-col mr-10">
                 {               text == "INTRODUCTION" ? dot("bg-orange-200") : dot("bg-white")}
                              {text == "CHILDHOOD" ? dot("bg-orange-200") : dot("bg-white")}
                                   {text == "EARLY LIFE" ? dot("bg-orange-200") : dot("bg-white")}
                                   {text == "TimeLine" ? dot("bg-orange-200") : dot("bg-white")}
-              </div>
+              </div> */}
             </div>
           </div>
 
