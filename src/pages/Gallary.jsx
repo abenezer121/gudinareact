@@ -4,13 +4,11 @@ import gallary1 from "../assets/image/gallary1.jpg";
 import gallary2 from "../assets/image/gallary2.jpg";
 import gallary3 from "../assets/image/gallary3.jpg";
 import gallary4 from "../assets/image/gallary4.jpg";
+import importAll from "./../helper/importAll"
 import './../assets/css/gallery.css'
 import Footer from "../components/Footer/Footer";
-import {
-  XIcon
-   
-                          
-} from "@heroicons/react/outline";
+import { XIcon } from "@heroicons/react/outline";
+
 
 
 const Gallary = () => {
@@ -18,34 +16,51 @@ const Gallary = () => {
   
     const [offsetX, setOffsetX] = useState(0);
     const [offsetY, setoffsetY] = useState(0);
+
+    
+    const images = importAll(
+    require.context("../assets/image/GTphotoAlbum/", false, /\.(png|jpe?g|svg)$/)
+    );
+
+    var res = []
+    for(var i in images)
+    res.push(images[i]);
+
+    
+    let data = res.map((image, index) => { 
+        return {
+            id: index,
+            imgSrc : image
+        }
+    });
    
-    let data = [
-        {
-            id: 1,
-            imgSrc: gallary1
-        },
-         {
-            id: 2,
-            imgSrc: gallary2
-        },
-         {
-            id: 3,
-            imgSrc: gallary3
-        },
-         {
-            id: 4,
-            imgSrc: gallary4
-        },
-          {
-            id: 5,
-            imgSrc: gallary2
-        },
-           {
-            id: 6,
-            imgSrc: gallary3
-        },
+    //     [
+    //     {
+    //         id: 1,
+    //         imgSrc: gallary1
+    //     },
+    //      {
+    //         id: 2,
+    //         imgSrc: gallary2
+    //     },
+    //      {
+    //         id: 3,
+    //         imgSrc: gallary3
+    //     },
+    //      {
+    //         id: 4,
+    //         imgSrc: gallary4
+    //     },
+    //       {
+    //         id: 5,
+    //         imgSrc: gallary2
+    //     },
+    //        {
+    //         id: 6,
+    //         imgSrc: gallary3
+    //     },
         
-    ]
+    // ]
     const style = [
         {
             width : ''

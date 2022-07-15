@@ -72,7 +72,7 @@ const Navbar = () => {
                   <div className='flex items-center h-full'>
                     <ul className='hidden md:flex space-x-4'>
                       <Link to='/'><li  className={ 'text-white font-bold hover:text-white text-sm uppercase '} > Home</li></Link>
-                      <Link to='/idiology'> <li className={'text-white font-bold hover:text-white text-sm uppercase'}> His Idiology</li></Link>
+                      <Link to='/idiology'> <li className={'text-white font-bold hover:text-white text-sm uppercase'}> His Ideology</li></Link>
                       <Link to='/relationtoothers'><li className={ 'text-white font-bold hover:text-white text-sm uppercase' } >In Relation to other</li></Link>
                       <Link to='/papers'><li className={ 'text-white font-bold hover:text-white text-sm uppercase' } >Papers</li></Link>
                       <Link to='/archive'><li className={'text-white font-bold hover:text-white text-sm uppercase'} >Archive</li></Link>

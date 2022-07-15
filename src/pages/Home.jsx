@@ -17,7 +17,13 @@ import {ArrowDownIcon,} from "@heroicons/react/outline";
 import nature from "./../assets/image/nature.jpg";
 import { useInView } from "react-intersection-observer";
 import getYouTubeID from "get-youtube-id";
-
+import homepage1 from "./../assets/image/HomePagePictures/homepage1.jpg";
+import homepage2 from "./../assets/image/HomePagePictures/homepage2.jpg";
+import homepage3 from "./../assets/image/HomePagePictures/homepage3.jpg";
+import homepage4 from "./../assets/image/HomePagePictures/homepage4.jpg";
+import homepage5 from "./../assets/image/HomePagePictures/homepage5.jpg";
+import homepage6 from "./../assets/image/HomePagePictures/homepage6.jpg";
+import homepage7 from "./../assets/image/HomePagePictures/homepage7.jpg";
 const TimeLineElement = (props) => {
     return (
          <div className="super-box  flex flex-col items-center justify-center   ">
@@ -353,11 +359,13 @@ const Home = () => {
               
               <div  className="w-full h-[20%]">
                     <OwlCarousel className='owl-carousel overflow-hidden'  margin={10} >
-                        <div className='h-[500px] '>  <img src={book1} alt='book1' className="ml-[40px] mr-[20px]"  /></div>
-                        <div className='h-[400px]'> <img src={book1} alt='book2' className="ml-[60px] " /> </div>
-                        <div className='h-[400px]'> <img src={book1} alt='book3' className="ml-[80px]" /></div>
-                        <div className='h-[400px]'> <img src={book1} alt='book3' className="ml-[100px]" /></div>
-                        <div className='h-[400px]'> <img src={book1} alt='book3' className="ml-[120px]" /></div>
+                        <div className='h-[500px] '>  <img src={homepage1} alt='book1' className="ml-[40px] mr-[20px]"  /></div>
+                        <div className='h-[400px]'> <img src={homepage2} alt='book2' className="ml-[60px] " /> </div>
+                        <div className='h-[400px]'> <img src={homepage3} alt='book3' className="ml-[80px]" /></div>
+                        <div className='h-[400px]'> <img src={homepage4} alt='book3' className="ml-[100px]" /></div>
+                        <div className='h-[400px]'> <img src={homepage5} alt='book3' className="ml-[120px]" /></div>
+                        <div className='h-[400px]'> <img src={homepage6} alt='book3' className="ml-[120px]" /></div>
+                        <div className='h-[400px]'> <img src={homepage7} alt='book3' className="ml-[120px]" /></div>
                     </OwlCarousel>
             </div> 
             <div className=" w-full  flex text-black bg-white relative m-auto">
