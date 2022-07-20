@@ -55,7 +55,11 @@ code {
 }
 
 
+ .homepagequoteimage{
+  
  
+  background: linear-gradient( rgba(29, 28, 28, 0.5), rgba(31, 30, 30, 0.5) ), url("./assets/image/nature.jpg");
+ }
 
 
  

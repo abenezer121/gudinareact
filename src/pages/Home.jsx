@@ -23,6 +23,7 @@ import homepage4 from "./../assets/image/HomePagePictures/homepage4.jpg";
 import homepage5 from "./../assets/image/HomePagePictures/homepage5.jpg";
 import homepage6 from "./../assets/image/HomePagePictures/homepage6.jpg";
 import homepage7 from "./../assets/image/HomePagePictures/homepage7.jpg";
+import HomePageQuote from "../components/Carousel/HomePageQuote";
 
 const TimeLineElement = (props) => {
     return (
@@ -207,7 +208,7 @@ const Home = () => {
                     transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                   }}
                 >
-                  Gudina's ChildHood
+                  The Importance of the Man, Reverend and Martyr Gudina Tumsa
                 </p>
                 {dash("bg-white")}
                 <h3   data-aos="fade-up"
@@ -229,20 +230,11 @@ const Home = () => {
                 </h3>
                 <h2   data-aos="fade-up" className="text-base  text-slate-400  text-center mt-4">
                   <ReadMore>
-                    Gudina Tumsa was born in 1929 in Bodji Wollega, Ethiopia. He
-                    was born to Mrs.Nassissie Chiracho and Mr. Tumsa Silga.
-                    Prior to Gudina Tumsa’s birth his mother had six children,
-                    sadly all of them died. Thus, when Gudina the “seventh
-                    child” was born she called him Gudina an Oromo word which
-                    means “growth”, because she wanted him to survive. It is
-                    ironic how Gudina’s name became his character, as H.E
-                    Emmanuel Abraham described him The ironic part about his
-                    name didn’t stop at his character but was seen in his height
-                    as he grew to be two meters tall or 6 foot 7 inches. Gudina
-                    was also the first in his family to get an education, and he
-                    went on to lead an exceptional life. It is not an
-                    exaggeration to say Gudina’s name was a prophetic utterance
-                    as growth became the defining theme of his life
+                      Gudina Tumsa was an Ethiopian, evangelist and Church leader who lived from 1929-1979. Gudina is one of the most famous figures in the history of
+                      Protestant Churches in Ethiopia.During his ministry in the Church Gudina was able to accomplish feats that completely changed the landscape of the 
+                      Ethiopian Church.Not only that but, he was able to speak on African and Western Churches as well as the political and economic situation of the world.
+                      His influence did not remain just in his lifetime, but still influences this generation and future generations as well.If you have opened this website 
+                      then you may ask why should I be interested in Gudina Tumsa?Well, Gudina’s historical life story offers topics of interest such as truth, faith, love, and persecution. 
                   </ReadMore>
                 </h2>
               </div>
@@ -252,27 +244,29 @@ const Home = () => {
           {/*  */}
           <div  className="text-black bg-white lifeimages">
             <div className=" w-full  flex  relative m-auto text-black bg-white bg-slate-300">
-              <div className="mx-auto my-10 w-[60%]  relative  ">
+              <div className="mx-auto my-10 w-[100%] md:w-[60%]  relative  ">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                   <div className="mx-20">
-                    <h1 className="text-4xl font-bold"   data-aos="fade-up">Life of Gudina Tumsa</h1>
+                    <h1 className="text-4xl font-bold"   data-aos="fade-up">A Defender of Truth</h1>
 
                     <h2 className="mt-20">
                       <p   data-aos="fade-up">
-                        Gudina Tumsa was a great man of prayer, through his
-                        prayers he was able to discern what God’s will was for
-                        him. In 1955 he was offered a promotion in the Teferi
-                        Mekonen hospital but he chose to resign from his job as
-                        a dresser and take theological training and serve as a
-                        pastor as he believed it was God’s calling for him.
-                        Because of this Gudina moved back to Nedjo and he joined
-                        what was known as the second pastoral course in 1955.
+                          Gudina accepted the truth at the age of ten, and from the first time that he heard it, he began to defend it.
+                          The first instance of Gudina defending the truth, is when he cut down a ritual worship tree and tried to tell
+                          his townspeople to accept the Gospel. His defense of this truth continued during his pastoral service in Nekemte when
+                          he clashed with a Church elder who practiced infidelity, he defended the truth again when he stood up against covert
+                          colonial practices seen in his criticism of certain Western Mission Organizations. He zeal for truth is seen again when
+                          he refused a liturgical prayer– A prayer that is read to glorify the Emperor and ensure the continuity of his reign without
+                          any consideration for justice– Gudina believed in praying for the nation and its leader, but the prayer he wanted to pray for the emperor
+                          was one of repentance on behalf of those facing injustice. The biggest stance for the truth that Gudina took was when he refused to deny
+                          that the Derg–A socialist Ethiopian regime– was oppressing human and religious rights. This was his last and most notable defense of the truth.
+                          This stance made him lose his freedom, family and even his life. Gudina’s fervor for defending the truth made him a martyr for Christ
                       </p>
                     </h2>
                   </div>
 
                   <div
-                    className=" "
+                    className=""
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                     }}
@@ -296,60 +290,24 @@ const Home = () => {
               
             </div>
             <div className=" w-full  flex  relative m-auto text-black bg-white ">
-              <div className="mx-auto my-10 w-[60%]   relative">
+              <div className="mx-auto my-10 w-[100%] md:w-[60%]   relative">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                   <img
                     src={gudinatumsa1}
-                    className="w-[90%] h-[600px] "
+                    className="mx-auto w-[70%] h-[400px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                     }}
                   />
                   <div className="mx-20 mt-3">
-                    <h1 className="text-4xl font-bold "   data-aos="fade-up">Early Life</h1>
+                    <h1 className="text-4xl font-bold "   data-aos="fade-up">Unconditional Faith</h1>
 
                     <h2 className="text-left mt-20"   data-aos="fade-up">
                       <ReadMore>
-                        Gudina’s family were uneducated farmers who followed
-                        traditional Oromo religion. Gudina’s family worshiped
-                        “Waqaa Guracha,” a pagan God. Gudina himself was
-                        expected as the eldest to follow in his uncle’s
-                        footsteps and become the village qallu (witch doctor).
-                        In his early life Gudina despised his uncle’s lifestyle.
-                        The qallu uncle was a pedophile who accepted young girls
-                        as payment for the services he gave to their parents.
-                        Growing up Gudina witnessed the demonic acts committed
-                        by his uncle and could not come to peace with the
-                        horrible things he had seen. When Gudina was around the
-                        age of 10 he began attending school in his village where
-                        he heard the gospel of Jesus Christ from his teachers.
-                        Through this Gudina Tumsa accepted the gospel of Jesus
-                        Christ and began to believe in the liberating power of
-                        the gospel from evil spirits. After accepting Jesus
-                        Christ as his Lord and Savior, Gudina Tumsa went to his
-                        uncle’s home and cut down the ritual "Hommi Tree'' The
-                        tree was fabled to host the spirit that possessed his
-                        uncle. After this Gudina took the persecution of his
-                        family and the people in his village but his new found
-                        faith in Christ urged him to preach the power that
-                        liberated him to them. As Gudina completed his 4th grade
-                        education his teacher Negessa Fayissa urged him to
-                        continue his education in Nedjo Town which was 33km.
-                        There he was admitted to a boarding school where two
-                        missionaries nurtured his spiritual life. Gudina Tumsa
-                        was filled with such Holy Zeal that every weekend he
-                        would go into town and preach the gospel to the
-                        townspeople. He stayed in Nedjo from the 4th to the 6th
-                        grade and later moved to Nekemte which is 184 km away
-                        from Nedjo town to continue his education. There he had
-                        little support so he began working at the Teferi Mekonen
-                        hospital as a gardener and later as a translator for the
-                        missionary doctors and nurses. He was then admitted into
-                        the nursing school at the Teferi Mekonnen Hospital where
-                        he was trained and graduated as a dresser in 1952. As a
-                        trainee at the hospital Gudina Tumsa met his spouse
-                        Tsehay Tolessa and they were married in 1951.
+                        Whether you are a Chrisitian or not, Gudina's story can resonate with you. For believers his story demonstrates the ultimate form of faithfulness in sacrificing himself for his Lord. For nonbelievers his actions of fighting against injustice, racism, colonialism and all forms of oppressive man made structures.  You cannot help but be astonished at his unconditional faith regardless of all the challenges in his life. To list a few things that Gudina had to sacrifice and persevere through to keep the faith: as a young boy at the age of ten he had to flee his home due to family opposition, having to starve and work as a domestic servant, denying a comfortable life as a medical doctor to become an evangelist, losing two children, and he continued his unconditional faithfulness even when God predestined him for martyrdom. People of all faiths can relate to Gudina, and follow his example of dedication–that dedication went to the point of death. 
+                        Gudina was not only a faithful Chrisitan in his death but also in his life. As a teenager he began preaching in the marketplace. He would take his trumpet, stand by a hill near by the bustling market and play. People were drawn to his ability and an instrument they had never seen before. Once the market people gathered around him, he would set down his trumpet, tell the people to be seated and begin witnessing the Gospel of Jesus Christ. In his life he served in the Church as a missionary, evangelist, theologian and Church leader. The international recognition Gudina received in 2004 posthumously is a testament to his unconditional faithfulness. He was awarded the Christus Lux Mundi Award–the witness and service of persons who have manifested the light of Christ during a long and distinguished career either, in the pastoral office or a lay person– by the Luther Seminary in St.Paul Minnesota.
+
                       </ReadMore>
                     </h2>
                   </div>
@@ -358,69 +316,31 @@ const Home = () => {
               </div>
               
               <div  className="w-full h-[20%]">
-                    <OwlCarousel className='owl-carousel overflow-hidden'  margin={10} >
-                        <div className='h-[500px] '>  <img src={homepage1} alt='book1' className="ml-[40px] mr-[20px]"  /></div>
-                        <div className='h-[400px]'> <img src={homepage2} alt='book2' className="ml-[60px] " /> </div>
-                        <div className='h-[400px]'> <img src={homepage3} alt='book3' className="ml-[80px]" /></div>
-                        <div className='h-[400px]'> <img src={homepage4} alt='book3' className="ml-[100px]" /></div>
-                        <div className='h-[400px]'> <img src={homepage5} alt='book3' className="ml-[120px]" /></div>
-                        <div className='h-[400px]'> <img src={homepage6} alt='book3' className="ml-[120px]" /></div>
-                        <div className='h-[400px]'> <img src={homepage7} alt='book3' className="ml-[120px]" /></div>
+                    <OwlCarousel className='owl-carousel   space-x-4 overflow-hidden'  margin={10} loop autoplay = {true} autoplayTimeout = {3000} >
+                        <div className='h-[500px] '>  <img src={homepage1} alt='book1' className=""  /></div>
+                        <div className='h-[400px]'> <img src={homepage2} alt='book2' className="" /> </div>
+                        <div className='h-[400px]'> <img src={homepage3} alt='book3' className="" /></div>
+                        <div className='h-[400px]'> <img src={homepage4} alt='book3' className="" /></div>
+                        <div className='h-[400px]'> <img src={homepage5} alt='book3' className="" /></div>
+                        <div className='h-[400px]'> <img src={homepage6} alt='book3' className="" /></div>
+                        <div className='h-[400px]'> <img src={homepage7} alt='book3' className="" /></div>
                     </OwlCarousel>
             </div> 
             <div className=" w-full  flex text-black bg-white relative m-auto">
-              <div className="mx-auto my-10 w-[60%]   relative">
+              <div className="mx-auto my-10 w-[100%] md:w-[60%]   relative">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                   <div className="mx-20">
                     <h1 className="text-4xl font-bold"   data-aos="fade-up">
-                      Beginning of Ministry
+                      Everlasting Love
                     </h1>
 
                     <h2 className="mt-20"   data-aos="fade-up">
                       <ReadMore>
-                        Gudina Tumsa was a great man of prayer, through his
-                        prayers he was able to discern what God’s will was for
-                        him. In 1955 he was offered a promotion in the Teferi
-                        Mekonen hospital but he chose to resign from his job as
-                        a dresser and take theological training and serve as a
-                        pastor as he believed it was God’s calling for him.
-                        Because of this Gudina moved back to Nedjo and he joined
-                        what was known as the second pastoral course in 1955.
-                        During his time in Nedjo Gudina Tumsa developed two
-                        habits: reading theological books and reflecting on the
-                        factors that negatively affect the lives of people.
-                        Gudina Tumsa would also serve in a Nekmete congregation
-                        as the first Ethiopian Pastor. During his time of
-                        shepherding the Nekemte congregation he would walk on
-                        foot or ride a mule to visit places of preaching,
-                        encourage the churches and he was also known for
-                        advocating for the common people to educate themselves.
-                        While serving in Nekemte Gudina Tumsa and an influential
-                        member in the Nekemte congregation got into a quarrel on
-                        Christian ethics. Soon it was evident that Gudina Tumsa
-                        was alone in his opinion, then the ECMY sent Gudina
-                        Tumsa to minister in Kambata, Gudina accepted the
-                        assignment and left his Children behind to go and serve.
-                        There Gudina found a lot of success and was able to
-                        accomplish many things. The people of that area loved
-                        Gudina as he was humble and when he went around to
-                        minister he would not separate himself from the people.
-                        Gudina during his time there was described by some as a
-                        strong preacher and teacher and for this reason some
-                        referred to him as their Billy Graham. When Gudina was
-                        ousted from the Nekemte congregation one foriegn
-                        missionary had sided with Gudina’s opinion. Gudina’s
-                        stance and unfearful approach left an impression on this
-                        missionary, that impression led to the missionary
-                        petitioning the ECMY to send Gudina to the US to get an
-                        education. After his service in Kambata Gudina was
-                        offered the opportunity to further his education in the
-                        US. After much prayer, especially with his wife, Gudina
-                        left his five children and went to the United States to
-                        study and receive a master’s of divinity degree. After
-                        three years of education in the U.S he returned to
-                        Ethiopia and was appointed as the General Secretary of
-                        the ECMY. (1966-1979).
+                        Gudina’s story consists of many loves such as Christ, the Church, the Nation, his wife and family. His greatest love was the Lord Jesus Christ, it is the love that saved him from eternal damnation.The love of the gospel is what made Gudina into the man that many admire today. Allow us to paint a picture of what Gudina’s life would have been, had he not accepted the love of Christ into his heart: Gudina was born in a rural village, and grew up as an unbelieving, uneducated, farmer. Had he stayed there, Gudina would have become a Witch Doctor following in the footsteps of his uncle, bringing souls unto eternal damnation. But the love of the gospel turned him into the opposite and saved him from all this and more. It made him a great man, who lived to serve a purpose greater than himself. The Gospel took him out of his rural village and sent him around the world. Just as Chrsit commanded in (Acts 1:8) “But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.”  
+
+                        The love he had for his Church was tied to the love he had for his country. What he wished for the Church he also wished for his nation. Whether that be, peace, unity, self-reliance, prosperity and service to the people. His love for his family was extraordinary. The Second most important love in his life was his wife. This love was an embodiment of Ephesians 5:22-23–where Paul compares the union of husband and wife to that of Christ and the Church– Their marriage was unique in how Gudina, respected Tsheay, how he consulted her on all decisions– becoming a minister based on her recommendation– and how she sacrificed to help him in his ministry. Their marriage was one that was purposeful and that purpose was to serve Christ. His love for his family was just as unique for his time as he spent time with his Children and was willing as a youngman to take the burden of raising his orphaned siblings.
+                        Throughout Gudina’s life his love for Christ developed into his theological understanding and that theology is one of “love and justice”. A theology of love and justice in one that grants freedom to people from evil spirits and injustices; this is noticed in Gudina’s 1971 Tokyo address when he writes, “People are tormented with fear of spirits, and they want to accept the new religion of love and justice.” (Witness and Discipleship Pg.137)
+
                       </ReadMore>
                     </h2>
                   </div>
@@ -448,44 +368,21 @@ const Home = () => {
                     }}
                   />
                   <div className="mx-20 mt-3">
-                    <h1 className="text-4xl font-bold"   data-aos="fade-up">Death</h1>
+                    <h1 className="text-4xl font-bold"   data-aos="fade-up">Persecution From Beginning to End</h1>
 
                     <h2 className="text-left mt-20"   data-aos="fade-up">
                       <ReadMore>
-                        Prior to his death Gudina Tumsa was arrested twice by
-                        the Derg government on no charges or crimes committed.
-                        The Derg government arrested Gudina Tumsa, because they
-                        feared that his challenges would hurt their
-                        international image. They started by inviting him to
-                        join the government on a good will tour in Europe. To
-                        show the world that the Derg was not violating human
-                        rights and persecuting religious groups. Gudina refused
-                        and chose to speak the truth. He was then arrested the
-                        first time on October 11, 1978 and the second time  on
-                        June 1, 1979. The second arrest was probably the hardest
-                        arrest for Gudina as his child Lensa was arrested with
-                        him. The Derg threatned him, through his daughter
-                        telling him “we will torture her infront of you.” But
-                        Gudina was not phased by it and replied “crucify her
-                        infront of me if you want I am not going to change the
-                        truth”. After his release Gudina was offered an
-                        opportunity to flee out of the country he refused this
-                        opportunity, Gudina’s response was something along the
-                        lines of “How can I leave my church and my country at
-                        this crucial time?” His final arrest was on July 28th,
-                        1979, after finishing a Bible Study in the Urael Mekane
-                        Yesus Church Gudina Tumsa and his wife were returning
-                        home. On their way home their car was stopped by heavily
-                        armed men, he was removed from the vehicle and walked
-                        silently away with the men. He was then taken to the Old
-                        Palace where Mengistu Hailemariam and his comrades were
-                        having a party. There he was stripped of his clothes and
-                        strangled to death, thus becoming a martyr for the
-                        gospel of Jesus Chirst. For 13 years no one knew the
-                        whereabouts of Gudina Tumsa, and his family lived in the
-                        hope that he was still alive. But in 1992 after the Derg
-                        government had fallen his body was found buried in the
-                        Old Palace of Ethiopia. 
+                          The theme of Gudina Tumsa’s life can be described as persecution due to his faith. Gudina’s
+                          life can be compared to that of the early Chrisitans, the Bible verse that can describe his journey of faith is found in Romans 8:26,
+                          “For your sake we face death all day long; we are considered as sheep to be slaughtered.” Gudina began facing persecution the moment he
+                          accepted Christ into his life. Living in a non-christian environment his new found faith was not welcomed by his family. The first instance
+                          of persecution in his life came when he had to run away from his home– around the age of 10– to save himself. The second instance of Gudina facing persecution,
+                          is found in the part of his life where his own Church that he was pastoring turned against him, and removed him from pastorship. In that same time span someone
+                          was sent to assassinate Gudina for unknown reasons (most likely because of the disagreement he had with a wealthier member of the congregation).
+                          He faced persecution in the form of racism, during his time in the US and his notable visit to South Africa in the early 1970’s; where he refused
+                          to submit to the laws of apparthied. Gudina’s faith began and ended with persecution,  for the sake of the Gospel that he protected, was faithful
+                          to and loved. He was arrested multiple times, spied on in his day to day life and most of all in the end he walked silently like a lamb and was
+                          slaughtered giving his life to Christ and concluding his time of persecution faithfully.
                       </ReadMore>
                     </h2>
                   </div>
@@ -493,28 +390,10 @@ const Home = () => {
               </div>
             </div>
             </div>
-
-            <div className="w-full h-[25%] mb-20 flex items-center  relative  "   data-aos="fade-up">
-              <div className="h-full w-[70%] mx-auto bg-gray-900/90 ">
+          {/* <div className="h-full w-[70%] mx-auto ">
                    <img className='w-full h-full object-cover mix-blend-overlay' src={nature} alt="/" />
-                </div>
-                <div className="absolute ml-[20%] md:ml-[20%] lg:ml-[35%] ">
-                     <h3
-                        className="text-4xl font-bold  text-center text-white "
-                        style={{
-                        fontFamily: "Odibee Sans"}}>
-                                  “A man of strong character, physically, mentally and
-                    </h3>
-                    <h3
-                        className="text-4xl font-bold  text-center text-white "
-                        style={{
-                        fontFamily: "Odibee Sans"  }}>
-                        {" "}
-                        spiritually.” - H.E Emmanuel Abraham
-                    </h3>
-                </div>
-             
-            </div>
+                </div> */}
+            <HomePageQuote />
 
             <div
             ref={fourth}

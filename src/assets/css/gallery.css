@@ -18,9 +18,9 @@
 
 }
 
-.gallery .pics:hover{
+/* .gallery .pics:hover{
     filter : opacity(.8)
-}
+} */
 
 @media (max-width : 991px) {
    .gallery {
