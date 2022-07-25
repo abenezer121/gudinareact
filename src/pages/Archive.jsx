@@ -14,6 +14,7 @@ import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
 import DropDown from "../components/DropDown/DropDown";
 
+import {home  , relationtoothers , papers , archive , gallery} from "./../redux/actions/navigation"
 
 const Archive = () => {
   const [text, setText] = useState("INTRODUCTION");
@@ -29,9 +30,13 @@ const Archive = () => {
   const [search , setSearch] = useState("")
   const [value, setValue] = useState(false);
   const [filter, setFilter] = useState("");
-
+  const dispatch = useDispatch()
   const authorState = useSelector(state => state.author)
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    dispatch(archive())
+  }, []);
+  
   useEffect(() => {
     if (fourthVisible) {
       setText("TimeLine");

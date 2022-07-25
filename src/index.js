@@ -13,6 +13,10 @@ import 'react-multi-carousel/lib/styles.css';
 import "aos/dist/aos.css";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'leaflet/dist/leaflet.css'
+import "slick-carousel/slick/slick.css";
+
+import "slick-carousel/slick/slick-theme.css";
 const store = createStore(allReducers)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,11 +1,13 @@
 import { React, useState, useEffect, useRef } from "react";
-import idiologyBackground from "./../assets/image/idiologybackground.png";
+// import idiologyBackground from "./../assets/image/idiologybackground.png";
+import idiologyBackground from "./../assets/image/ideologyBack.jpg";
+
 import { useSelector, useDispatch } from 'react-redux'
 import { useInView } from "react-intersection-observer";
 import { Link } from 'react-router-dom';
 import Footer from "../components/Footer/Footer";
 import { idiology } from "./../assets/data/idiologydata/index"
-
+import { _idiology } from "../redux/actions/navigation";
 const  titleText = (text) => {
     return (
         
@@ -15,13 +17,43 @@ const  titleText = (text) => {
     )
 }
 
+
+const ReadMore = ({ children }) => {
+  const text = children;
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  return (
+    <p className="text">
+      {isReadMore ? text.slice(0, 500) : text}
+      <div className="flex flex-col">
+        <span
+          onClick={toggleReadMore}
+          className="read-or-hide uppercase text-sm"
+        >
+          <p className="mt-10 uppercase">
+            {isReadMore ? "+ read more" : "- show less"}
+          </p>
+        </span>
+      </div>
+    </p>
+  );
+};
+
+ const dash = (color) => {
+    return (
+      <div
+        className={`w-[30px] h-[4px]  -rotate-12  ${color} m-auto mt-4 mb-4`}
+      ></div>
+    );
+  };
+
 const Idiology = () => {
   const [text, setText] = useState("IDIOLOGIES");
   const { ref: first, inView: firstVisible } = useInView();
   const { ref: second, inView: secondVisible } = useInView();
-
   const [offsetX, setOffsetX] = useState(0);
- 
   const [offsetY, setoffsetY] = useState(0);
   const [offsetXOther, setoffXOther] = useState(0);
   const [offsetYOther, setoffYOther] = useState(0);
@@ -29,52 +61,27 @@ const Idiology = () => {
   const [cursorY, setCursorY] = useState(0);
   const [value, setValue] = useState(false);
 
-     const dispatch = useDispatch()
-    useEffect(() => {
+  const dispatch = useDispatch()
   
-      if (secondVisible) {
-         
-          setText("TOPICS");
-      }
-      if (firstVisible) {
-          setText("IDIOLOGIES");
-      } 
-          
-      
-
-
-    const handleWindowMouseMove = (event) => {
-      // const x = (window.innerWidth - event.screenX * 3) / 90;
-      // const y = (window.innerHeight - event.screenY * 3) / 90;
-      // setOffsetX(x);
-      // setoffsetY(y);
-
-      // setoffXOther((window.innerWidth - event.screenX * 1) / 90);
-      // setoffYOther((window.innerHeight - event.screenY * 1) / 90);
-    };
-    window.addEventListener("mousemove", handleWindowMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleWindowMouseMove);
-    };
-  });
-
-
-
+    useEffect(() => {
+      window.scrollTo(0, 0);
+      dispatch(_idiology())
+    }, []);
+  
 
   return (
     <>
       {value == true ? (
-        <div className="w-full h-full ">
+        <div className="w-full h-full  ">
      
         </div>
       ) : (
-        <div className="w-full h-full">
-            <div className='w-full h-[100%]' style={{
-              backgroundImage: `url(${idiologyBackground})`,
-               backgroundRepeat: "no-repeat",
-            backgroundSize: "100%"
-          }}>
+        <div className="w-full h-screen">
+                <div className='w-full h-[100%]' style={{
+                  backgroundImage: `url(${idiologyBackground})`,
+                  backgroundRepeat: "no-repeat",
+                    backgroundSize: "100%"
+              }}>
                 <div className='flex flex-col h-full items-center'>
                     <div className=' my-auto flex'>
                         <p className='text-9xl my-auto text-white'    style={{ fontFamily: "Odibee Sans", fontSize :'350px' }}>Ideology</p>
@@ -82,12 +89,51 @@ const Idiology = () => {
                     </div>
                 </div>
             </div> 
+
+             <div className="w-full h-full flex flex-col items-center bg-[#6dafd1]  overflow-auto">
+            <div className="my-auto w-[60%]" >
+              <div className=" mx-auto my-10   relative">
+                <p  data-aos="fade-up"
+                  className="text-lg text-center text-black"
+                  style={{
+                    transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
+                  }}
+                >
+                  The Importance of the Man, Reverend and Martyr Gudina Tumsa
+                </p>
+                {dash("bg-white")}
+                <h3   data-aos="fade-up"
+                  className="text-6xl font-bold py-6 text-center text-black "
+                  style={{
+                   fontFamily: "Odibee Sans" 
+                  }}
+                >
+                  “A man of strong character, physically, mentally and
+                </h3>
+                <h3   data-aos="fade-up"
+                  className="text-6xl font-bold py-6 text-center text-black "
+                  style={{
+                   fontFamily: "Odibee Sans" 
+                  }}
+                >
+                  {" "}
+                  spiritually.” - H.E Emmanuel Abraham
+                </h3>
+                <h2   data-aos="fade-up" className="text-base  text-black  text-center mt-4">
+                  <ReadMore>
+                      Gudina Tumsa was an Ethiopian, evangelist and Church leader who lived from 1929-1979. Gudina is one of the most famous figures in the history of
+                      Protestant Churches in Ethiopia.During his ministry in the Church Gudina was able to accomplish feats that completely changed the landscape of the 
+                      Ethiopian Church.Not only that but, he was able to speak on African and Western Churches as well as the political and economic situation of the world.
+                      His influence did not remain just in his lifetime, but still influences this generation and future generations as well.If you have opened this website 
+                      then you may ask why should I be interested in Gudina Tumsa?Well, Gudina’s historical life story offers topics of interest such as truth, faith, love, and persecution. 
+                  </ReadMore>
+                </h2>
+              </div>
+            </div>
+          </div>
          
                   
-          <div
-            ref={second}
-            className="w-full flex flex-col items-center bg-[#6dafd1] pb-20 "
-          >
+          <div className="w-full flex flex-col items-center bg-[#6dafd1] pb-20 ">
             <div className="my-auto w-[80%] h-full mx-auto text-center relative bg-[#6dafd1] ">
               <div className=" text-center my-10   relative">
                 <p
@@ -100,7 +146,8 @@ const Idiology = () => {
                 </p>
                
                 </div>
-                {
+                <div className="space-x-3">
+                  {
                   idiology.map((item, index) => {
                     
                     return (
@@ -116,7 +163,8 @@ const Idiology = () => {
                                   "Cost of Discipleship",
                                   "GT on Politics/Economics",
                                   "Holistic Theology"
-                            ]
+                          ],
+                          pdf : item.pdf,
                         })
                         
                         
@@ -124,7 +172,9 @@ const Idiology = () => {
                     
                     )
                   })
-                }   
+                }
+                </div>
+                   
               
                                   
             
@@ -141,3 +191,5 @@ const Idiology = () => {
 
 
 export default Idiology;
+
+

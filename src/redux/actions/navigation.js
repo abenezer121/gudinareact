@@ -4,39 +4,36 @@ export const home = () => {
     }
 }
 
-
-
-export const article = () => {
+export const intro = () => { 
     return {
-        type : "ARTICLE"
+        type : "INTRO"
     }
 }
 
 
-
-
-export const book = () => {
-    return {
-        type : "BOOK"
+export const _idiology = () => {
+     return {
+        type : "Ideology"
+    }
+ }
+export const relationtoothers = () => { 
+     return {
+        type : "RelationToOthers"
+    }
+ }
+export const papers = () => { 
+     return {
+        type : "Papers"
+    }
+ }
+export const archive = () => {  
+     return {
+        type : "Archive"
     }
 }
-
-
-export const question = () => {
-    return {
-        type : "QUESTION"
-    }
-}
-
-
-export const about = () => {
-    return {
-        type : "ABOUT"
-    }
-}
-
-export const donation = () => {
-    return {
-        type : "DONATION"
+export const gallery = () => {  
+   
+     return {
+        type : "Gallery"
     }
 }

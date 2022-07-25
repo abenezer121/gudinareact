@@ -13,6 +13,8 @@ import { useInView } from "react-intersection-observer";
 import DropDown from "../components/DropDown/DropDown";
 import { useSelector , useDispatch} from 'react-redux'
 
+import {home , idiology , relationtoothers , papers , archive , gallery} from "./../redux/actions/navigation"
+
 const Papers = () => {
   const [text, setText] = useState("INTRODUCTION");
   const { ref: first, inView: firstVisible } = useInView();
@@ -27,9 +29,12 @@ const Papers = () => {
   const [search , setSearch] = useState("")
   const [value, setValue] = useState(false);
   const [filter, setFilter] = useState("");
-
+  const dispatch = useDispatch()
   const authorState = useSelector(state => state.author)
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    dispatch(papers())
+    }, []);
   useEffect(() => {
     if (fourthVisible) {
       setText("TimeLine");

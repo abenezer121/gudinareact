@@ -1,32 +1,36 @@
 const initialState = {
-    navLocation : "HOME"
+    navLocation : "INTRO"
 }
 
 const navigationReducer = (state = initialState, action) => {
     switch (action.type) {
+        case  "INTRO":
+            return Object.assign({}, state, {
+                navLocation: "INTRO"
+            })
         case 'HOME':
             return Object.assign({}, state, {
                 navLocation : 'HOME'
             })
-        case 'ARTICLE':
+        case 'Ideology':
             return Object.assign({}, state, {
-                navLocation : 'ARTICLE'
+                navLocation : 'Ideology'
             })
-        case 'BOOK':
+        case 'RelationToOthers':
             return Object.assign({}, state, {
-                navLocation : "BOOK"
+                navLocation : "RelationToOthers"
             })
-        case 'QUESTION':
+        case 'Papers':
             return Object.assign({}, state, {
-                navLocation : "QUESTION" 
+                navLocation : "Papers" 
             })
-        case 'ABOUT':
+        case 'Archive':
             return Object.assign({}, state, {
-                navLocation : "ABOUT"
+                navLocation : "Archive"
             })
-        case 'DONATION':
+        case 'Gallery':
             return Object.assign({}, state, {
-                navLocation : "DONATION"
+                navLocation : "Gallery"
             } )
         default:
             return state;

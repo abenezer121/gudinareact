@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/outline";
 import logo from "./../assets/image/logo.png";
 import slider from "./../assets/image/slider.png";
@@ -7,15 +7,8 @@ import { Link } from "react-router-dom";
 import QuoteCarousel from "../components/Carousel/QuoteCarousel";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
-import homepage1 from "./../assets/image/HomePagePictures/homepage1.jpg";
-import homepage2 from "./../assets/image/HomePagePictures/homepage2.jpg";
-import homepage3 from "./../assets/image/HomePagePictures/homepage3.jpg";
-import homepage4 from "./../assets/image/HomePagePictures/homepage4.jpg";
-import homepage5 from "./../assets/image/HomePagePictures/homepage5.jpg";
-import homepage6 from "./../assets/image/HomePagePictures/homepage6.jpg";
-import homepage7 from "./../assets/image/HomePagePictures/homepage7.jpg";
 import importAll from "./../helper/importAll"
-
+import HomePageQuote from "../components/Carousel/HomePageQuote";
 const ReadMore = ( props ) => {
 
   const [isReadMore, setIsReadMore] = useState(true);
@@ -43,12 +36,14 @@ const Description = () => {
    const images = importAll(
     require.context("../assets/image/SectionsPictures/", false, /\.(png|jpe?g|svg)$/)
     );
-
+  useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     var res = []
     for(var i in images)
         res.push(images[i]);
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full mt-10">
       <div className="flex f-full justify-between items-center w-full py-10">
         <img
           src={logo}
@@ -68,12 +63,15 @@ const Description = () => {
                         <div className="w-[90%] md:w-[70%] mx-auto">
                                 <div className=" grid grid-cols-1 md:grid-cols-2">
                                         <div className="hidden md:block  w-[30%]">
-                                            <p className="text-sm font-medium uppercase">{data.sideText}</p>
-                                            {
-                                              data.sideArray.map((item, index) => { 
-                                                return (<p className="text-base">{item}</p>)
+              <p className="text-sm font-medium uppercase">{data.sideText}</p>
+              <div className="flex flex-col space-y-3">
+                              {
+                                              data.pdf.map((item, index) => { 
+                                                return (<a href={ item.pdf} target='_blank' rel='noopener noreferrer' className="text-base hover:text-black" >{item.name}</a>)
                                               })
-                                            }
+                                            }    
+              </div>
+                                          
                                                 
                                              
                                         </div>
@@ -103,19 +101,16 @@ const Description = () => {
                     </OwlCarousel>
             </div> 
       </div>
-                          <div className="w-full mt-10">
-                        <div className="w-[90%] md:w-[70%] mx-auto">
-                                <div className=" grid grid-cols-1 md:grid-cols-10 ">
-                                        <div className="hidden md:block  col-span-2 ">
-                                                <p className="text-3xl mt-16 font-medium uppercase">Quotes</p>
-                                                
+             
+                         
+                      
+                                        <div className=" ">
+            
+                                                <HomePageQuote quotes = {data.quote}  />
                                         </div>
-                                        <div className="col-span-8 mb-10">
-                                                  <QuoteCarousel quote={data.quote} />
-                                        </div>
-                                </div>
-                        </div>
-        </div>
+                               
+                      
+        
                 
 
 

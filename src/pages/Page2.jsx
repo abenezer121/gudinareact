@@ -1,96 +1,99 @@
-import React, { useState , useEffect } from "react";
+import React from 'react';
 
-import book1 from "../assets/image/book1.jpg";
-import { ArrowLeftIcon } from "@heroicons/react/outline";
-import { Link } from "react-router-dom";
-const Page2 = (props) => {     
+import importAll from "./../helper/importAll"
+const Page2 = () => {
 
-  return (
-    <>
-   
-      <div className="w-full h-full mb-20">
-        <div className="flex w-full">
-          <div className="w-[32%] h-full  my-auto">
-                <img src={book1} className="mx-auto" alt="book1" />
-          </div>
-          <div className="w-[40%] mx-3 mt-20">
-            <div className="w-[90%]">
-              <h1 className="text-5xl font-medium">Debt - The First 5000 Years</h1> 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae amet possimus, delectus temporibus natus culpa magnam cupiditate officia nam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae amet possimus, delectus temporibus natus culpa magnam cupiditate officia nam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae amet possimus, delectus temporibus natus culpa magnam cupiditate officia nam!
-
-              </p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas esse suscipit voluptatem deserunt explicabo, minus culpa magnam animi doloribus tempore similique, amet porro. Facilis delectus corrupti error consequuntur ipsam deleniti harum. Sint sunt consequuntur fuga beatae voluptas qui reiciendis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas esse suscipit voluptatem deserunt explicabo, minus culpa magnam animi doloribus tempore similique, amet porro. Facilis delectus corrupti error consequuntur ipsam deleniti harum. Sint sunt consequuntur fuga beatae voluptas qui reiciendis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas esse suscipit voluptatem deserunt explicabo, minus culpa magnam animi doloribus tempore similique, amet porro. Facilis delectus corrupti error consequuntur ipsam deleniti harum. Sint sunt consequuntur fuga beatae voluptas qui reiciendis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas esse suscipit voluptatem deserunt explicabo, minus culpa magnam animi doloribus tempore similique, amet porro. Facilis delectus corrupti error consequuntur ipsam deleniti harum. Sint sunt consequuntur fuga beatae voluptas qui reiciendis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas esse suscipit voluptatem deserunt explicabo, minus culpa magnam animi doloribus tempore similique, amet porro. Facilis delectus corrupti error consequuntur ipsam deleniti harum. Sint sunt consequuntur fuga beatae voluptas qui reiciendis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas esse suscipit voluptatem deserunt explicabo, minus culpa magnam animi doloribus tempore similique, amet porro. Facilis delectus corrupti error consequuntur ipsam deleniti harum. Sint sunt consequuntur fuga beatae voluptas qui reiciendis.
-                
-              </p>
-              <div className="border-t-2 border-slate-200">
-                <div className="flex w-full justify-between ">
-                  <div className="pt-8">
-                      <div className="flex">
-                        <p className="font-bold">Author</p>
-                        <p className="mx-10">Gudina Tumsa</p>
-                      </div>
-                  </div>
-                  <div className="pt-8">
-                      <div className="flex">
-                        <p className="font-bold">Release Date</p>
-                        <p className="mx-10">Gudina Tumsa</p>
-                      </div>
-                  </div>
-                  
-                </div>
-                 <div className="flex w-full justify-between ">
-                  <div className="pt-2">
-                      <div className="flex">
-                        <p className="font-bold">Language</p>
-                        <p className="mx-10">Gudina Tumsa</p>
-                      </div>
-                  </div>
-                  <div className="pt-2">
-                      <div className="flex">
-                        <p className="font-bold">Page</p>
-                        <p className="mx-10">Gudina Tumsa</p>
-                      </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-                 
-          </div>
-          <div className="absolute h-screen right-0 w-[15%]  mt-[60px] overflow-auto">
-            <div className="flex flex-col">
-              <Link to="/papers">
-                  <div className="flex h-full  items-center uppercase hover:text-blue-500">
-                    <p className="mr-10 text-center align-center mt-3 font-medium">
-                    Back to Papers
-                    </p>
-                    <ArrowLeftIcon className="mr-20 w-5 h-5 font-medium" />
-                </div>
-              </Link>
-              
-              
-              <p className="mx-auto font-bold mt-10 ">Other Book</p>
-              <img src={book1} className="mx-auto w-[70%] h-[50%] mt-10" alt="book1" />
-              <img src={book1} className="mx-auto w-[70%] h-[50%] mt-10" alt="book1" />
-              <img src={book1} className="mx-auto w-[70%] h-[50%] mt-10" alt="book1" />
-              <img src={book1} className="mx-auto w-[70%] h-[50%] mt-10" alt="book1" />
-              <img src={book1} className="mx-auto w-[70%] h-[50%] mt-10" alt="book1" />
-              <img src={book1} className="mx-auto w-[70%] h-[50%] mt-10" alt="book1" />
-            </div>
-          </div>
-        
+   const images = importAll(
+    require.context("../assets/image/GTphotoAlbum/", false, /\.(png|jpe?g|svg)$/)
+    );
+    
+    var res = []
+    for(var i in images)
+      res.push(images[i]);
+  
+  const returnData = (one, two, three, four, five, six) => {  
+    return (
+      <><div className="flex flex-wrap md:w-1/2">
+        <div className="w-1/2 p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src={one} />
         </div>
-     </div>
-     
-    </>
+
+        <div className="w-1/2 p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src={two} />
+        </div>
+
+        <div className="w-full p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src={three} />
+        </div>
+      </div>
+        <div className="flex flex-wrap md:w-1/2">
+            <div className="w-full p-1 md:p-2">
+              <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                src={four} />
+            </div>
+            <div className="w-1/2 p-1 md:p-2">
+              <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                src={five} />
+            </div>
+            <div className="w-1/2 p-1 md:p-2">
+              <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                src={six} />
+            </div>
+        </div></>
+        
+    );
+  }
+  const data = []
+  for (let i = 0; i < res.length; i += 6) { 
+    data.push(returnData(res[i], res[i + 1], res[i + 2], res[i + 3], res[i + 4], res[i + 5]))
+  }
+
+  
+      
+    
+  
+
+   
+  return (
+    <div className='w-full'>
+      <div className='flex flex-col w-full items-center'>
+        <div className='w-[50%] bg-red-200   text-xl font-bold mt-[1%] fixed visible md:hidden'>
+          <div className='flex items-center'>
+                <p className=''>All</p>
+                  <p className='px-[20px]'>Family</p>
+                  <p className=' '>Work</p>
+            </div>  
+        </div>
+             <div className='  w-[85%] mx-auto  mt-20'>
+        
+            <div className='hidden md:flex md:flex-col text-xl font-bold mt-[1%] fixed mr-[10px]'>
+                  <p className='-rotate-90'>Family</p>
+                  <p className='-rotate-90 py-[20px]'>Work</p>
+                  <p className='-rotate-90'>All</p>
+            </div>
+            <section className="overflow-hidden text-gray-700 ml-[10px]">
+                <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+              <div className="flex flex-wrap -m-1 md:-m-2">
+                {data.map((item, index) => { 
+                  return (item);
+                })}
+              
+                  </div>
+                </div>
+            </section>
+      </div>
+      </div>
+    
+ 
+    </div>
+
+
   );
-};
+}
 
 export default Page2;
+
+

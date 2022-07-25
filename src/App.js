@@ -9,7 +9,7 @@ import Archive from './pages/Archive';
 import DetailThesis from './pages/DetailThesis';
 import { AnimatePresence , motion } from 'framer-motion';
 import { BrowserRouter as Router, Route, Routes  ,Link , useLocation} from 'react-router-dom' 
-import Gallary from './pages/Gallary';
+import Gallery from './pages/Gallery';
 import Papers from './pages/Papers';
 import Footer from './components/Footer/Footer';
 import Aos from 'aos'
@@ -61,7 +61,7 @@ const location = useLocation()
               border: '3px solid #fff'
             }}
         
-      /> 
+      />  
          <NavBar/> 
       
         
@@ -75,18 +75,14 @@ const location = useLocation()
 
         
         <Route path="/" element={
-            <motion.div
-              className='w-full h-screen'
-                  initial="out"
-                  animate="in"
-                  exit="out"
-                  variants={pageVariant}
-              transition={pageTransition}>
-            <Home /> </motion.div>} />
-        
 
-        <Route path="/archive" element={
+           <div className='w-full h-screen' >
+                <Home  />
+            </div>
+            } />
         
+        <Route path="/archive" element={
+  
         <motion.div
                   initial="out"
                   animate="in"
@@ -131,7 +127,7 @@ const location = useLocation()
               variants={pageVariant}
                className='w-full h-screen'
               transition={pageTransition}>
-              <Gallary />
+              <Gallery />
               </motion.div>
             
           } />

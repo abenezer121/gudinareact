@@ -91,10 +91,10 @@ const Footer = () => {
                 <div>
                 
                      <h1 className='font-semibold text-lg text-[#524b4b]'>Other Pages</h1>
-                    <Link to="/archive"><p className='text-white font-medium'>Archive</p></Link>
-                    <Link to="/papers"><p className='text-white font-medium'>Papers</p></Link>
-                    <Link to="/idiology"><p className='text-white font-medium'>Ideology</p></Link>
-                    <Link to="/gallery"><p className='text-white font-medium'>Gallery</p></Link>
+                        <Link to="/archive"><p className='text-white font-medium  hover:font-bold'>Archive</p></Link>
+                        <Link to="/papers"><p className='text-white font-medium  hover:font-bold'>Papers</p></Link>
+                        <Link to="/idiology"><p className='text-white font-medium  hover:font-bold'>Ideology</p></Link>
+                        <Link to="/gallery"><p className='text-white font-medium  hover:font-bold'>Gallery</p></Link>
                     
                 </div>
                 

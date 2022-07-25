@@ -31,7 +31,9 @@ const DetailThesis = () => {
 
   const [value, setValue] = useState(false);
   console.log(years.years);
-
+  useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   useEffect(() => {
     if (fourthVisible) {
       setText("TimeLine");
