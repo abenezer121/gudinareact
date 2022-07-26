@@ -82,20 +82,24 @@ const Gallery = () => {
                   <p className='-rotate-90'>All</p>
             </div>
          */}
-             <div className='  w-[85%]  mx-auto   mt-20'>
-        
-            
-            <section className="overflow-hidden text-gray-700 ml-[10px]">
-                <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
-              <div className="flex flex-wrap -m-1 md:-m-2">
-                {data.map((item, index) => { 
-                  return (item);
-                })}
+          <div className='  w-[85%]  mx-auto   mt-20'>
+              <div className='flex'>
+                      <div className='flex flex-col text-xl font-bold mt-[1%] fixed mr-[10px]'>
+                          <p className='-rotate-90'>Family</p>
+                          <p className='-rotate-90 py-[20px]'>Work</p>
+                          <p className='-rotate-90'>All</p>
+                      </div>
+                      <section className="overflow-hidden text-gray-700 ml-[10px]">
+                          <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+                              <div className="flex flex-wrap -m-1 md:-m-2">
+                                  {data.map((item, index) => { 
+                                    return (item);
+                                  })}
+                              </div>
+                          </div>
+                      </section>
                   </div>
-                </div>
-        </section>
-     
-      </div>
+          </div>
     <Footer/>
     
  

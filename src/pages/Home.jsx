@@ -2,39 +2,21 @@
 
 
 import { React, useState, useEffect, useRef } from "react";
-import { useSelector , useDispatch} from 'react-redux'
-import TimeLine3 from "../components/timeline/TimeLine3";
+import { useSelector } from 'react-redux'
 import ministry from "../assets/image/ministry.jpg";
 import funeral from "../assets/image/funeral.JPG";
 import gudinatumsa1 from "../assets/image/gudinatumsa1.JPG";
-
+import './../assets/css/homepagegallery.css'
 import Footer from "../components/Footer/Footer";
 import years from "./../assets/data/year.json"
-import OwlCarousel from 'react-owl-carousel';
-import { ArrowDownIcon, ArrowRightIcon } from "@heroicons/react/outline";
-import gudinatumsa4 from "../assets/image/gudinatumsa4.png";
-import nature from "./../assets/image/nature.jpg";
 import getYouTubeID from "get-youtube-id";
 import HomeIntro from "./Home/HomeIntro"
 import HomePageQuote from "../components/Carousel/HomePageQuote";
 import TimeLineElement from "../components/timeline/TimeLineElement";
 import Intro from "./Intro"
-
-import Slider from "react-slick";
-
-import one from "./../assets/image/HomePagePictures/homepage1.jpg"
-import two from "./../assets/image/HomePagePictures/homepage2.jpg"
-import three from "./../assets/image/HomePagePictures/homepage3.jpg"
-import four from "./../assets/image/HomePagePictures/homepage4.jpg"
-import five from "./../assets/image/HomePagePictures/homepage5.jpg"
-import six from "./../assets/image/HomePagePictures/homepage6.jpg"
-import seven from "./../assets/image/HomePagePictures/homepage7.jpg"
-
-
-import { AnimatePresence, motion } from 'framer-motion';
-
+import {  motion } from 'framer-motion';
 import './../assets/css/style.css'
-import "./../assets/css/scroll.css"
+import FlexImage from "../components/Flex/FlexImage";
 
 const ReadMore = ({ children }) => {
   const text = children;
@@ -99,7 +81,7 @@ const Home = () => {
   }
 
   useEffect(() => {
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
   }, []);
 
  
@@ -175,7 +157,7 @@ const Home = () => {
           </div>
 
           {/*  */}
-          <div  className="text-black  ">
+          <div  className="text-black flex flex-col  ">
             <div className=" w-full  flex  relative m-auto text-black ">
               <div className="mx-auto my-10 w-[100%] md:w-[60%]  relative  ">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
@@ -225,7 +207,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
+                
             <div className=" w-full  flex  relative m-auto text-black bg-white ">
               <div className="mx-auto my-10 w-[100%] md:w-[60%]   relative">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
@@ -252,43 +235,17 @@ const Home = () => {
                     </h2>
                   </div>
                 </div>
-              </div>
-              </div>
+                  </div>
+                  
+                  
+                </div>
+
+                 
+                
               
-                <div className="h-[450px]">
-                   <Slider {...settings} className="h-full">
-              <div >
-                <img src={one}  alt=""/>
-              </div>
-              <div className="mx-2">
-                <img src={two} alt=""/>
-              </div>
-              <div className="mx-2">
-                <img src={three} alt=""/>
-              </div>
-              <div className="mx-2">
-                <img src={four} alt=""/>
-              </div>
-              <div className="mx-2">
-                <img src={five} alt=""/>
-              </div>
-              <div className="mx-2">
-                <img src={six} alt=""/>
-                    </div>
-                    
-
-
-
               
-        </Slider>
-                {/* <OwlCarousel className='owl-carousel '  margin={0}  loop autoplay = {true} autoplayTimeout = {3000} >
-                      <div className="w-[400px] owlcarouselitem"> <img src={homepage1} alt='book1'  className="h-[400px] " /></div> 
-                      <div className="w-[400px] owlcarouselitem"> <img src={homepage2} alt='book2'  className="h-[400px] " /></div>
-                      <div className="w-[400px] owlcarouselitem"> <img src={homepage3} alt='book3'  className="h-[400px] " /></div>
-                      <div className="w-[400px] owlcarouselitem"> <img src={homepage4} alt='book3'  className="h-[400px] " /></div>
-                      <div className="w-[400px] owlcarouselitem"> <img src={homepage6} alt='book3'  className="h-[400px] " /></div>
-                </OwlCarousel> */}
-            </div> 
+   
+        
             <div className=" w-full  flex text-black bg-white relative m-auto">
               <div className="mx-auto my-10 w-[100%] md:w-[60%]   relative">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
@@ -308,7 +265,7 @@ const Home = () => {
                   </div>
                   <img
                     src={ministry}
-                    className="w-[90%] h-[600px] "
+                    className="w-[90%] h-[400px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
@@ -317,7 +274,15 @@ const Home = () => {
                 </div>
               </div>
             </div>
+  <div className=" w-full  flex  relative m-auto text-black bg-white ">
+              <div className=" my-10 w-[100%] md:w-[100%]   relative">
+                 
+                    <FlexImage/>
 
+                  </div>
+                  
+                  
+                </div>
             <div className=" w-full  flex text-black bg-white relative m-auto ">
               <div className="mx-auto my-10 w-[60%]   relative">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
@@ -426,12 +391,21 @@ const Home = () => {
                
                     
                   </div>
-                       <div className="w-[30%]  mx-auto">
-                      <div className="flex justify-between ">
-                        <div><TimeLineElement    data-aos="fade-up" name={"Second arrest, with his sixteen year old Lensa Gudina "} year={"June 1, 1979"} offsetXOther ={offsetXOther} offsetYOther = {offsetYOther} /></div>
-                         <div><TimeLineElement    data-aos="fade-up" name={"Kidnapped and Murdered by Derg Regime burial on the grounds of the Old Palace"} year={"July 28,1979"} offsetXOther ={offsetXOther} offsetYOther = {offsetYOther} /></div>
-                      
-                      
+                       <div className="w-[60%]  mx-auto ">
+                      <div className="flex justify-between mt-20">
+                          {/* <div className="ml-[50px]"><TimeLineElement data-aos="fade-up" name={"Second arrest, with his sixteen year old Lensa Gudina "} year={"June 1, 1979"} offsetXOther={offsetXOther} offsetYOther={offsetYOther} /></div> 
+                          <div className="ml-[164px]"><TimeLineElement    data-aos="fade-up" name={"Kidnapped and Murdered by Derg Regime burial on the grounds of the Old Palace"} year={"July 28,1979"} offsetXOther ={offsetXOther} offsetYOther = {offsetYOther} /></div>
+                           */}
+                        <div className="ml-[3%]">
+                          <p className="text-white text-3xl font-bold border-b-[2px] pb-6">June 1, 1979</p>
+                          <p className="text-white text-xl">Second arrest, with his sixteen year old Lensa Gudina</p>
+                        </div>
+                        <div className="ml-[70px]">
+                          <p className="text-white text-3xl font-bold border-b-[2px] pb-6">June 1, 1979</p> 
+                          <p className="text-white text-xl">Kidnapped and Murdered by Derg Regime burial on the grounds of the Old Palace</p>
+                        </div>
+                        
+                          
                       </div>    
                     </div>
                                

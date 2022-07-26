@@ -5,8 +5,7 @@ import gudinatumsa4 from "../../assets/image/gudinatumsa4.png";
 const HomeIntro = () => { 
     const [offsetX, setOffsetX] = useState(0);
     const [offsetY, setoffsetY] = useState(0);
-    const [offsetXOther, setoffXOther] = useState(0);
-    const [offsetYOther, setoffYOther] = useState(0);
+
     
     useEffect(() => {
   
