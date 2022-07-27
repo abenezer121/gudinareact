@@ -8,6 +8,7 @@ import bonhoeffer1 from "./../assets/image/bonhoeffer1.png";
 import abiy2 from "./../assets/image/drabiy2.jpg";
 import Dash from "./../components/Carousel/Dash";
 import "./../assets/css/style.css";
+                                          
 import { useSelector, useDispatch } from "react-redux";
 import { relationtoothers } from "./../redux/actions/navigation";
 
@@ -37,10 +38,16 @@ const RelationToOthers = () => {
   };
   return (
     <>
-      <div className="w-full h-full mb-[120px] ">
-        <div className="flex flex-col">
-          <div className="w-full h-screen ">
-            <div className="w-[80%] h-[70%]  mx-auto flex items-center mt-[8%] justify-between mb-[500px] md:mb-[120px]">
+          <div className="w-full h-full mb-[120px] ">
+           
+              <div className="flex flex-col">
+                  
+                  <div className="w-full h-screen ">
+                      <div className="w-[80%] mx-auto">
+                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-gray-300 ">Relation With Others</h2>
+                   </div>
+                      
+            <div className="w-[80%] h-[70%]  mx-auto flex items-center mt-[3%] justify-between mb-[500px] md:mb-[120px]">
               <div className="flex flex-col w-[100%] md:w-[70%] h-full ">
                 <div className="flex  flex-col md:flex-row w-full h-full  ">
                   <img
@@ -106,7 +113,8 @@ const RelationToOthers = () => {
                         }),
                       }}
                     >
-                      <button class="btn btn1"> Read More</button>
+                                          <button class="btn btn1"> Read More</button>
+                                          
                     </Link>
                   </div>
                 </div>

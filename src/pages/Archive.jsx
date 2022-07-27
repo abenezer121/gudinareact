@@ -119,11 +119,15 @@ const Archive = () => {
           <>
             
              
-         <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50 shadow-sm  drop-shadow-lg mb-10 relative overflow-hidden   ">
+         <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50    mb-10 relative overflow-hidden   ">
         {/* */}
-          {/*  md:ml-[40px] my-auto ml-[10%] */}
+         <div className="w-[80%] mx-auto">
+                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-gray-300 ">Archive</h2>
+                   </div>
+        {/*  md:ml-[40px] my-auto ml-[10%] */}
+        
             <div className=" h-full w-full  flex flex-col md:flex-row      md:items-center justify-between  mt-[60px] ">
-              <div class="relative text-gray-600 focus-within:text-gray-400 shadow-lg md:w-[40%] md:ml-10 w-[85%] ml-[10px]">
+              <div class="relative text-gray-600 focus-within:text-gray-400 md:w-[40%] md:ml-10 w-[85%] ml-[10px]">
                 <span class="absolute inset-y-0 right-0 flex items-center pl-2">
                   <button type="submit" class="p-1 mr-5">
                     <SearchIcon className="w-5 h-5" />
@@ -171,7 +175,7 @@ const Archive = () => {
                  
            
                   </div>
-                   <div className="h-full mr-[10px] md:mr-0 w-[60%] md:w-[40%] md:w-[20%] sticky top-[21%] md:top-[10%]">
+                   <div className="h-full mr-[10px] md:mr-0 w-[60%] md:w-[40%] md:w-[20%] sticky top-[21%] md:top-[27%]">
                   <div className="w-full bg-white shadow-lg text-black  ">
                     <div className="w-full flex items-center h-[70px] z-10 bg-slate-100 text-left">
                      <AdjustmentsIcon className="  w-5 h-5 ml-[40px] " />

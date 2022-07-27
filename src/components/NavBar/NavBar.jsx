@@ -76,8 +76,11 @@ const Navbar = () => {
     <>
       {
         navigation.navLocation === 'INTRO' ? ("") : (
-          <Nav className= 'h-[60px] w-full h-[80px]  z-10 bg-transparent fixed top-0 text-white align-middle'>
-              <Logo><img src={logo} className= "w-[35px] h-[35px]" /></Logo> 
+          <Nav className='h-[60px] w-full h-[80px]  z-10 bg-transparent fixed top-0 text-white align-middle'>
+            <Link to='/'>
+                <Logo><img src={logo} className= "w-[35px] h-[35px]" /></Logo>
+            </Link>
+               
           
                 <NavIcon  onClick={() => setContactVisible(true)} className = "  z-10  ">
                   <Line open={contactVisible} className = "bg-black"/>

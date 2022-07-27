@@ -116,7 +116,7 @@ const Papers = () => {
    
           <>
             
-               <div className='w-full h-screen bg-[#322476] relative overflow-hidden '>
+               {/* <div className='w-full h-screen bg-[#322476] relative overflow-hidden '>
                 <div className='flex flex-col h-[100%] items-center'>
                     <div className=' my-auto flex'>
                         <p className='text-[400px] my-auto text-white z-1 ml-[100px] '    style={{ fontFamily: "Odibee Sans" }}>Papers</p>
@@ -128,18 +128,20 @@ const Papers = () => {
               </div>
                <ArrowDownIcon className="w-7 h-7 text-white absolute bottom-0 mb-20 left-1/2 text-center animate-bounce " />
             </div> 
-        
+         */}
       
 
 
-
-
-            
-          <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50 shadow-sm  drop-shadow-lg mb-10 relative overflow-hidden  ">
+      
+         <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50    mb-10 relative overflow-hidden   ">
         {/* */}
-          {/*  md:ml-[40px] my-auto ml-[10%] */}
-            <div className=" h-full w-full  flex flex-col md:flex-row      md:items-center justify-between  ">
-              <div class="relative text-gray-600 focus-within:text-gray-400 shadow-lg md:w-[40%] md:ml-10 w-[85%] ml-[10px]">
+         <div className="w-[80%] mx-auto">
+                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-gray-300 ">Papers</h2>
+                   </div>
+        {/*  md:ml-[40px] my-auto ml-[10%] */}
+        
+            <div className=" h-full w-full  flex flex-col md:flex-row      md:items-center justify-between  mt-[60px] ">
+              <div class="relative text-gray-600 focus-within:text-gray-400 md:w-[40%] md:ml-10 w-[85%] ml-[10px]">
                 <span class="absolute inset-y-0 right-0 flex items-center pl-2">
                   <button type="submit" class="p-1 mr-5">
                     <SearchIcon className="w-5 h-5" />
@@ -162,7 +164,6 @@ const Papers = () => {
               </div>
             </div>
       </div>
-      
 
 
 

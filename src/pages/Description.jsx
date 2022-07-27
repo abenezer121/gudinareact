@@ -11,7 +11,9 @@ import importAll from "./../helper/importAll";
 import HomePageQuote from "../components/Carousel/HomePageQuote";
 import background from "./../assets/image/ideology/image.jpg";
 import { idiology } from "./../assets/data/idiologydata/index"
+import "./../assets/css/style.css";
 
+                                          
 import { relationData } from './../assets/data/relationdata/index'
 import styled from "styled-components";
 const ReadMore = (props) => {
@@ -29,11 +31,8 @@ const ReadMore = (props) => {
       <div className="flex flex-col">
         <span
           onClick={toggleReadMore}
-          className="read-or-hide uppercase text-sm"
-        >
-          <p className=" mt-10 uppercasetext-black w-[21%] border-2 border-slate-400 font-bold py-2 px-4 ">
-            {isReadMore ? "read more" : "show less"}
-          </p>
+          className="">
+            <button class="btn btn1 uppercase"> {isReadMore ? "read more" : "show less"}</button>
         </span>
       </div>
     </p>
@@ -104,12 +103,13 @@ const Description = () => {
           style={{ width: "50px", height: "50px" }}
         />
         <Link to={data.backToLink}>
-          <div className="flex h-full  items-center uppercase">
-            <p className="mr-10 text-center align-center mt-3 font-medium">
+          
+            <p className="uppercase mr-10 text-center align-center mt-3 font-medium text-black hover:text-blue-200 flex">
               {data.backToText}{" "}
+            <ArrowLeftIcon className="ml-10 mr-20 w-5 h-5 font-medium  hover:text-blue-200" />
             </p>
-            <ArrowLeftIcon className="mr-20 w-5 h-5 font-medium" />
-          </div>
+            
+        
         </Link>
       </div>
       <div className="w-full">
@@ -124,7 +124,7 @@ const Description = () => {
                       href={item.pdf}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-base hover:text-black"
+                      className="text-black hover:text-blue-200"
                     >
                       {item.name}
                     </a>

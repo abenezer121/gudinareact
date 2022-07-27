@@ -89,9 +89,12 @@ const Gallery = () => {
   
   return (
     <>
+      <div className="w-[80%] mx-auto">
+                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-gray-300 ">Gallery</h2>
+                   </div>
     <div class="flex">
     <aside class="h-screen sticky top-[120px] md:ml-20 md:mr-10">
-        <div className='flex flex-col text-xl font-bold mt-[1%] absolute left-[10%]'>
+        <div className='flex flex-col text-xl font-bold  mt-[110px] left-[10%]'>
                         <p className='-rotate-90'>Family</p>
                         <p className='-rotate-90 py-[20px]'>Work</p>
                         <p className='-rotate-90'>All</p>
