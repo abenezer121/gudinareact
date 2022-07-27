@@ -14,8 +14,8 @@ import './../assets/css/style.css'
 import FlexImage from "../components/Flex/FlexImage";
 
 import ministry from "../assets/image/HomePagePictures/ministry.jpg";
-import funeral from "../assets/image/HomePagePictures/funeral.JPG";
-import gudinatumsa1 from "../assets/image/HomePagePictures/gudinatumsa1.JPG";
+import funeral from "../assets/image/HomePagePictures/funeral.png";
+import gudinatumsa1 from "../assets/image/HomePagePictures/gudinatumsa1.png";
 
 const ReadMore = ({ children }) => {
   const text = children;

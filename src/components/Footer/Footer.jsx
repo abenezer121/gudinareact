@@ -12,15 +12,13 @@ import {Link} from "react-router-dom"
 const Footer = () => {
     return (
         <div className='w-full bg-[#1e2025] relative py-10 '>
-            <div className='grid grid-cols-2 md:grid-cols-4 mx-20 py-10'>
-                <div>
+            <div className='grid grid-cols-1 md:grid-cols-4 mx-20 py-10'>
+                <div className='mt-10'>
                     <h1 className='font-semibold text-lg text-[#524b4b]'>Location</h1>
-                    
                     <p className='text-white font-medium'>Address- Ethiopia Addis Ababa, Bole Kifle</p>
-                        <p className='text-white font-medium'>Ketema Woreda 07 House No.999</p>
+                    <p className='text-white font-medium'>Ketema Woreda 07 House No.999</p>
                 </div>
-                <div>
-                    
+                <div className='mt-10'>
                      <h1 className='font-semibold text-lg text-[#524b4b]'>Relation To Others</h1>
                     {
                            
@@ -52,7 +50,7 @@ const Footer = () => {
                     }
 
                 </div>
-                <div>
+                <div className='mt-10'>
               
                     <h1 className='font-semibold text-lg text-[#524b4b]'>Ideology</h1>
                         {
@@ -88,7 +86,7 @@ const Footer = () => {
                     
                   
                 </div>
-                <div>
+                <div className='mt-10'>
                 
                      <h1 className='font-semibold text-lg text-[#524b4b]'>Other Pages</h1>
                         <Link to="/archive"><p className='text-white font-medium  hover:font-bold'>Archive</p></Link>
