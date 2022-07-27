@@ -127,7 +127,8 @@ const location = useLocation()
               variants={pageVariant}
                className='w-full h-screen'
               transition={pageTransition}>
-              <Gallery />
+            <Gallery />
+             
               </motion.div>
             
           } />

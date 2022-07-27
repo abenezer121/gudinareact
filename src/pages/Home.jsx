@@ -1,6 +1,3 @@
-
-
-
 import { React, useState, useEffect, useRef } from "react";
 import { useSelector } from 'react-redux'
 import ministry from "../assets/image/ministry.jpg";
@@ -113,8 +110,9 @@ const Home = () => {
               <div className="w-full h-full ">
          
           
-        <HomeIntro/>
-          <div className="w-full h-full flex flex-col items-center bg-[#321473] ">
+              <HomeIntro />
+              <div className="flex flex-col">
+                <div className="w-full h-full flex flex-col items-center bg-[#321473] ">
             <div className="my-auto w-[60%]" >
               <div className=" mx-auto my-10   relative">
                 <p  data-aos="fade-up"
@@ -343,6 +341,9 @@ const Home = () => {
               </div>
               
             </div>
+
+              </div>
+          
            
               <HomePageQuote quotes = {[
         "“Gudina Tumsa is “our St.Paul.” He and his wife “showed our people Jesus Christ  they shared our hunger and suffering.” -Rev. Girma Kassa",
@@ -352,10 +353,8 @@ const Home = () => {
           
             
 
-            <div
-         
-            className="w-full h-full flex flex-col items-center  bg-[#321473]  "
-          >
+              <div className="flex flex-col">
+ <div className="w-full h-full flex flex-col items-center  bg-[#321473]">
             <div className="my-auto w-[100%]">
                 <div className=" mx-auto  my-10 w-[90%]  ">
                    <p
@@ -413,6 +412,8 @@ const Home = () => {
             </div>
           </div>
              <Footer/>
+              </div>
+           
           
         </div>
             

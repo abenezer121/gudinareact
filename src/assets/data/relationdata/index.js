@@ -1,13 +1,15 @@
+
+import abiy from "./../../image/drabiy2.jpg"
 import martin from "./../../image/martin.jpg"
 import bonhoeffer1 from "./../../image/bonhoeffer1.jpg"
-import abiy2 from "./../../image/drabiy2.jpg"
 import Bonhoeffer from "./../../book/relation/Bonhoeffer.pdf" 
 export let relationData = [
 
        
 
     {
-            photo : martin,
+        photo: martin,
+        image : martin,
         title: 'Gudina Tumsa and Dr. Martin Luther King Jr.', quote: [
 
             
@@ -28,7 +30,8 @@ export let relationData = [
         
         
     {
-                photo : abiy2,
+        photo: abiy,
+        image : abiy,
         title: 'Gudina Tumsa and Dr.Abiy Ahmed', quote: [
 
             "When we see his life and work, we can confirm that he was rightly compared with Dietrich Bonhoeffer of Germany, who boldly opposed the ideology of Hitler and spoke publicly against it. He was then murdered by the Hitler regime, ready to sacrifice his life for the cause of the gospel. He was unselfish, bold, and prepared to help others up to the point of self-sacrifice. Rev.Gudina came in contact with the theology of Bonhoeffer during his stay at Luther Seminary in St. Paul,MN, USA"
@@ -50,7 +53,8 @@ export let relationData = [
                pdf: []
     }, 
         {
-        photo : bonhoeffer1,
+            photo: bonhoeffer1,
+            image : bonhoeffer1,
         title: 'Gudina Tumsa and Dietrich Bonhoeffer', quote: [
 
             "When we see his life and work, we can confirm that he was rightly compared with Dietrich Bonhoeffer of Germany, who boldly opposed the ideology of Hitler and spoke publicly against it. He was then murdered by the Hitler regime, ready to sacrifice his life for the cause of the gospel. He was unselfish, bold, and prepared to help others up to the point of self-sacrifice. Rev.Gudina came in contact with the theology of Bonhoeffer during his stay at Luther Seminary in St. Paul,MN, USA"

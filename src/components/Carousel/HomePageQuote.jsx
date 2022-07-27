@@ -22,7 +22,7 @@ const HomePageQuote = (props) => {
     }
     return (
         <>
-            <div className="w-[80%] h-[25%] mb-20 flex items-center   mx-auto homepagequoteimage relative"   data-aos="fade-up">
+            <div className="w-[80%]  mb-20 flex items-center   mx-auto homepagequoteimage relative"   data-aos="fade-up">
                   <div className=" w-full  my-auto" >
                       <h3    
                           className="text-4xl font-bold  text-center text-white "

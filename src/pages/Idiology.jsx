@@ -76,21 +76,9 @@ const Idiology = () => {
      
         </div>
       ) : (
-        <div className="w-full h-screen">
-                <div className='w-full h-[100%]' style={{
-                  backgroundImage: `url(${idiologyBackground})`,
-                  backgroundRepeat: "no-repeat",
-                    backgroundSize: "100%"
-              }}>
-                <div className='flex flex-col h-full items-center'>
-                    <div className=' my-auto flex'>
-                        <p className='text-9xl my-auto text-white'    style={{ fontFamily: "Odibee Sans", fontSize :'350px' }}>Ideology</p>
-                     
-                    </div>
-                </div>
-            </div> 
-
-             <div className="w-full h-full flex flex-col items-center bg-[#6dafd1]  overflow-auto">
+          <div className="w-full h-full">
+            <div className="flex flex-col">
+              <div className="w-full h-screen flex flex-col items-center bg-[#750085] ">
             <div className="my-auto w-[60%]" >
               <div className=" mx-auto my-10   relative">
                 <p  data-aos="fade-up"
@@ -133,8 +121,8 @@ const Idiology = () => {
           </div>
          
                   
-          <div className="w-full flex flex-col items-center bg-[#6dafd1] pb-20 ">
-            <div className="my-auto w-[80%] h-full mx-auto text-center relative bg-[#6dafd1] ">
+          <div className="w-full flex flex-col items-center bg-[#750085] pb-20 ">
+            <div className="my-auto w-[80%] h-full mx-auto text-center relative bg-[#750085] ">
               <div className=" text-center my-10   relative">
                 <p
                   className="text-lg text-center uppercase text-xm text-white font-bold"
@@ -159,6 +147,7 @@ const Idiology = () => {
                           quote: item.quote,
                           paragrah: item.paragraph,
                           sideText: "OTHER TOPICS",
+                          image : item.image,
                           sideArray: [
                                   "Cost of Discipleship",
                                   "GT on Politics/Economics",
@@ -181,6 +170,8 @@ const Idiology = () => {
             </div>
             </div>
             <Footer/>
+            </div>
+             
         </div>
       )}
     </>

@@ -26,7 +26,7 @@ const Intro = () => {
       function () {   
               localStorage.setItem('nav', JSON.stringify({ "location" : "HOME"}));
              dispatch(home())
-             clearTimeout(timer)},100);
+             clearTimeout(timer)},3000);
     return (
         <motion.div
             className='w-full h-screen'

@@ -6,3 +6,35 @@
     border-radius: 50%;
     pointer-events: none;
 }
+
+
+/* Circle */
+
+/* .sketchy {
+  position: relative;
+  background: none;
+
+}
+
+.sketchy:after {
+  border: .25em solid yellow;
+  border-top: none;
+  border-radius: 1.5em 1em 2em 1.5em;
+  bottom: -.3em;
+  content: '';
+  left: -.3em;
+  position: absolute;
+  right: -.3em;
+  top: -.1em;
+}
+.sketchy:before {
+  border-top: .25em solid yellow;
+  border-radius: .5em;
+  content: '';
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: -.3em;
+  transform: rotate(-10deg);
+  width: 2em;
+} */

@@ -93,10 +93,9 @@ const Archive = () => {
     setFilter(e.type)
   }
 
-
-  const ArchiveCard = (image , title , book , bookname) => {
+ const ArchiveCard = (image , title , book , bookname) => {
     return (
-          <div className="max-w-sm rounded overflow-hidden shadow-lg w-[90%] mt-5">
+          <div className="rounded overflow-hidden shadow-lg w-[90%] mt-5">
               <img className="w-full" src={image} alt="Sunset in the mountains"/>
               <div className="px-6 py-1">
                   <div className="font-bold text-xl mb-1">{ title}</div>
@@ -114,28 +113,17 @@ const Archive = () => {
     );
   };
 
+
   return (
    
           <>
             
-               <div className='w-full h-screen bg-[#322476] relative'>
-                <div className='flex flex-col h-[100%] items-center'>
-                    <div className=' my-auto flex'>
-                        <p className='text-[400px] my-auto text-white z-1 ml-[100px] '    style={{ fontFamily: "Odibee Sans" }}>Archive</p>
-                        <img src={gudinatumsa4}  className=" absolute w-[400px] h-[400px] right-[100px]" style={{
-                        
-                        transform: `translateY(${offsetY}px) translateX(${offsetX}px)`,
-                      }} />
-                    </div>
-              </div>
-               <ArrowDownIcon className="w-7 h-7 text-white absolute bottom-0 mb-20 left-1/2 text-center animate-bounce " />
-            </div> 
-            
-            
-          <div className="w-full h-[80px] z-10 bg-slate-100 sticky top-0 z-50 shadow-sm  drop-shadow-lg mb-10 relative  ">
-            {/* */}
-            <div className=" flex flex-cols  h-full  items-center justify-between  md:ml-[15%] ml-[40px] my-auto ml-[10%] ">
-              <div class="relative text-gray-600 focus-within:text-gray-400 shadow-lg">
+             
+         <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50 shadow-sm  drop-shadow-lg mb-10 relative overflow-hidden   ">
+        {/* */}
+          {/*  md:ml-[40px] my-auto ml-[10%] */}
+            <div className=" h-full w-full  flex flex-col md:flex-row      md:items-center justify-between  mt-[60px] ">
+              <div class="relative text-gray-600 focus-within:text-gray-400 shadow-lg md:w-[40%] md:ml-10 w-[85%] ml-[10px]">
                 <span class="absolute inset-y-0 right-0 flex items-center pl-2">
                   <button type="submit" class="p-1 mr-5">
                     <SearchIcon className="w-5 h-5" />
@@ -147,27 +135,27 @@ const Archive = () => {
                   onChange={(e) => {
                     setSearch(e.target.value.toLowerCase())
                   }}
-                  class="py-3 text-sm text-black  focus:outline-none rounded-lg pl-10 w-[700px]"
+                  class="py-3 text-sm text-black  focus:outline-none rounded-lg pl-10 w-full "
                   placeholder="Search..."
                   autocomplete="off"
                 />
               </div>
 
-          <div className="flex flex-rows  space-x-5 pr-10 mr-[13%]">
-                  
-                <DropDown className="" text={"Sort By Author"} authors={ Authors} />
-                  {/* <DropDown className="" text={"Sort By Upload Date"} /> */}
+              <div className="ml-[10px] mt-[10px] md:mt-[10px] ">
+                  <DropDown className="" text={"Sort By Author"} authors={ Authors} />
               </div>
             </div>
-          </div>
-            <div>
-              {/* <p className="ml-[15%]  text-4xl font-medium">0 items found</p> */}
-          </div>
-          <div ref={second} className="w-full h-full flex flex-col mt-[20px] pb-10 ">
-            <div className=" w-[80%]  mx-auto">
+      </div>
+            
+         
+          
+      
+
+          <div className="w-full h-full flex flex-col mt-[20px] pb-10 ">
+            <div className=" w-[100%] md:w-[80%]  mx-auto">
               <div className="flex">
                 
-                  <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-2 w-[70%] ml-[100px]  ">
+                  <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-2 w-[100%] md:w-[70%] ml-[20px] md:ml-[100px]  ">
               {
                 data.map((item, index) => {
                         if (item.bookName.toLowerCase().includes(search) || search == "") {
@@ -183,9 +171,9 @@ const Archive = () => {
                  
            
                   </div>
-                  <div className="h-full w-[40%] md:w-[20%] sticky top-[10%]">
+                   <div className="h-full mr-[10px] md:mr-0 w-[60%] md:w-[40%] md:w-[20%] sticky top-[21%] md:top-[10%]">
                   <div className="w-full bg-white shadow-lg text-black  ">
-                    <div className="w-full flex items-center h-[70px] z-10 bg-slate-100    text-left">
+                    <div className="w-full flex items-center h-[70px] z-10 bg-slate-100 text-left">
                      <AdjustmentsIcon className="  w-5 h-5 ml-[40px] " />
                       <p className="mx-2 my-auto  font-bold">Filter</p>
                       </div>
@@ -203,7 +191,7 @@ const Archive = () => {
                 </div>
               </div>
             </div>
-      </div>
+          </div>
       
             <Footer/>
         </>

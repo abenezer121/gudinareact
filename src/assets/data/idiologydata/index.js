@@ -12,6 +12,22 @@ import  ContributiontoNationBuilding from './../../book/idiology/ContributiontoN
 import  AMoreReponsibleChurchMinistry from './../../book/idiology/AMoreReponsibleChurchMinistry.pdf';
 import  AWholisticTheology from './../../book/idiology/AWholisticTheology.pdf';
 
+import african from "./../../image/ideology/african.PNG"
+import christianstewardship from "./../../image/ideology/christianstewardship.PNG"
+import costofdisciplesip from "./../../image/ideology/costofdiscipleship.PNG"
+import ecumenticalharmony from "./../../image/ideology/ecumenicalharmony.PNG"
+import gtonpolotics from "./../../image/ideology/gtonpolotics.PNG"
+import holistictheology from "./../../image/ideology/holistictheology.PNG"
+import humandevelopment from "./../../image/ideology/humandevelopment.PNG"
+import missionandoutreach from "./../../image/ideology/missionandoutreach.PNG"
+import nationbuilding from "./../../image/ideology/nationbuilding.PNG"
+import resourcesamongsttheuniversalchurch from "./../../image/ideology/resourcesamongsttheuniversalchurch.PNG"
+import responsibilityofachristiantosociety from "./../../image/ideology/responsibilityofachristiantosociety.PNG"
+import responsibilityofthechurchtosociety from "./../../image/ideology/responsibilityofthechurchtosociety.PNG"
+import unbeliefromhistoricalperspective from "./../../image/ideology/unbeliefromhistoricalperspective.PNG"
+import youth from "./../../image/ideology/youth.PNG"
+
+
 export let idiology = [
     {
         title: 'Responsibility of a Christian to society ',
@@ -38,11 +54,20 @@ export let idiology = [
            {"name" : "The Role of a Christian in a Given Society",
             "pdf" : TheRoleofaChristianinaGivenSociety}
            
-        ]
+        ],
+        image : responsibilityofachristiantosociety
     },
     {
             title: 'Responsibility of the Church to society  ',
-            quote: [
+        quote: [
+                     "“The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” ",
+              "“Ecclesia belongs to God because he has called it in to be, dwells within it, rules over it, and realizes his purpose through it.” ",
+            "“What makes the church is not the fund she has. No, what makes the church is the faith that she has in the Gospel of Jesus Christ, her confession of Jesus as her Lord and Savior, which liberates man.” "
+       
+        ],
+        fadeAnimation: "fade-left",
+          paragraph : [
+       
                 "Gudina’s Tumsa’s life experiences helped shape his understanding of how a Church is responsible to society. For example, the time he spent in the United States formed his theology and gave him a new insight on how to build a Church that served the whole man. Two specific things helped form his thoughts on this topic and according to Øyvind M. Eide are, ",
                 "“The First that Qes Gudina studied was Reinhold Niebuhr, commonly considered the most powerful theological ethicist of the mid-twentieth century… The second point of importance is the fact that he studied in the USA at the time of the intense debates and struggles of the Civil Rights Movement, led by Martin Luther King.” (Life and Ministry Pg.42). ",
                 "These things led Gudina to have a strong will and vision to develop a modern, efficient and Biblical church structure. He did this through thoroughly debating, writing on and presenting solutions on the Church's responsibility to Ecumenical Harmony, Nation Building, Self-reliance and Mission etc... The way that Gudina Tumsa states the church should be structured is clear when he writes about two extremes; over spiritualizing or over secularizing. He presents a solution to this by writing,",
@@ -53,17 +78,11 @@ export let idiology = [
                 "Another aspect of how Gudina believed in building a responsible Church was to make it a paradigm for society. Gudina strongly believed that the Church should be a leading force in guiding its members through change based on a theological understanding as well as setting the standard for the nation and government in matters of development, economics and even politics.His understanding of this is seen when he writes,",
                 "“The ECMY will continue to contribute her share to the economic development of Ethiopia, to improve the living conditions of the people, to the political orientation of the people in being useful to society, in knowing their rights and obligations of citizens.” (Witness and Discipleship Pg.67). Gudina Tumsa’s thought on the responsibility of the Church to society can be summed up by saying he pleaded for the Church to have a balanced approach and minister to the spiritual, social, political and economic factors of life. In other words he desired total involvement of the Church. "
         ],
-        fadeAnimation: "fade-left",
-          paragraph : [
-            "“The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” ",
-              "“Ecclesia belongs to God because he has called it in to be, dwells within it, rules over it, and realizes his purpose through it.” ",
-            "“What makes the church is not the fund she has. No, what makes the church is the faith that she has in the Gospel of Jesus Christ, her confession of Jesus as her Lord and Savior, which liberates man.” "
-        ],
         pdf: [
               {"name" : "The Role of a Christian in a Given Society",
                 "pdf" : TheRoleofaChristianinaGivenSociety}
-            
-          ]
+        ],
+        image : responsibilityofthechurchtosociety
     },
     {
         title: 'Ecumenical Harmony  ',
@@ -91,7 +110,8 @@ export let idiology = [
                 {"name" : "Scan",
                 "pdf" : Scan}
 
-          ]
+        ],
+        image : ecumenticalharmony
     },  
     {
         title: 'Unbelief from Historical Perspective (Kairos)',
@@ -126,7 +146,8 @@ export let idiology = [
                 "name" : "Unbelief from Historical Perspective(KAIROS)",
             "pdf" : UnbelieffromHistoricalPerspective
             }
-          ]
+        ],
+        image : unbeliefromhistoricalperspective
     }, 
     {
                 title: 'African Theology/ Contextualization',
@@ -149,7 +170,8 @@ export let idiology = [
             "His attempt at constructing an African theology, was not only to relate the Gospel to the people of Africa, but also to help African churches become self reliant, become partners– not dependents– with foreign missions, and lastly to make the Church a model for the recuperation that Africa needed after the devastating colonial period. Gudina Tumsa was murdered and was never able to develop his idea of an African theology, which would have been able to minister to the life situation of Africans. Today the Church in Africa needs to restructure and form its own theology that can minister to the life of Africa's struggling people. This can be done from using the foundation that Gudina Tumsa laid for us. As Øyvind M. Edie writes,  “Qes Gudina was not given the opportuntiy to develop a “Confessio Africana”, but his integrated approach to human developments and his theology of “love and justice” may serve as a guideline for further reflection on the task of the church in a continent ravaged by conflict and deep human suffering.” (Life and Ministry Pg.73) "
 
         ],
-        pdf :[]
+        pdf: [],
+        image : african
     },
     {
         title: 'Youth',
@@ -166,14 +188,15 @@ export let idiology = [
 
 
         ],
-        pdf : []
+        pdf: [],
+        image : youth
     },
     {
         title: 'Holistic Theology',
         quote: [
-            "⦁	“In His ministry, we know that forgiveness of sins and healing of the body, feeding the hungry and spiritual nurture, opposing dehumanizing structures and identifying himself with the weak were never at any time divided or departmentalized. He saw as a whole and was always ready to give help where the need was most obvious.”",
-            "⦁	“The healing of the Brokenness in human life can therefore never be accomplished without the gospel message of forgiveness which has in itself the power to liberate man from the most dehumanizing power in his own life and his relationships with other men and God.” ",
-            "⦁	“We are not interested in creating medieval monasteries, and setting up ghettos (modern monasteries), but in being involved in the complex social life of our people as we find it daily, with full knowledge of our Christian responsibility.” (Witness and Discipleship Pg.70)"
+            "“In His ministry, we know that forgiveness of sins and healing of the body, feeding the hungry and spiritual nurture, opposing dehumanizing structures and identifying himself with the weak were never at any time divided or departmentalized. He saw as a whole and was always ready to give help where the need was most obvious.”",
+            "“The healing of the Brokenness in human life can therefore never be accomplished without the gospel message of forgiveness which has in itself the power to liberate man from the most dehumanizing power in his own life and his relationships with other men and God.” ",
+            "“We are not interested in creating medieval monasteries, and setting up ghettos (modern monasteries), but in being involved in the complex social life of our people as we find it daily, with full knowledge of our Christian responsibility.” (Witness and Discipleship Pg.70)"
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -187,13 +210,14 @@ export let idiology = [
         pdf: [
             {"name" : "A Wholistic Theology",
                 "pdf" : AWholisticTheology }
-        ]
+        ],
+        image : youth
     },  
     {
         title: 'GT on Politics/Economics',
         quote: [
                 "In our continent, what is prevalent is the basis to define economic policy, agricultural Development, foreign Relations – “Politics decides who should die and who should live.” (Witness and Discipleship Pg.70",
-            "	“The democratic system being introduced in our country has been in practice in the ECMY for years. This must be appreciated and acted on.” (Witness and Discipleship Pg.79)"
+            "“The democratic system being introduced in our country has been in practice in the ECMY for years. This must be appreciated and acted on.” (Witness and Discipleship Pg.79)"
         ],
         fadeAnimation: "fade-left",
             paragraph: [
@@ -202,7 +226,8 @@ export let idiology = [
                 "While many Christians think that economics is outside of the jurisdiction of God, once again Gudina Tumsa’s holistic view differs from that of the masses. He claims that the Church and Christians should have their own economy. “We believe that the economy of the Christian community should be seen in a global perspective and the aim should be to arrange for a more fair distribution of resources. Here the Church should even lead the way towards this goal.” (Witness and Discipleship Pg.126). Gudina was not a man of theory who just spoke about the Church's economic growth but he put it into action as he planned for the Church to become self-reliant in its ministry. ",
                 "Gudina was a man who saw Christ as the Alpha and the Omega, not only in the spiritual sense but also on Earth. Gudina understood that the Earth was Christ's dominion meaning God’s Kingdom led and still leads earthly kingdoms. This is seen when Gudina applies his holistic approach and called on Churches and Christian’s to build and develop the economy of their country as the Churches (God’s Kingdom) and countries (Earth’s Kingdom) economies are intertwined, “It is a well-known fact that the economic life of any church is tied up with the economic life of the country where the church is placed.” (Witness and Discipleship Pg.139). Gudina was raised by poor farmers in an imperial system. An oppressive system that preyed on the so called “peasants”. His stance on landrefrom and the letter he along with ECMY members wrote to the Ethiopian parliament in 1973 was a plea to better the economic lives of the Ethiopian people. To conclude, Gudina knew that a prosperous economy could only be developed if it was developed in a model that mirrored a Christian or Church economy, and the Christian economy is based on God’s will for the people within it; that will is  justice and equality. Thus, he made it his mission and the Churches to begin involving themselves in economic development and become the necessary paradigm for society so that there can be balanced economic growth. "
         ],
-        pdf: []
+        pdf: [],
+        image : gtonpolotics
     },
     {
         title: 'The Cost of Discipleship',
@@ -219,7 +244,8 @@ export let idiology = [
         pdf: [
             {"name" : "A Wholistic Theology",
     "pdf" : AWholisticTheology }
-        ]
+        ],
+        image : costofdisciplesip
     },
     {
         title: 'Integral Human Development',
@@ -241,7 +267,8 @@ export let idiology = [
             {
                 "name": "The Cost of Discipleship",
                 "pdf" : TheCostofDiscipleship}
-           ]
+        ],
+        image : christianstewardship
     },
     {
         title: 'Resources Amongst the Universal Church',
@@ -263,7 +290,8 @@ export let idiology = [
             "pdf" : Moratorium},
             {"name" : "The Moratorium Debate and the ECMY",
             "pdf" : TheMoratoriumDebateandtheECMY}
-            ]
+        ],
+        image : resourcesamongsttheuniversalchurch
     },  
     {
         title: 'Chrisian Stewardship ',
@@ -281,7 +309,8 @@ export let idiology = [
         pdf: [
        {"name" : "Stewrdship of the Gospel",
             "pdf" : StewardshipoftheGospel}
-              ]
+        ],
+        image : christianstewardship
     },
     {
         title: 'Missions and Outreach ',
@@ -301,7 +330,8 @@ export let idiology = [
               pdf : [{"name" : "SCAN 2",
                     "pdf" : Scan2},
                     
-]
+        ],
+              image : missionandoutreach
     },
     
     {
@@ -320,7 +350,8 @@ export let idiology = [
               pdf : [ {
                 "name": "Contribution to Nation Building",
                 "pdf" : ContributiontoNationBuilding},
-                    {name : "Functional Approach" ,"pdf" : FunctionalApproach}]
+            { name: "Functional Approach", "pdf": FunctionalApproach }],
+              image : nationbuilding
     }, 
         
 ]
