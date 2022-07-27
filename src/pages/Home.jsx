@@ -1,8 +1,6 @@
 import { React, useState, useEffect, useRef } from "react";
 import { useSelector } from 'react-redux'
-import ministry from "../assets/image/ministry.jpg";
-import funeral from "../assets/image/funeral.JPG";
-import gudinatumsa1 from "../assets/image/gudinatumsa1.JPG";
+
 import './../assets/css/homepagegallery.css'
 import Footer from "../components/Footer/Footer";
 import years from "./../assets/data/year.json"
@@ -14,6 +12,10 @@ import Intro from "./Intro"
 import {  motion } from 'framer-motion';
 import './../assets/css/style.css'
 import FlexImage from "../components/Flex/FlexImage";
+
+import ministry from "../assets/image/HomePagePictures/ministry.jpg";
+import funeral from "../assets/image/HomePagePictures/funeral.JPG";
+import gudinatumsa1 from "../assets/image/HomePagePictures/gudinatumsa1.JPG";
 
 const ReadMore = ({ children }) => {
   const text = children;

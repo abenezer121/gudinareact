@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/outline";
 import logo from "./../assets/image/logo.png";
-import slider from "./../assets/image/slider.png";
-import OwlCarousel from "react-owl-carousel";
 import { Link } from "react-router-dom";
-import QuoteCarousel from "../components/Carousel/QuoteCarousel";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import importAll from "./../helper/importAll";

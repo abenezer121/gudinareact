@@ -21,20 +21,7 @@ const Page2 = () => {
   return (
     <div className='w-full h-screen  bg-red-200'>
       <div className='pt-[430px] pl-[100px]'>
-
       </div>
-      <p className='ml-[150px] '>
-
-            <span className='hover:rotate-45'>C</span>
-            <span>r</span>
-            <span>e</span>
-            <span>a</span>
-            <span>t</span>
-            <span>i</span>
-            <span>v</span>
-            <span>e</span>
-            
-      </p>
     </div>
   );
 };

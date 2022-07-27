@@ -1,7 +1,4 @@
 import { React, useState, useEffect, useRef } from "react";
-// import idiologyBackground from "./../assets/image/idiologybackground.png";
-import idiologyBackground from "./../assets/image/ideologyBack.jpg";
-
 import { useSelector, useDispatch } from 'react-redux'
 import { useInView } from "react-intersection-observer";
 import { Link } from 'react-router-dom';
