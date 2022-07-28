@@ -13,7 +13,7 @@ import Papers from './pages/Papers';
 import Aos from 'aos'
 import RelationToOthers from './pages/RelationToOthers';
 import Page2 from './pages/Page2';
-
+//fdg
 import Description from './pages/Description';
 const pageVariant = {
   in: {
