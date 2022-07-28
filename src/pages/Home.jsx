@@ -14,7 +14,8 @@ import './../assets/css/style.css'
 import FlexImage from "../components/Flex/FlexImage";
 
 import ministry from "../assets/image/HomePagePictures/ministry.jpg";
-import funeral from "../assets/image/HomePagePictures/funeral.png";
+import funeral from "../assets/image/HomePagePictures/homepage5.jpg";
+import homepage6 from "../assets/image/HomePagePictures/homepage6.jpg";
 import gudinatumsa1 from "../assets/image/HomePagePictures/gudinatumsa1.png";
 import homepagecover from "../assets/image/other/qw.png";
 
@@ -160,7 +161,7 @@ const Home = () => {
           {/*  */}
           <div  className="text-black flex flex-col  ">
             <div className=" w-full  flex  relative m-auto text-black ">
-              <div className="mx-auto my-10 w-[100%] md:w-[60%]  relative  ">
+              <div className="mx-auto my-10 w-[100%] md:w-[70%]  relative  ">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                   <div className="mx-20">
                     <div data-aos="fade-up" data-aos-delay="600">
@@ -192,19 +193,21 @@ const Home = () => {
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                     }}
-                  >
-                    <iframe
-                      //
-                      width="100%"
-                      height="350"
-                      src={`https://www.youtube.com/embed/${getYouTubeID(
-                        "https://www.youtube.com/watch?v=tIzP_D8-Y28"
-                      )}`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      title="Embedded youtube"
-                    />
+                        >
+                          <div data-aos="fade-up">
+                              <iframe
+                                  width="100%"
+                                  height="350"
+                                  src={`https://www.youtube.com/embed/${getYouTubeID(
+                                    "https://www.youtube.com/watch?v=tIzP_D8-Y28"
+                                  )}`}
+                                  frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                  title="Embedded youtube"
+                                />
+                          </div>
+                  
                   </div>
                 </div>
               </div>
@@ -212,15 +215,18 @@ const Home = () => {
                 
             <div className=" w-full  flex  relative m-auto text-black bg-white ">
               <div className="mx-auto my-10 w-[100%] md:w-[60%]   relative">
-                <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
-                  <img
+                      <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
+                        <div data-aos="fade-up">
+                           <img
                     src={gudinatumsa1}
-                    className="w-[100%] md:w-[70%] h-[400px] "
+                    className="w-[100%] md:w-[70%] h-[400px] md:ml-[15%]"
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                     }}
                   />
+                        </div>
+                 
                   <div className="mx-20 mt-3">
                     <h1 className="text-4xl font-bold "   data-aos="fade-up">A Defender of Truth</h1>
 
@@ -263,15 +269,16 @@ const Home = () => {
 
                         </ReadMore>
                     </h2>
-                  </div>
-                  <img
+                        </div>
+                        <div data-aos="fade-up"> <img
                     src={ministry}
                     className="w-[100%] md:w-[70%]  h-[400px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                     }}
-                  />
+                  /></div>
+                 
                 </div>
               </div>
             </div>
@@ -279,7 +286,10 @@ const Home = () => {
               <div className=" my-10 w-[100%] md:w-[100%]   relative">
                  
                       {/* <FlexImage /> */}
-                      <img src={homepagecover}/>
+                      <div data-aos="fade-up">
+                        <img src={homepagecover}/>
+                      </div>
+                      
 
                   </div>
                   
@@ -287,15 +297,17 @@ const Home = () => {
                 </div>
             <div className=" w-full  flex text-black bg-white relative m-auto ">
               <div className="mx-auto my-10 w-[100%] md:w-[60%]   relative">
-                <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
-                  <img
-                    src={funeral}
-                    className="w-[100%] md:w-[70%]  h-[600px] "
-                    alt="nature"
-                    style={{
-                      transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
-                    }}
-                  />
+                      <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
+                        <div data-aos="fade-up">
+                                    <img src={funeral}
+                                                        className="w-[100%] md:w-[70%]  h-[600px] md:ml-[15%] "
+                                                        alt="nature"
+                                                        style={{
+                                                          transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
+                                                        }}
+                                                      />
+                        </div>
+                 
                   <div className="mx-20 mt-3">
                     <h1 className="text-4xl font-bold"   data-aos="fade-up">Everlasting Love</h1>
 
@@ -331,15 +343,16 @@ const Home = () => {
                           The theme of Gudina Tumsa’s life can be described as persecution due to his faith. Gudina’s life can be compared to that of the early Chrisitans, the Bible verse that can describe his journey of faith is found in Romans 8:26, “For your sake we face death all day long; we are considered as sheep to be slaughtered.” Gudina began facing persecution the moment he accepted Christ into his life. Living in a non-christian environment his new found faith was not welcomed by his family. The first instance of persecution in his life came when he had to run away from his home– around the age of 10– to save himself. The second instance of Gudina facing persecution, is found in the part of his life where his own Church that he was pastoring turned against him, and removed him from pastorship. In that same time span someone was sent to assassinate Gudina for unknown reasons (most likely because of the disagreement he had with a wealthier member of the congregation). He faced persecution in the form of racism, during his time in the US and his notable visit to South Africa in the early 1970’s; where he refused to submit to the laws of apparthied. Gudina’s faith began and ended with persecution,  for the sake of the Gospel that he protected, was faithful to and loved. He was arrested multiple times, spied on in his day to day life and most of all in the end he walked silently like a lamb and was slaughtered giving his life to Christ and concluding his time of persecution faithfully.
                       </ReadMore>
                     </h2>
-                    </div>
-                    <img
-                    src={gudinatumsa1}
-                    className="mx-auto w-[100%] md:w-[70%]  h-[400px] "
+                        </div>
+                        <div data-aos="fade-up"> <img
+                    src={homepage6}
+                    className="mx-auto w-[100%] md:w-[90%]  h-[400px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                     }}
-                  />
+                  /></div>
+                    
                 </div>
               </div>
               </div>

@@ -64,7 +64,7 @@ const NavDrawer = (props) => {
                         
 
                     >
-                        <div>
+                        <div>   
                         <div className='w-[80%] mx-auto relative '>
                             <div className="cursor"
                     style={{

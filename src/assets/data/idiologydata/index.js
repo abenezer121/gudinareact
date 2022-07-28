@@ -14,7 +14,6 @@ import AWholisticTheology from './../../book/idiology/AWholisticTheology.pdf';
 import african from "./../../image/ideology/african.png"
 import christianstewardship from "./../../image/ideology/christianstewardship.png"
 import costofdisciplesip from "./../../image/ideology/costofdiscipleship.png"
-
 import ecumenticalharmony from "./../../image/ideology/ecumenicalharmony.png"
 import gtonpolotics from "./../../image/ideology/gtonpolotics.png"
 import holistictheology from "./../../image/ideology/holistictheology.png"
