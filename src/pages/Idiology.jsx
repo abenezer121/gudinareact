@@ -139,11 +139,12 @@ const Idiology = () => {
                         data: JSON.stringify({
                           title: item.title,
                           backToText: "Back To Ideology",
-                          backToLink : "/ideology", 
+                          backToLink : "/idiology", 
                           quote: item.quote,
                           paragrah: item.paragraph,
                           sideText: "OTHER TOPICS",
-                          image : item.image,
+                          image: item.image,
+                          youtube : item.youtube,
                           sideArray: [
                                   "Cost of Discipleship",
                                   "GT on Politics/Economics",

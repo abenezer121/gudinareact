@@ -54,7 +54,8 @@ export let idiology = [
             "pdf" : TheRoleofaChristianinaGivenSociety}
            
         ],
-        image : responsibilityofachristiantosociety
+        image: responsibilityofachristiantosociety,
+        youtube : ""
     },
     {
             title: 'Responsibility of the Church to society  ',
@@ -81,7 +82,8 @@ export let idiology = [
               {"name" : "The Role of a Christian in a Given Society",
                 "pdf" : TheRoleofaChristianinaGivenSociety}
         ],
-        image : responsibilityofthechurchtosociety
+        image: responsibilityofthechurchtosociety,
+         youtube : "https://www.youtube.com/watch?v=kwVLaBEeLLg"
     },
     {
         title: 'Ecumenical Harmony  ',
@@ -110,7 +112,8 @@ export let idiology = [
                 "pdf" : Scan}
 
         ],
-        image : ecumenticalharmony
+        image: ecumenticalharmony,
+         youtube : ""
     },  
     {
         title: 'Unbelief from Historical Perspective (Kairos)',
@@ -146,7 +149,8 @@ export let idiology = [
             "pdf" : UnbelieffromHistoricalPerspective
             }
         ],
-        image : unbeliefromhistoricalperspective
+        image: unbeliefromhistoricalperspective,
+         youtube : ""
     }, 
     {
                 title: 'African Theology/ Contextualization',
@@ -170,7 +174,8 @@ export let idiology = [
 
         ],
         pdf: [],
-        image : african
+        image: african,
+         youtube : ""
     },
     {
         title: 'Youth',
@@ -188,7 +193,8 @@ export let idiology = [
 
         ],
         pdf: [],
-        image : youth
+        image: youth,
+         youtube : "https://www.youtube.com/watch?v=yqB5_msFaXA"
     },
     {
         title: 'Holistic Theology',
@@ -210,7 +216,8 @@ export let idiology = [
             {"name" : "A Wholistic Theology",
                 "pdf" : AWholisticTheology }
         ],
-        image : youth
+        image: youth,
+         youtube : "https://www.youtube.com/watch?v=OQ2oOp040f0"
     },  
     {
         title: 'GT on Politics/Economics',
@@ -226,7 +233,8 @@ export let idiology = [
                 "Gudina was a man who saw Christ as the Alpha and the Omega, not only in the spiritual sense but also on Earth. Gudina understood that the Earth was Christ's dominion meaning God’s Kingdom led and still leads earthly kingdoms. This is seen when Gudina applies his holistic approach and called on Churches and Christian’s to build and develop the economy of their country as the Churches (God’s Kingdom) and countries (Earth’s Kingdom) economies are intertwined, “It is a well-known fact that the economic life of any church is tied up with the economic life of the country where the church is placed.” (Witness and Discipleship Pg.139). Gudina was raised by poor farmers in an imperial system. An oppressive system that preyed on the so called “peasants”. His stance on landrefrom and the letter he along with ECMY members wrote to the Ethiopian parliament in 1973 was a plea to better the economic lives of the Ethiopian people. To conclude, Gudina knew that a prosperous economy could only be developed if it was developed in a model that mirrored a Christian or Church economy, and the Christian economy is based on God’s will for the people within it; that will is  justice and equality. Thus, he made it his mission and the Churches to begin involving themselves in economic development and become the necessary paradigm for society so that there can be balanced economic growth. "
         ],
         pdf: [],
-        image : gtonpolotics
+        image: gtonpolotics,
+         youtube : ""
     },
     {
         title: 'The Cost of Discipleship',
@@ -242,9 +250,10 @@ export let idiology = [
         ],
         pdf: [
             {"name" : "A Wholistic Theology",
-    "pdf" : AWholisticTheology }
+            "pdf" : AWholisticTheology }
         ],
-        image : costofdisciplesip
+        image: costofdisciplesip,
+         youtube : ""
     },
     {
         title: 'Integral Human Development',
@@ -290,7 +299,8 @@ export let idiology = [
             {"name" : "The Moratorium Debate and the ECMY",
             "pdf" : TheMoratoriumDebateandtheECMY}
         ],
-        image : resourcesamongsttheuniversalchurch
+        image: resourcesamongsttheuniversalchurch,
+         youtube : ""
     },  
     {
         title: 'Chrisian Stewardship ',
@@ -309,7 +319,8 @@ export let idiology = [
        {"name" : "Stewrdship of the Gospel",
             "pdf" : StewardshipoftheGospel}
         ],
-        image : christianstewardship
+        image: christianstewardship,
+         youtube : ""
     },
     {
         title: 'Missions and Outreach ',
@@ -330,7 +341,8 @@ export let idiology = [
                     "pdf" : Scan2},
                     
         ],
-              image : missionandoutreach
+        image: missionandoutreach,
+               youtube : ""
     },
     
     {
@@ -350,7 +362,8 @@ export let idiology = [
                 "name": "Contribution to Nation Building",
                 "pdf" : ContributiontoNationBuilding},
             { name: "Functional Approach", "pdf": FunctionalApproach }],
-              image : nationbuilding
+        image: nationbuilding,
+               youtube : ""
     }, 
         
 ]

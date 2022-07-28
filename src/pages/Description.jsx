@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import importAll from "./../helper/importAll";
-
+import getYouTubeID from "get-youtube-id";
 import background from "./../assets/image/ideology/image.jpg";
 import { idiology } from "./../assets/data/idiologydata/index"
 import "./../assets/css/style.css";
@@ -86,6 +86,14 @@ const Description = () => {
     }
   };
 
+   const dash = (color) => {
+    return (
+      <div
+        className={`w-[30px] h-[4px]  -rotate-12  ${color} m-auto mt-4 mb-4`}
+      ></div>
+    );
+  };
+
   const Scrollable = styled.div`
    height : 500px;
   padding: 60px 0 0 0;
@@ -157,7 +165,7 @@ const Description = () => {
                 backgroundRepeat: "no-repeat",
                 
               }}>
-                <div className="absolute hidden md:flex md:left-[68%] z-10 w-[600px] top-10  rounded bg-slate-100 shadow-lg">
+                <div className="absolute hidden md:flex md:left-[68%] z-10 w-[600px] top-10  rounded bg-slate-100 ">
                   <div className="mx-10">
                       <div className="w-full border-b-2 pb-2 ">
                         <div className="">
@@ -181,10 +189,27 @@ const Description = () => {
           </div>
         </div>
       </div>
-
-
-
       </div>
+      {
+        data.youtube != "" ?  <div className="w-full h-[500px] ">
+              {/* <p  data-aos="fade-up" className="text-lg text-center text-black "> The Importance of the Man, Reverend and Martyr Gudina Tumsa </p>
+               {dash("bg-black")}
+                    <p className="mb-[4 0px]"></p> */}
+          <iframe
+                                  width="100%"
+                                  height="100%"
+                                  src={`https://www.youtube.com/embed/${getYouTubeID(
+                                    data.youtube
+                                  )}`}
+                                  frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                  title="Embedded youtube"
+                                />
+
+      </div> : ("")
+      }
+     
 
       <div
         className="w-full h-[60%]  pb-10"
@@ -210,6 +235,7 @@ const Description = () => {
                           paragrah: _data[handleClick(-1, data.title)].paragraph,
                           image : _data[handleClick(-1, data.title)].image,
                           sideText: "OTHER TOPICS",
+                          youtube : _data[handleClick(-1, data.title)].youtube,
                           sideArray: [
                                   "Cost of Discipleship",
                                   "GT on Politics/Economics",
@@ -255,7 +281,8 @@ const Description = () => {
                           backToLink :  data.backToLink, 
                           quote: _data[handleClick(1, data.title)].quote,
                           paragrah: _data[handleClick(1, data.title)].paragraph,
-                          image : _data[handleClick(-1, data.title)].image,
+                          image: _data[handleClick(-1, data.title)].image,
+                           youtube : _data[handleClick(1, data.title)].youtube,
                           sideText: "OTHER TOPICS",
                           sideArray: [
                                   "Cost of Discipleship",

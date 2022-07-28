@@ -106,6 +106,7 @@ const RelationToOthers = () => {
                           image: relationData[position].image,
                           paragrah: relationData[position].paragraph,
                           sideText: "OTHER PEOPLE",
+                          youtube : relationData[position].youtube,
                           sideArray: [
                             "Prime minster Dr Abiy",
                             "Dietrich Bonhoeffer",
