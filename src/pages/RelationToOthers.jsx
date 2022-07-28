@@ -3,9 +3,9 @@ import { relationData } from "./../assets/data/relationdata/index";
 
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
-import martin from "./../assets/image/martin.png";
-import bonhoeffer1 from "./../assets/image/bonhoeffer1.png";
-import abiy2 from "./../assets/image/drabiy2.jpg";
+import martin from "./../assets/image/other/martin.png";
+import bonhoeffer1 from "./../assets/image/other/bonhoeffer1.png";
+import abiy2 from "./../assets/image/other/drabiy2.jpg";
 import Dash from "./../components/Carousel/Dash";
 import "./../assets/css/style.css";
                                           

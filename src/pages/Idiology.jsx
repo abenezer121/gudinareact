@@ -75,11 +75,11 @@ const Idiology = () => {
       ) : (
           <div className="w-full h-full">
             <div className="flex flex-col">
-              <div className="w-full h-screen flex flex-col items-center bg-[#750085] ">
+            <div className="w-full h-full flex flex-col items-center bg-[#750085] pt-[10%] ">
             <div className="my-auto w-[60%]" >
               <div className=" mx-auto my-10   relative">
                 <p  data-aos="fade-up"
-                  className="text-lg text-center text-black"
+                  className="text-lg text-center text-white"
                   style={{
                     transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                   }}
@@ -88,7 +88,7 @@ const Idiology = () => {
                 </p>
                 {dash("bg-white")}
                 <h3   data-aos="fade-up"
-                  className="text-6xl font-bold py-6 text-center text-black "
+                  className="text-4xl md:text-6xl font-bold py-6 text-center text-white "
                   style={{
                    fontFamily: "Odibee Sans" 
                   }}
@@ -96,7 +96,7 @@ const Idiology = () => {
                   “A man of strong character, physically, mentally and
                 </h3>
                 <h3   data-aos="fade-up"
-                  className="text-6xl font-bold py-6 text-center text-black "
+                  className="text-4xl md:text-6xl font-bold py-6 text-center text-white "
                   style={{
                    fontFamily: "Odibee Sans" 
                   }}
@@ -104,7 +104,7 @@ const Idiology = () => {
                   {" "}
                   spiritually.” - H.E Emmanuel Abraham
                 </h3>
-                <h2   data-aos="fade-up" className="text-base  text-black  text-center mt-4">
+                <h2   data-aos="fade-up" className="text-base  text-slate-400  text-center mt-4">
                   <ReadMore>
                       Gudina Tumsa was an Ethiopian, evangelist and Church leader who lived from 1929-1979. Gudina is one of the most famous figures in the history of
                       Protestant Churches in Ethiopia.During his ministry in the Church Gudina was able to accomplish feats that completely changed the landscape of the 
@@ -116,13 +116,12 @@ const Idiology = () => {
               </div>
             </div>
           </div>
-         
                   
-          <div className="w-full flex flex-col items-center bg-[#750085] pb-20 ">
+          <div className="w-full flex flex-col items-center bg-[#750085] pb-20  ">
             <div className="my-auto w-[80%] h-full mx-auto text-center relative bg-[#750085] ">
               <div className=" text-center my-10   relative">
                 <p
-                  className="text-lg text-center uppercase text-xm text-white font-bold"
+                  className="text-lg text-center uppercase text-xm text-white font-bold mt-[100px] mb-[150px] md:mt-[1px]"
                   style={{
                     transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                   }}
@@ -139,8 +138,8 @@ const Idiology = () => {
                       <Link to="/description" state={{
                         data: JSON.stringify({
                           title: item.title,
-                          backToText: "Back To Idiology",
-                          backToLink : "/idiology", 
+                          backToText: "Back To Ideology",
+                          backToLink : "/ideology", 
                           quote: item.quote,
                           paragrah: item.paragraph,
                           sideText: "OTHER TOPICS",

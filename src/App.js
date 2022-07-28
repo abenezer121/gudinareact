@@ -4,14 +4,12 @@ import React , { useEffect } from 'react';
 import AnimatedCursor from "react-animated-cursor"
 import NavBar from './components/NavBar/NavBar';
 import Idiology from './pages/Idiology';
-
 import Archive from './pages/Archive';
 import DetailThesis from './pages/DetailThesis';
 import { AnimatePresence , motion } from 'framer-motion';
 import { BrowserRouter as Router, Route, Routes  ,Link , useLocation} from 'react-router-dom' 
 import Gallery from './pages/Gallery';
 import Papers from './pages/Papers';
-import Footer from './components/Footer/Footer';
 import Aos from 'aos'
 import RelationToOthers from './pages/RelationToOthers';
 import Page2 from './pages/Page2';

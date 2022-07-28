@@ -16,6 +16,7 @@ import FlexImage from "../components/Flex/FlexImage";
 import ministry from "../assets/image/HomePagePictures/ministry.jpg";
 import funeral from "../assets/image/HomePagePictures/funeral.png";
 import gudinatumsa1 from "../assets/image/HomePagePictures/gudinatumsa1.png";
+import homepagecover from "../assets/image/other/qw.png";
 
 const ReadMore = ({ children }) => {
   const text = children;
@@ -127,7 +128,7 @@ const Home = () => {
                 </p>
                 {dash("bg-white")}
                 <h3   data-aos="fade-up"
-                  className="text-6xl font-bold py-6 text-center text-white "
+                  className="text-4xl md:text-6xl font-bold py-6 text-center text-white "
                   style={{
                    fontFamily: "Odibee Sans" 
                   }}
@@ -135,7 +136,7 @@ const Home = () => {
                   “A man of strong character, physically, mentally and
                 </h3>
                 <h3   data-aos="fade-up"
-                  className="text-6xl font-bold py-6 text-center text-white "
+                  className="text-4xl md:text-6xl font-bold py-6 text-center text-white "
                   style={{
                    fontFamily: "Odibee Sans" 
                   }}
@@ -214,7 +215,7 @@ const Home = () => {
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                   <img
                     src={gudinatumsa1}
-                    className="mx-auto w-[70%] h-[400px] "
+                    className="w-[100%] md:w-[70%] h-[400px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
@@ -265,7 +266,7 @@ const Home = () => {
                   </div>
                   <img
                     src={ministry}
-                    className="w-[90%] h-[400px] "
+                    className="w-[100%] md:w-[70%]  h-[400px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
@@ -274,21 +275,22 @@ const Home = () => {
                 </div>
               </div>
             </div>
-  <div className=" w-full  flex  relative m-auto text-black bg-white ">
+  <div className=" w-full hidden md:flex  relative m-auto text-black bg-white  ">
               <div className=" my-10 w-[100%] md:w-[100%]   relative">
                  
-                    <FlexImage/>
+                      {/* <FlexImage /> */}
+                      <img src={homepagecover}/>
 
                   </div>
                   
                   
                 </div>
             <div className=" w-full  flex text-black bg-white relative m-auto ">
-              <div className="mx-auto my-10 w-[60%]   relative">
+              <div className="mx-auto my-10 w-[100%] md:w-[60%]   relative">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                   <img
                     src={funeral}
-                    className="w-[90%] h-[600px] "
+                    className="w-[100%] md:w-[70%]  h-[600px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
@@ -326,13 +328,13 @@ const Home = () => {
 
                     <h2 className="text-left mt-20"   data-aos="fade-up">
                       <ReadMore>
-                       The theme of Gudina Tumsa’s life can be described as persecution due to his faith. Gudina’s life can be compared to that of the early Chrisitans, the Bible verse that can describe his journey of faith is found in Romans 8:26, “For your sake we face death all day long; we are considered as sheep to be slaughtered.” Gudina began facing persecution the moment he accepted Christ into his life. Living in a non-christian environment his new found faith was not welcomed by his family. The first instance of persecution in his life came when he had to run away from his home– around the age of 10– to save himself. The second instance of Gudina facing persecution, is found in the part of his life where his own Church that he was pastoring turned against him, and removed him from pastorship. In that same time span someone was sent to assassinate Gudina for unknown reasons (most likely because of the disagreement he had with a wealthier member of the congregation). He faced persecution in the form of racism, during his time in the US and his notable visit to South Africa in the early 1970’s; where he refused to submit to the laws of apparthied. Gudina’s faith began and ended with persecution,  for the sake of the Gospel that he protected, was faithful to and loved. He was arrested multiple times, spied on in his day to day life and most of all in the end he walked silently like a lamb and was slaughtered giving his life to Christ and concluding his time of persecution faithfully.
+                          The theme of Gudina Tumsa’s life can be described as persecution due to his faith. Gudina’s life can be compared to that of the early Chrisitans, the Bible verse that can describe his journey of faith is found in Romans 8:26, “For your sake we face death all day long; we are considered as sheep to be slaughtered.” Gudina began facing persecution the moment he accepted Christ into his life. Living in a non-christian environment his new found faith was not welcomed by his family. The first instance of persecution in his life came when he had to run away from his home– around the age of 10– to save himself. The second instance of Gudina facing persecution, is found in the part of his life where his own Church that he was pastoring turned against him, and removed him from pastorship. In that same time span someone was sent to assassinate Gudina for unknown reasons (most likely because of the disagreement he had with a wealthier member of the congregation). He faced persecution in the form of racism, during his time in the US and his notable visit to South Africa in the early 1970’s; where he refused to submit to the laws of apparthied. Gudina’s faith began and ended with persecution,  for the sake of the Gospel that he protected, was faithful to and loved. He was arrested multiple times, spied on in his day to day life and most of all in the end he walked silently like a lamb and was slaughtered giving his life to Christ and concluding his time of persecution faithfully.
                       </ReadMore>
                     </h2>
                     </div>
                     <img
                     src={gudinatumsa1}
-                    className="mx-auto w-[70%] h-[400px] "
+                    className="mx-auto w-[100%] md:w-[70%]  h-[400px] "
                     alt="nature"
                     style={{
                       transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,

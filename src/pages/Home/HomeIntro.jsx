@@ -1,6 +1,6 @@
 import React , {useState , useEffect} from 'react'
 import { ArrowDownIcon, ArrowRightIcon } from "@heroicons/react/outline";
-import gudinatumsa4 from "../../assets/image/gudinatumsa4.png";
+import gudinatumsa4 from "../../assets/image/other/gudinatumsa4.png";
 
 const HomeIntro = () => { 
     const [offsetX, setOffsetX] = useState(0);
@@ -45,7 +45,7 @@ const HomeIntro = () => {
                         className="text-8xl font-bold italic text-center text-white  "
                         style={{ fontFamily: "Odibee Sans" }}
                       >
-                        Gudina Tumsa
+                        Welcome to Gudina Tumsa
                       </h3>
                         <h2
                           data-aos="fade-up"

@@ -1,15 +1,11 @@
 import React , {useState , useEffect} from 'react';
 import styled from "styled-components";
-import { SearchIcon , MenuIcon, XIcon , ArrowsExpandIcon } from "@heroicons/react/outline";
 import { useSelector, useDispatch } from 'react-redux'
-
-import logo from "./../../assets/image/logo.png"
+import logo from "./../../assets/image/other/logo.png"
 import { Link } from 'react-router-dom';
-import {Button , Modal} from "antd"
-import ModalContact from "../ModalContact/ModalContact"
 import NavDrawer from '../Drawer/NavDrawer';
 import {home , _idiology , relationtoothers , papers , archive , gallery} from "./../../redux/actions/navigation"
-import Archive from '../../pages/Archive';
+
 const Nav = styled.nav`
   padding: 0 20px;
   min-height: 9vh;

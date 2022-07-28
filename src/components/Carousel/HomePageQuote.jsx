@@ -23,9 +23,9 @@ const HomePageQuote = (props) => {
     return (
         <>
             <div className="w-[80%]  mb-20 flex items-center   mx-auto homepagequoteimage relative"   data-aos="fade-up">
-                  <div className=" w-full  my-auto" >
+                  <div className="  w-[70%]  my-auto mx-auto" >
                       <h3    
-                          className="text-4xl font-bold  text-center text-white "
+                          className="text-2xl font-bold  text-center text-white py-[20px]  "
                           
                     >
                             {props.quotes[position]}
@@ -33,7 +33,8 @@ const HomePageQuote = (props) => {
                       
                 </div>
                 
-                 <div className='  absolute  bottom-0 right-0 mb-5  mr-10'>
+                <div className='  absolute  bottom-0 right-0 mb-5  mr-10'>
+                
                     <div className='flex space-x-2'>
                         {
                             props.quotes.map((item, index) => { 
@@ -42,12 +43,9 @@ const HomePageQuote = (props) => {
                         }}><Dash color={position == index ? 'bg-white' : 'bg-slate-500'} /></div>  
                             })
                         }
-                     
+
+                        </div>
                       
-                        
-                        
-                   
-                </div>
             </div>
                
             </div>

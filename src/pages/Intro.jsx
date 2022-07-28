@@ -1,6 +1,6 @@
 import React , {useState , useEffect} from 'react'
 import { useSelector , useDispatch} from 'react-redux'
-import loadgif from "./../assets/load.gif";
+import loadgif from "./../assets/image/other/load.gif";
 import { AnimatePresence, motion } from 'framer-motion';
 import {home} from "./../redux/actions/navigation.js"
 const Intro = () => { 

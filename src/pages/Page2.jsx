@@ -1,6 +1,6 @@
 import React , {useState , useEffect} from 'react';
 import styled from "styled-components";
-import logo from "../assets/image/logo.png";
+import "./../assets/css/navbar.css"
 
 
 
@@ -20,8 +20,21 @@ const Page2 = () => {
 
   return (
     <div className='w-full h-screen  bg-red-200'>
-      <div className='pt-[430px] pl-[100px]'>
-      </div>
+      
+<section>
+  <h2>Underline Fill</h2>
+  <div class="navtest fill">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Downloads</a></li>
+      <li><a href="#">More</a></li>
+      <li><a href="#">Nice staff</a></li>
+    </ul>
+  </div>
+</section>
+
+
     </div>
   );
 };

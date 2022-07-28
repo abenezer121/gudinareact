@@ -1,10 +1,10 @@
-import book1 from "./../../image/book1.jpg";
+import book1 from "./../../image/other/book1.jpg";
 
-import book2 from "./../../image/book2.jpg";
-import book3 from "./../../image/book3.jpg";
-import book4 from "./../../image/book4.jpg";
-import book5 from "./../../image/book5.jpg";
-import bookdata1 from "./../../exact.pdf";
+import book2 from "./../../image/other/book2.jpg";
+import book3 from "./../../image/other/book3.jpg";
+import book4 from "./../../image/other/book4.jpg";
+import book5 from "./../../image/other/book5.jpg";
+import bookdata1 from "./../../book/exact.pdf";
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
 
 

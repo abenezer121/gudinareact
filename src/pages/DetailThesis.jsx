@@ -1,13 +1,13 @@
 import { React, useState, useEffect, useRef } from "react";
 
 
-import gudinatumsa4 from "../assets/image/gudinatumsa4.png";
-import bookcover1 from "../assets/image/bookcover1.jpg";
-import bookcover2 from "../assets/image/bookcover2.jpg";
-import bookcover3 from "../assets/image/bookcover3.jpg";
-import bookcover4 from "../assets/image/bookcover4.jpg";
-import bookcover5 from "../assets/image/bookcover5.jpg";
-import bookcover6 from "../assets/image/bookcover6.jpg";
+import gudinatumsa4 from "../assets/image/other/gudinatumsa4.png";
+import bookcover1 from "../assets/image/other/bookcover1.jpg";
+import bookcover2 from "../assets/image/other/bookcover2.jpg";
+import bookcover3 from "../assets/image/other/bookcover3.jpg";
+import bookcover4 from "../assets/image/other/bookcover4.jpg";
+import bookcover5 from "../assets/image/other/bookcover5.jpg";
+import bookcover6 from "../assets/image/other/bookcover6.jpg";
 import years from "./../assets/data/year.json";
 import {ArrowDownIcon,DownloadIcon} from "@heroicons/react/outline";
 

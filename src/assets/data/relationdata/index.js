@@ -1,7 +1,7 @@
 
-import abiy from "./../../image/drabiy2.jpg"
-import martin from "./../../image/martin.jpg"
-import bonhoeffer1 from "./../../image/bonhoeffer1.jpg"
+import abiy from "./../../image/other/drabiy2.jpg"
+import martin from "./../../image/other/martin.jpg"
+import bonhoeffer1 from "./../../image/other/bonhoeffer1.jpg"
 import Bonhoeffer from "./../../book/relation/Bonhoeffer.pdf" 
 export let relationData = [
 

@@ -15,7 +15,7 @@ import styled from "styled-components";
 import { SearchIcon , MenuIcon, XIcon , ArrowsExpandIcon } from "@heroicons/react/outline";
 import { useSelector, useDispatch } from 'react-redux'
 
-import logo from "./../../assets/image/logo.png"
+import logo from "./../../assets/image/other/logo.png"
 import { Link } from 'react-router-dom';
 import {Button , Modal} from "antd"
 import ModalContact from '../ModalContact/ModalContact';
@@ -72,27 +72,23 @@ const NavDrawer = (props) => {
                         top: `${position.y}px`
                     }}/>
                             <div className='flex flex-col w-full'>
-                            <div className='text-center  mt-60  w-full'>
+                            <div className='text-center  my-[10%]  w-full '>
                                     
-                                        <Link to='/'><p className=' text-black text-center text-4xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(home());  }}  > <span className='hover:border-b-2'>Home</span></p></Link>
-                                        <Link to='/idiology'> <p className=' text-black text-center text-4xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(_idiology());  }}><span className='hover:border-b-2 hover:border-green-200'> His Ideology</span> </p></Link>
-                                        <Link to='/relationtoothers'><p className=' text-black text-center text-4xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(relationtoothers());  }}  > <span className='hover:border-b-2'>In Relation to other</span></p></Link>
-                                        <Link to='/papers'><p className=' text-black text-center text-4xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(papers());  }} > <span className='hover:border-b-2'>Papers</span></p></Link>
-                                        <Link to='/archive'><p className=' text-black text-center text-4xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(archive()); }}  > <span className='hover:border-b-2'>Archive</span></p></Link>
-                                        <Link to='/gallery'><p className=' text-black text-center text-4xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(gallery());  }}><span className='hover:border-b-2'>Gallery</span></p></Link>
-                                        <p className=' text-black text-center text-4xl font-bold  text-sm ' onClick={() => setContactVisible(true)}><span className='hover:border-b-2'>Contact Us</span></p>
+                                        <Link to='/'><h1 className='text-black text-center text-6xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(home());  }}  > <span className=''>Home</span></h1></Link>
+                                        <Link to='/idiology'> <h1 className='text-black text-center text-6xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(_idiology());  }}><span className=''> His Ideology</span> </h1></Link>
+                                        <Link to='/relationtoothers'><h1 className=' text-black text-center text-6xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(relationtoothers());  }}  > <span className=''>In Relation to other</span></h1></Link>
+                                        <Link to='/papers'><h1 className=' text-black text-center text-6xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(papers());  }} > <span className=''>Papers</span></h1></Link>
+                                        <Link to='/archive'><h1 className=' text-black text-center text-6xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(archive()); }}  > <span className=''>Archive</span></h1></Link>
+                                        <Link to='/gallery'><h1 className=' text-black text-center text-6xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(gallery());  }}><span className=''>Gallery</span></h1></Link>
+                                        <h1 className=' text-black text-center text-6xl font-bold  text-sm ' onClick={() => setContactVisible(true)}><span className=''>Contact Us</span></h1>
                         
                                     </div>
-                        
-                            
-                            
-                        
                             </div>
                         </div>
                         </div>
-                    
+
                 </Drawer>
-        </>
+        </> 
      
     )
 }

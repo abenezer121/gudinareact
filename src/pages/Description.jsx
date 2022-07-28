@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/outline";
-import logo from "./../assets/image/logo.png";
+import logo from "./../assets/image/other/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import importAll from "./../helper/importAll";
-import HomePageQuote from "../components/Carousel/HomePageQuote";
+
 import background from "./../assets/image/ideology/image.jpg";
 import { idiology } from "./../assets/data/idiologydata/index"
 import "./../assets/css/style.css";
+import bookgif from "./../assets/image/other/bbbook.gif"
 
                                           
 import { relationData } from './../assets/data/relationdata/index'
@@ -110,25 +111,30 @@ const Description = () => {
         </Link>
       </div>
       <div className="w-full">
-        <div className="w-[90%] md:w-[70%] mx-auto">
+        <div className="w-[90%] md:w-[80%] mx-auto">
           <div className=" grid grid-cols-1 md:grid-cols-2">
-            <div className="hidden md:block  w-[30%]">
-              <p className="text-sm font-medium uppercase">{data.sideText}</p>
-              <div className="flex flex-col space-y-3">
-                {data.pdf.map((item, index) => {
-                  return (
-                    <a
-                      href={item.pdf}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-black hover:text-blue-200"
-                    >
-                      {item.name}
-                    </a>
-                  );
-                })}
+            <div className="hidden md:block  w-[50%]">
+              <p className="text-sm font-medium uppercase border-b-2 pb-3">{data.sideText}</p>
+              <div className="flex w-full">
+                <img src={bookgif} className="w-[250px] h-[150px] mr-5"/>
+                <div className="flex flex-col space-y-3">
+                    {data.pdf.map((item, index) => {
+                      return (
+                        <a
+                          href={item.pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-black hover:text-blue-200"
+                        >
+                          {item.name}
+                        </a>
+                      );
+                    })}
               </div>
+              </div>
+         
             </div>
+            
             <div className="w-[100%]">
               <h1 className="text-4xl font-medium">{data.title}</h1>
               <ReadMore paragraph={data.paragrah}></ReadMore>
