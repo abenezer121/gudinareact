@@ -194,7 +194,7 @@ export let idiology = [
         ],
         pdf: [],
         image: youth,
-         youtube : "https://www.youtube.com/watch?v=u3rA3be_gNk"
+         youtube : ""
     },
     {
         title: 'Holistic Theology',
