@@ -55,7 +55,7 @@ export let idiology = [
            
         ],
         image: responsibilityofachristiantosociety,
-        youtube : ""
+        youtube : "https://www.youtube.com/watch?v=u3rA3be_gNk"
     },
     {
             title: 'Responsibility of the Church to society  ',
@@ -83,7 +83,7 @@ export let idiology = [
                 "pdf" : TheRoleofaChristianinaGivenSociety}
         ],
         image: responsibilityofthechurchtosociety,
-         youtube : ""
+         youtube : "https://www.youtube.com/watch?v=dZq3Ow7PPcA"
     },
     {
         title: 'Ecumenical Harmony  ',
@@ -113,7 +113,7 @@ export let idiology = [
 
         ],
         image: ecumenticalharmony,
-         youtube : ""
+         youtube : "https://www.youtube.com/watch?v=Q2GVSyewiuc"
     },  
     {
         title: 'Unbelief from Historical Perspective (Kairos)',
@@ -150,7 +150,7 @@ export let idiology = [
             }
         ],
         image: unbeliefromhistoricalperspective,
-         youtube : ""
+         youtube : "https://www.youtube.com/watch?v=aeMocbe5rso"
     }, 
     {
                 title: 'African Theology/ Contextualization',
@@ -194,7 +194,7 @@ export let idiology = [
         ],
         pdf: [],
         image: youth,
-         youtube : ""
+         youtube : "https://www.youtube.com/watch?v=-TWNgc1Kvms"
     },
     {
         title: 'Holistic Theology',
