@@ -76,7 +76,7 @@ const Navbar = () => {
  
           
                
-                <div id="menu_button">
+                <div id="menu_button" onClick={() => setContactVisible(true)}>
                   <input type="checkbox" id="menu_checkbox"/>
                   <label for="menu_checkbox" id="menu_label">
                     <div id="menu_text_bar"></div>

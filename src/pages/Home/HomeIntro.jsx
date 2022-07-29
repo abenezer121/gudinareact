@@ -49,8 +49,8 @@ const HomeIntro = () => {
                       </h3>
                         <h2
                           data-aos="fade-up"
-                        className="text-6xl  text-slate-300 cursive  text-center mt-[-25px] ml-[200px] "
-                        style={{ fontFamily: "Oooh Baby" }}
+                        className="text-7xl  text-slate-300 cursive  text-center mt-[-25px] ml-[200px] font-black "
+                        style={{ fontFamily: "Antro" }}
                       >
                         {" "}
                         Legacy
