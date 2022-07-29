@@ -94,25 +94,21 @@ const Description = () => {
     );
   };
 
-  const Scrollable = styled.div`
-   height : 500px;
-  padding: 60px 0 0 0;
-  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1657299156185-6f5de6da0996?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60") fixed center center;
-  background-size: cover;
-`;
+
   return (
     <div className="w-full h-full mt-10">
       <div className="flex f-full justify-between items-center w-full py-10">
-        <img
+        {/* <img
           src={logo}
           className="ml-10 text-black"
           style={{ width: "50px", height: "50px" }}
-        />
+        /> */}
+        <p></p>
         <Link to={data.backToLink}>
           
-            <p className="uppercase mr-10 text-center align-center mt-3 font-medium text-black hover:text-blue-200 flex">
+            <p className="uppercase mr-10 text-center align-center    md:ml-[1%] mt-[30%] font-medium text-black hover:text-blue-200 flex">
               {data.backToText}{" "}
-            <ArrowLeftIcon className="ml-10 mr-20 w-5 h-5 font-medium  hover:text-blue-200" />
+            <ArrowLeftIcon className="ml-2 md:ml-10 mr-10 md:mr-20 w-5 h-5 font-medium  hover:text-blue-200" />
             </p>
             
         

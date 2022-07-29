@@ -12,18 +12,48 @@ import {home , idiology , relationtoothers , papers , archive , gallery} from ".
 const Gallery = () => {
 
 
+ 
+ 
   const dispatch = useDispatch()
+  const [filter , setFilter] = useState("All")
   useEffect(() => { 
     window.scrollTo(0, 0);
     dispatch(gallery())
   }, []);
-    const images = importAll(
-    require.context("../assets/image/GTphotoAlbum/", false, /\.(png|jpe?g|svg)$/)
-    );
-    
-    var res = []
-    for(var i in images)
-      res.push(images[i]);
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+  }
+  return array;
+  }
+  
+
+
+  const getMeImage = () => {
+      const Childhood = importAll(require.context("../assets/image/Gallery/Childhood", false, /\.(png|jpe?g|svg)$/));
+      const EarlyLife = importAll(require.context("../assets/image/Gallery/EarlyLife", false, /\.(png|jpe?g|svg)$/));
+      const EECMY = importAll(require.context("../assets/image/Gallery/EECMY", false, /\.(png|jpe?g|svg)$/));
+      const Evangelist = importAll(require.context("../assets/image/Gallery/Evangelist", false, /\.(png|jpe?g|svg)$/));
+      const GTFamily = importAll(require.context("../assets/image/Gallery/GTFamily", false, /\.(png|jpe?g|svg)$/));
+      const quote = importAll(require.context("../assets/image/Gallery/quote", false, /\.(png|jpe?g|svg)$/));
+      
+      var res = []
+      for (var image in Childhood) res.push( { category:"Childhood" , image:Childhood[image]  });
+      for (var image in EarlyLife) res.push( { category:"Early Life" , image:EarlyLife[image]  });
+      for (var image in EECMY) res.push( { category:"EECMY" , image:EECMY[image] } );
+      for (var image in Evangelist) res.push( { category:"Evangelist" , image:Evangelist[image]} );
+      for (var image in GTFamily) res.push({ category:"Family" , image:GTFamily[image]});
+      for (var image in quote) res.push({ category:"Quote" , image:quote[image]});
+      return shuffleArray(res)
+      
+  }
+
+  var res = getMeImage()
+  
   
   const returnData = (one, two, three, four, five, six , putdata) => {  
     return (
@@ -68,15 +98,29 @@ const Gallery = () => {
         
     );
   }
+  let filteredRes = []
+  for (let i = 0; i < res.length; i++) { 
+    try {
+         if (res[i].category == filter || filter == "All")  { 
+      filteredRes.push(res[i])
+    }
+    }catch(err){}
+ 
+  }
   const data = []
   let added = false
-  for (let i = 0; i < res.length; i += 6) { 
-    if (i == 36 && added == false) {
-      data.push(returnData(res[i], res[i+1], res[i+2], res[i+3], res[i+4], res[i+5] , true))
+  for (let i = 0; i < filteredRes.length; i += 6) { 
+    try {
+      if (i == 36 && added == false) {
+      data.push(returnData(filteredRes[i].image, filteredRes[i+1].image, filteredRes[i+2].image, filteredRes[i+3].image, filteredRes[i+4].image, filteredRes[i+5].image , true))
       added = true;
     } else {
-        data.push(returnData(res[i], res[i + 1], res[i + 2], res[i + 3], res[i + 4], res[i + 5] , false))
+        data.push(returnData(filteredRes[i].image, filteredRes[i + 1].image, filteredRes[i + 2].image, filteredRes[i + 3].image, filteredRes[i + 4].image, filteredRes[i + 5].image , false))
     }
+    } catch (err) {
+   
+    }
+    
     
   }
 
@@ -86,15 +130,27 @@ const Gallery = () => {
   
   return (
     <>
-      <div className="w-[80%] mx-auto">
-                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-gray-300 ">Gallery</h2>
+      <div className="w-[80%] mx-auto mt-[36%] md:mt-[5%]">
+                          <h2 className="mt-[2%] font-bold text-5xl uppercase text-gray-300 ">Gallery</h2>
                    </div>
     <div class="flex">
-    <aside class="h-screen sticky top-[120px] md:ml-20 md:mr-10">
-        <div className='flex flex-col text-xl font-bold  mt-[110px] left-[10%]'>
-                        <p className='-rotate-90'>Family</p>
-                        <p className='-rotate-90 py-[20px]'>Work</p>
-                        <p className='-rotate-90'>All</p>
+    <aside class="h-screen sticky top-[10px] md:ml-20 md:mr-10">
+        <div className='flex flex-col text-xl font-bold  mt-[10px] left-[10%]'>
+                        
+                      
+  
+  
+ 
+   
+            <p className='-rotate-90 py-[40px]' onClick={()=>{setFilter("All");}}>All</p>
+            <p className='-rotate-90 py-[40px]' onClick={()=>{setFilter("Childhood");}}>Childhood</p>
+            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("Early Life");}}>Early Life</p>
+            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("EECMY");}}>EECMY</p>
+            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("Family");}}>Family</p>
+            <p className='-rotate-90 py-[40px]' onClick={()=>{setFilter("Evangelist");}}>Evangelist</p>
+            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("Quote");}}>Quote</p>
+         
+
       </div>
     </aside>
     

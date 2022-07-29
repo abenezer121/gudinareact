@@ -6,16 +6,6 @@ import { Link } from 'react-router-dom';
 import NavDrawer from '../Drawer/NavDrawer';
 import {home , _idiology , relationtoothers , papers , archive , gallery} from "./../../redux/actions/navigation"
 
-const Nav = styled.nav`
-  padding: 0 20px;
-  min-height: 9vh;
-  background: #1c2022;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-`;
-
 
 
 
@@ -72,20 +62,28 @@ const Navbar = () => {
     <>
       {
         navigation.navLocation === 'INTRO' ? ("") : (
-          <Nav className='h-[60px] w-full h-[80px]  z-10 bg-transparent fixed top-0 text-white align-middle'>
-            <Link to='/'>
-                <Logo><img src={logo} className= "w-[35px] h-[35px]" /></Logo>
-            </Link>
-               
-          
-                <NavIcon  onClick={() => setContactVisible(true)} className = "  z-10  ">
+          <div className=' items-center w-full h-[60px]  z-10 bg-transparent fixed top-0 text-white align-middle '>
+            <div className='w-full flex relative'>
+                <Link to='/' className='ml-[15px]'>
+                <Logo>
+                  {/* <img src={logo} className="w-full h-full " /> */}
+                <img src={logo} className="w-[150px] h-[150px] top-0  absolute" />
+                </Logo>
+              </Link>
+              <NavIcon  onClick={() => setContactVisible(true)} className = "mt-[15%] md:mt-[3%] ml-[68%] md:ml-[95%]">
                   <Line open={contactVisible} className = "bg-black"/>
                   <Line open={contactVisible} className = "bg-black" />
                   <Line open={contactVisible}  className = "bg-black"/>
-                </NavIcon>
+              </NavIcon>
+
+            </div>
+           
+               
+          
+              
 
                 <NavDrawer visible={contactVisible} setContact = {()=>{handleContactVisible()}} />
-            </Nav>
+            </div>
           )
       }
       

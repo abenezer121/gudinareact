@@ -45,16 +45,42 @@ const RelationToOthers = () => {
                   
                   <div className="w-full h-screen ">
                       <div className="w-[80%] mx-auto">
-                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-gray-300 ">In Relation With Others</h2>
+                          <h2 className="mt-[50%] md:mt-[4%] font-bold text-5xl uppercase text-gray-300 ">In Relation With Others</h2>
                    </div>
                       
             <div className="w-[80%] h-[70%]  mx-auto flex items-center mt-[3%] justify-between mb-[500px] md:mb-[120px]">
               <div className="flex flex-col w-[100%] md:w-[70%] h-full ">
                 <div className="flex  flex-col md:flex-row w-full h-full  ">
-                  <img
-                    src={images[position]}
-                    className="w-[90%] md:w-[60%] h-[100%] "
-                  />
+                  <div className="h-full w-full relative">
+                      <img
+                        src={images[position]}
+                        className="w-[90%] md:w-[60%] h-[100%] "
+                    />
+                    <div className="w-[90%] md:w-[60%] flex justify-between absolute top-1/2 md:hidden  ">
+                       <button type="button" class="animate-pulse ml-[10px]" data-carousel-prev onClick={function (e) {
+                        
+                        handlePosition(-1);
+                    }}>
+                            <span class="bg-gray-500 inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                      </button>
+                  
+                       <button type="button" class="animate-pulse  mr-[10px]" data-carousel-prev onClick={function (e) {
+                      
+                        handlePosition(1);
+                    }}>
+                            <span class="bg-gray-500 inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-w/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                       
+
+                    </div>
+                  </div>
+                  
 <div className=" w-[70%] mt-3  md:hidden flex items-center">
                   <div
                     onClick={function (e) {
@@ -115,8 +141,7 @@ const RelationToOthers = () => {
                         }),
                       }}
                     >
-                                          <button class="btn btn1"> Read More</button>
-                                          
+                      <button class="btn btn1"> Read More</button>                    
                     </Link>
                   </div>
                 </div>
@@ -156,21 +181,30 @@ const RelationToOthers = () => {
                   </div>
                 </div>
               </div>
+              <div className="h-full relative"  onClick={() => {
+                                      handlePosition(1);
+                                    }}>
+                        <img
+                                    className="grayscale hidden md:flex  h-[100%] "
+                                    width="200"
+                                   
+                                    style={{
+                                      objectFit: "cover",
 
-              <img
-                className="grayscale hidden md:flex  h-[100%] "
-                width="200"
-                onClick={() => {
-                  handlePosition(1);
-                }}
-                style={{
-                  objectFit: "cover",
-
-                  height: "100%",
-                }}
-                src={cutImage[position]}
-                alt="Bear"
-              />
+                                      height: "100%",
+                                    }}
+                                    src={cutImage[position]}
+                                    alt="Bear"
+                />
+                 <button type="button" class="hidden md:flex animate-pulse flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                  <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                      <span class="sr-only">Next</span>
+                  </span>
+              </button>
+                          
+              </div>
+              
                       </div>
                      
                        <Footer />

@@ -1,7 +1,7 @@
 import React , {useState , useEffect} from 'react';
 import styled from "styled-components";
 import "./../assets/css/navbar.css"
-
+import logo from "./../assets/image/other/logo.png"
 
 
 
@@ -20,19 +20,7 @@ const Page2 = () => {
 
   return (
     <div className='w-full h-screen  bg-red-200'>
-      
-<section>
-  <h2>Underline Fill</h2>
-  <div class="navtest fill">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Downloads</a></li>
-      <li><a href="#">More</a></li>
-      <li><a href="#">Nice staff</a></li>
-    </ul>
-  </div>
-</section>
+        <img src={logo} className="w-[150px] h-[150px]" />
 
 
     </div>

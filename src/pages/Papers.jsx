@@ -32,69 +32,18 @@ const Papers = () => {
     window.scrollTo(0, 0);
     dispatch(papers())
     }, []);
-  useEffect(() => {
-    if (fourthVisible) {
-      setText("TimeLine");
-    
-    }
-    if (firstVisible) {
-      setText("INTRODUCTION");
-    } else if (secondVisible) {
-      setText("CHILDHOOD");
-    } else if (thirdVisible) {
-      setText("EARLY LIFE");
-    }
-
-    const handleWindowMouseMove = (event) => {
-      const x = (window.innerWidth - event.screenX * 3) / 90;
-      const y = (window.innerHeight - event.screenY * 3) / 90;
-      // setOffsetX(x);
-      // setoffsetY(y);
-    };
-    window.addEventListener("mousemove", handleWindowMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleWindowMouseMove);
-    };
-  });
+ 
 
   
-  const sort = (e) => { 
-   
-    if (e.type == "Date") {
-        // data = data.sort((a, b) => (new Date(b.date).getTime() || -Infinity) - (new Date(a.date).getTime() || -Infinity));
-        
-      for (let i = 0; i < paperdata.length; i++){
-        for (let j = 0; j < paperdata.length; j++){
-          if (new Date(paperdata[i].uploadDate) > new Date(paperdata[j].uploadDate)){
-            let temp = paperdata[i]
-            paperdata[i] = paperdata[j]
-            paperdata[j] = temp
-          }
-        }
-      }
-    }
-    if (e.type == "Popular") {
-      for (let i = 0; i < paperdata.length; i++){
-        for (let j = 0; j < paperdata.length; j++){
-          if (paperdata[i].popular > paperdata[j].popular){
-            let temp = paperdata[i]
-            paperdata[i] = paperdata[j]
-            paperdata[j] = temp
-          }
-        }
-      } 
-    }
-    setFilter(e.type)
-  }
+
 
 
   const ArchiveCard = (image , title , book , bookname) => {
     return (
           <div className="rounded overflow-hidden shadow-lg w-[90%] mt-5">
-              <img className="w-full" src={image} alt="Sunset in the mountains"/>
+              {/* <img className="w-full" src={image} alt="Sunset in the mountains"/> */}
               <div className="px-6 py-1">
-                  <div className="font-bold text-xl mb-1">{ title}</div>
+                  {/* <div className="font-bold text-xl mb-1">{ title}</div> */}
                   <p className="text-gray-700 text-base"> {bookname}</p>
               </div>
               <div className="flex  justify-between px-6  pb-2">      
@@ -171,7 +120,7 @@ const Papers = () => {
             <div className=" w-[100%] md:w-[80%]  mx-auto">
               <div className="flex">
                 
-                  <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%] ml-[20px] md:ml-[100px]  ">
+                  <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%] ml-[20px] md:ml-[100px]  ">
               {
                 paperdata.map((item, index) => {
                         if (item.bookName.toLowerCase().includes(search) || search == "") {

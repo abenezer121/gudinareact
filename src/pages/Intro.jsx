@@ -37,7 +37,7 @@ const Intro = () => {
             transition={pageTransition}>
             <div className="w-full h-screen bg-black">    
                     <div class="grid place-items-center h-screen text-white">
-                            <img src={loadgif} className="w-[25%] h-[35%]" alt="loading" />
+                            <img src={loadgif} className="md:w-[30%] md:h-[25%] lg:w-[25%] lg:h-[35%]" alt="loading" />
                     </div>
                 </div>
               </motion.div>

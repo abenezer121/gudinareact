@@ -41,7 +41,7 @@ const Archive = () => {
  const ArchiveCard = (image , title , book , bookname) => {
     return (
           <div className="rounded overflow-hidden shadow-lg w-[90%] mt-5">
-              <img className="w-full" src={image} alt="Sunset in the mountains"/>
+              {/* <img className="w-full" src={image} alt="Sunset in the mountains"/> */}
               <div className="px-6 py-1">
                   {/* <div className="font-bold text-xl mb-1">{ title}</div> */}
                   <p className="text-gray-700 text-base"> {bookname}</p>
@@ -104,7 +104,7 @@ const Archive = () => {
             <div className=" w-[100%] md:w-[90%]  mx-auto">
               <div className="flex">
                 
-                  <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%] ml-[20px] md:ml-[100px]  ">
+                  <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%] ml-[20px] md:ml-[100px]  ">
                         {
                           bookdata.map((item, index) => {
                                   if (item.bookName.toLowerCase().includes(search) || search == "") {

@@ -83,7 +83,7 @@ export let idiology = [
                 "pdf" : TheRoleofaChristianinaGivenSociety}
         ],
         image: responsibilityofthechurchtosociety,
-         youtube : "https://www.youtube.com/watch?v=kwVLaBEeLLg"
+         youtube : ""
     },
     {
         title: 'Ecumenical Harmony  ',
@@ -194,7 +194,7 @@ export let idiology = [
         ],
         pdf: [],
         image: youth,
-         youtube : "https://www.youtube.com/watch?v=yqB5_msFaXA"
+         youtube : ""
     },
     {
         title: 'Holistic Theology',
@@ -217,7 +217,7 @@ export let idiology = [
                 "pdf" : AWholisticTheology }
         ],
         image: youth,
-         youtube : "https://www.youtube.com/watch?v=OQ2oOp040f0"
+         youtube : ""
     },  
     {
         title: 'GT on Politics/Economics',

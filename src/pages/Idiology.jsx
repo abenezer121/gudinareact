@@ -77,7 +77,7 @@ const Idiology = () => {
             <div className="flex flex-col">
             <div className="w-full h-full flex flex-col items-center bg-[#750085] pt-[10%] ">
             <div className="my-auto w-[60%]" >
-              <div className=" mx-auto my-10   relative">
+              <div className=" mx-auto my-[130px]   relative">
                 <p  data-aos="fade-up"
                   className="text-lg text-center text-white"
                   style={{
@@ -93,9 +93,9 @@ const Idiology = () => {
                    fontFamily: "Odibee Sans" 
                   }}
                 >
-                  “A man of strong character, physically, mentally and
+                  His Ideology and Theology
                 </h3>
-                <h3   data-aos="fade-up"
+                {/* <h3   data-aos="fade-up"
                   className="text-4xl md:text-6xl font-bold py-6 text-center text-white "
                   style={{
                    fontFamily: "Odibee Sans" 
@@ -103,14 +103,13 @@ const Idiology = () => {
                 >
                   {" "}
                   spiritually.” - H.E Emmanuel Abraham
-                </h3>
+                </h3> */}
                 <h2   data-aos="fade-up" className="text-base  text-slate-400  text-center mt-4">
                   <ReadMore>
-                      Gudina Tumsa was an Ethiopian, evangelist and Church leader who lived from 1929-1979. Gudina is one of the most famous figures in the history of
-                      Protestant Churches in Ethiopia.During his ministry in the Church Gudina was able to accomplish feats that completely changed the landscape of the 
-                      Ethiopian Church.Not only that but, he was able to speak on African and Western Churches as well as the political and economic situation of the world.
-                      His influence did not remain just in his lifetime, but still influences this generation and future generations as well.If you have opened this website 
-                      then you may ask why should I be interested in Gudina Tumsa?Well, Gudina’s historical life story offers topics of interest such as truth, faith, love, and persecution. 
+                        This section was inspired by the writing of Gudina Tumsa from his compiled writings—Witness and Discipleship. The section is meant to analyze Gudina’s
+                        thought pattern, make it contextual to the present day and use his deep insight to minister to the future. Gudina’s thought is based on his theology but
+                        his theology ministers in a holistic way to the world and with the issues that mankind faces today. We hope that those who read can find new insight and
+                        solutions to build a modern and integral society
                   </ReadMore>
                 </h2>
               </div>
