@@ -90,17 +90,12 @@ const Archive = () => {
                 />
               </div>
 
-              {/* <div className="ml-[10px] mt-[10px] md:mt-[10px] ">
-                  <DropDown className="" text={"Sort By Author"} authors={ Authors} />
-              </div> */}
+              {/* <div className="  w-[90%] md:w-[81%]   mx-auto md:ml-[10%]md:hidden md:ml-[10px] mt-[10px] md:mt-[10px] ">
+                  <DropDown className="" text={"Filter"} authors={ category} />
+              </div>  */}
             </div>
-      </div>
-            
-         
-          
-      
-
-          <div className="w-full h-full flex flex-col mt-[20px] pb-10 ">
+    </div>
+      <div className="w-full h-full flex flex-col mt-[20px] pb-10 ">
             <div className=" w-[100%] md:w-[90%]  mx-auto">
               <div className="flex">
                 

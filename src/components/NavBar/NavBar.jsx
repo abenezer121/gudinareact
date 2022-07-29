@@ -5,7 +5,7 @@ import logo from "./../../assets/image/other/logo.png"
 import { Link } from 'react-router-dom';
 import NavDrawer from '../Drawer/NavDrawer';
 import {home , _idiology , relationtoothers , papers , archive , gallery} from "./../../redux/actions/navigation"
-
+import { MenuIcon } from '@heroicons/react/outline';
 
 
 
@@ -67,14 +67,19 @@ const Navbar = () => {
                 <Link to='/' className='ml-[15px]'>
                 <Logo>
                   {/* <img src={logo} className="w-full h-full " /> */}
-                <img src={logo} className="w-[150px] h-[150px] top-0  absolute" />
+                <img src={logo} className="w-[150px] h-[150px]  top-0  absolute" />
                 </Logo>
               </Link>
-              <NavIcon  onClick={() => setContactVisible(true)} className = "mt-[15%] md:mt-[3%] ml-[68%] md:ml-[95%]">
+              <div className='top-10  absolute right-20 '>
+                <MenuIcon className='w-10 h-10 text-black ' onClick={() => setContactVisible(true)}></MenuIcon>
+                {/* <NavIcon  onClick={() => setContactVisible(true)} className = "w-[150px] h-[150px] ">
                   <Line open={contactVisible} className = "bg-black"/>
                   <Line open={contactVisible} className = "bg-black" />
                   <Line open={contactVisible}  className = "bg-black"/>
-              </NavIcon>
+              </NavIcon> */}
+
+              </div>
+              
 
             </div>
            
