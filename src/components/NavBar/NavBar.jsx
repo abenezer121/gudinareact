@@ -86,12 +86,7 @@ const Navbar = () => {
                           
 
 
-                {/* <MenuIcon className='w-10 h-10 text-black ' onClick={() => setContactVisible(true)}></MenuIcon> */}
-                {/* <NavIcon  onClick={() => setContactVisible(true)} className = "w-[150px] h-[150px] ">
-                  <Line open={contactVisible} className = "bg-black"/>
-                  <Line open={contactVisible} className = "bg-black" />
-                  <Line open={contactVisible}  className = "bg-black"/>
-              </NavIcon> */}
+              
 
               </div>
               
