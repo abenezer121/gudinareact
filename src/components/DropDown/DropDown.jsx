@@ -23,7 +23,8 @@ const DropDownComp = (props) => {
     />
     
     
-);
+    );
+    
     return (
         <Dropdown overlay={menu} className='w-[200px] md:w-[250px] h-[40px] bg-white '>
             <div className='w-full flex justify-between shadow-sm items-center rounded-lg '>

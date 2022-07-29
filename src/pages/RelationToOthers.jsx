@@ -48,13 +48,13 @@ const RelationToOthers = () => {
                           <h2 className="mt-[50%] md:mt-[4%] font-bold text-5xl uppercase text-gray-300 ">In Relation With Others</h2>
                    </div>
                       
-            <div className="w-[80%] h-[70%]  mx-auto flex items-center mt-[3%] justify-between mb-[500px] md:mb-[120px]">
+            <div className="w-[80%] md:w-[100%] lg:w-[80%] h-[70%]  mx-auto flex items-center mt-[3%] justify-between mb-[500px] md:mb-[120px]">
               <div className="flex flex-col w-[100%] md:w-[70%] h-full ">
                 <div className="flex  flex-col md:flex-row w-full h-full  ">
-                  <div className="h-full w-full relative">
+                  <div className="w-[90%] md:w-[60%] h-[100%] relative">
                       <img
                         src={images[position]}
-                        className="w-[90%] md:w-[60%] h-[100%] "
+                        className="h-full w-full "
                     />
                     <div className="w-[90%] md:w-[60%] flex justify-between absolute top-1/2 md:hidden  ">
                        <button type="button" class="animate-pulse ml-[10px]" data-carousel-prev onClick={function (e) {
