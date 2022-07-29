@@ -38,22 +38,27 @@ const Archive = () => {
  
 
 
- const ArchiveCard = (image , title , book , bookname) => {
+ const ArchiveCard = (image , author , book , bookname) => {
     return (
-          <div className="rounded overflow-hidden shadow-lg w-[90%] mt-5">
-              {/* <img className="w-full" src={image} alt="Sunset in the mountains"/> */}
-              <div className="px-6 py-1">
-                  {/* <div className="font-bold text-xl mb-1">{ title}</div> */}
-                  <p className="text-gray-700 text-base"> {bookname}</p>
-              </div>
-              <div className="flex  justify-between px-6  pb-2">      
-                  <a href={book} without rel="noopener noreferrer" target="_blank">
-                      <span className="inline-block bg-gray-200 px-2 md:px-3 py-1 text-sm font-semibold text-gray-700 mr-1 md:mr-2 md:mb-2">Preview</span>
-                  </a>
-                  <a href={book} download>
-                      <span className="inline-block bg-gray-200  px-2 md:px-3 py-1 text-sm font-semibold text-gray-700 md:mr-2 md:mb-2">Download</span>
-                  </a>
-              </div>
+      <div className="rounded overflow-hidden shadow-lg w-[90%]  max-h-[150px] my-[10px] ">
+        <div className="flex flex-col w-full h-full justify-between">
+          <div className="w-[100%] md:w-[80%] mx-auto">
+            <p className="mx-[10%] md:mx-auto mt-[10%] text-gray-700 text-base">{bookname}</p>
+          </div>
+          
+          <div className="flex w-[80%] justify-between mx-auto mb-[10px] ">
+              <a href={book} without rel="noopener noreferrer" target="_blank">
+                                              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Preview</span>
+                                          </a>
+                                          <a href={book} download>
+                                              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Download</span>
+                                          </a>
+          </div>
+                  
+        </div>
+      
+        
+             
           </div>  
     );
   };
@@ -99,7 +104,7 @@ const Archive = () => {
             <div className=" w-[100%] md:w-[90%]  mx-auto">
               <div className="flex">
                 
-                  <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%] ml-[20px] md:ml-[100px]  ">
+                  <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%]    ">
                         {
                           bookdata.map((item, index) => {
                                   if (item.bookName.toLowerCase().includes(search) || search == "") {
