@@ -33,7 +33,7 @@ const HomePageQuote = (props) => {
                       
                 </div>
                 
-                <div className='  absolute  bottom-0 right-0 mb-5  mr-10'>
+                {/* <div className='  absolute  bottom-0 right-0 mb-5  mr-10'>
                 
                     <div className='flex space-x-2'>
                         {
@@ -46,7 +46,7 @@ const HomePageQuote = (props) => {
 
                         </div>
                       
-            </div>
+            </div> */}
                
             </div>
         </>
