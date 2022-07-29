@@ -105,13 +105,10 @@ const Description = () => {
         /> */}
         <p></p>
         <Link to={data.backToLink}>
-          
-            <p className="uppercase mr-10 text-center align-center    md:ml-[1%] mt-[30%] font-medium text-black hover:text-blue-200 flex">
+            <p className="uppercase mr-10 text-center align-center    md:ml-[1%] mt-[30%] font-medium text-black hover:text-[#321473] flex">
               {data.backToText}{" "}
-            <ArrowLeftIcon className="ml-2 md:ml-10 mr-10 md:mr-20 w-5 h-5 font-medium  hover:text-blue-200" />
+            <ArrowLeftIcon className="ml-2 md:ml-10 mr-10 md:mr-20 w-5 h-5 font-medium  hover:text-[#321473]" />
             </p>
-            
-        
         </Link>
       </div>
       <div className="w-full">
@@ -128,7 +125,7 @@ const Description = () => {
                           href={item.pdf}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-black hover:text-blue-200"
+                          className="text-black hover:text-[#321473]"
                         >
                           {item.name}
                         </a>
@@ -136,9 +133,7 @@ const Description = () => {
                     })}
               </div>
               </div>
-         
             </div>
-            
             <div className="w-[100%]">
               <h1 className="text-4xl font-medium">{data.title}</h1>
               <ReadMore paragraph={data.paragrah}></ReadMore>
@@ -165,13 +160,13 @@ const Description = () => {
                   <div className="mx-10">
                       <div className="w-full border-b-2 pb-2 ">
                         <div className="">
-                          <p className="font-bold  text-xl   ">Quotes</p>
+                          <p className="font-bold  text-xl mt-8">Quotes</p>
                         </div>
                       </div>
                       <div className="mt-10"></div>
                       { 
                         data.quote.map((item, index) => { 
-                          return <p className=" text-xl" >{item}</p>
+                          return <p className="" >{item}</p>
                         })
                       }
                     </div>
