@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import NavDrawer from '../Drawer/NavDrawer';
 import {home , _idiology , relationtoothers , papers , archive , gallery} from "./../../redux/actions/navigation"
 import { MenuIcon } from '@heroicons/react/outline';
-
+import "./../../assets/css/hamberger.css"
 
 
 
@@ -71,7 +71,22 @@ const Navbar = () => {
                 </Logo>
               </Link>
               <div className='top-10  absolute right-20 '>
-                <MenuIcon className='w-10 h-10 text-black ' onClick={() => setContactVisible(true)}></MenuIcon>
+                
+
+ 
+          
+               
+                <div id="menu_button">
+                  <input type="checkbox" id="menu_checkbox"/>
+                  <label for="menu_checkbox" id="menu_label">
+                    <div id="menu_text_bar"></div>
+                  </label>
+                </div>
+            
+                          
+
+
+                {/* <MenuIcon className='w-10 h-10 text-black ' onClick={() => setContactVisible(true)}></MenuIcon> */}
                 {/* <NavIcon  onClick={() => setContactVisible(true)} className = "w-[150px] h-[150px] ">
                   <Line open={contactVisible} className = "bg-black"/>
                   <Line open={contactVisible} className = "bg-black" />
