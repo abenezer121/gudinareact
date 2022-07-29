@@ -24,22 +24,11 @@ code {
 
 
 
-
-
-
-
-
-
-/* .ant-carousel .slick-dots li   {
-   width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    background: #141414;
+@font-face {
+    font-family: 'Antro';
+    font-weight: 900;
+    src: local('Antro'), url(./assets/font/Antro/Antro_Vectra.otf) format('opentype');
 }
-
- .ant-carousel li.slick-dots li.slick-active button    {
-    background: #0fa55f;
-}  */
 
 .idiologyScroll {
 

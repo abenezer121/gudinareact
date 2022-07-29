@@ -4,9 +4,9 @@ html, body {
 }
 
 .cursor {
-  width: 80px;
-  height: 80px;
-  border: 80px solid #fefefe;
+  width: 60px;
+  height: 60px;
+  border: 60px solid #fefefe;
   border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);

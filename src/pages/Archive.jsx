@@ -76,7 +76,7 @@ const Archive = () => {
                    </div>
         {/*  md:ml-[40px] my-auto ml-[10%] */}
         
-            <div className=" h-full w-full  flex flex-col md:flex-row      md:items-center justify-between  mt-[60px] ">
+            <div className=" h-full w-full  flex flex-col md:flex-row      md:items-center justify-between  mt-[30px] ">
               <div class="relative text-gray-600 focus-within:text-gray-400  w-[90%] md:w-[81%]   mx-auto md:ml-[10%]  ">
                 <span class="absolute inset-y-0 right-0 flex items-center pl-2">
                   <button type="submit" class="p-1 mr-5">
@@ -101,10 +101,10 @@ const Archive = () => {
             </div>
     </div>
       <div className="w-full h-full flex flex-col mt-[20px] pb-10 ">
-            <div className=" w-[100%] md:w-[90%]  mx-auto">
+            <div className=" w-[100%] md:w-[90%]  mx-auto  ">
               <div className="flex">
                 
-                  <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%]    ">
+                  <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-2 w-[100%] md:w-[70%]  md:ml-[6%]   ">
                         {
                           bookdata.map((item, index) => {
                                   if (item.bookName.toLowerCase().includes(search) || search == "") {
@@ -117,7 +117,7 @@ const Archive = () => {
                                 })
                         }
                   </div>
-                   <div className="hidden md:flex h-full mr-[10px] md:mr-0 w-[60%] md:w-[40%] md:w-[20%] sticky top-[21%] md:top-[37%]  border-2 border-transparent border-l-gray-300 ">
+                   <div className="z hidden md:flex h-full md:mr-0 w-[50%]  md:w-[40%] md:w-[20%] sticky top-[21%] md:top-[30%]   border-2 border-transparent border-l-gray-300 ">
                       <div className="w-full bg-whitetext-black  ">
                         <div className="w-full flex items-center h-[70px] z-10 bg-slate-100 text-left">
                         <AdjustmentsIcon className="  w-5 h-5 ml-[40px] " />
@@ -127,8 +127,7 @@ const Archive = () => {
 
                         <div className="w-full h-full text-left pb-10">
                           <div className="mx-10 mt-10">
-                            <p className="text-base font-bold">Refine by</p>
-                      
+                  
                         </div>
                           {category.map((item, index) => {
                             
