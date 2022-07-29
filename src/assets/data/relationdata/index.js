@@ -51,7 +51,7 @@ export let relationData = [
                   "In conclusion, many similarities can be drawn between Abiy Ahmed and Gudina Tumsa, from generic things such as the country they were born and served in, their positions in leadership and their style of leadership which is service. But if we look deeper and analyze both men, we are able to see beyond the surface and to the wealth they possess in their thoughts. Both men came into a leadership position at a crucial and troublesome time, one during a revolution where marxism was threatening the existence of his Church, the other came to leadership into a nation that was on the verge of state collapse. Their thoughts, reforms and leadership style is drawn from the risky environment their leadership term came to be. Their response was intended to combat the risk that faced their respective institutions. These men were able to acknowledge the issue, begin restoring their institutions' responsibility, survive the turmoil and renew how their institutions worked inorder for there to be sustainable work and change, with what God entrusted to them. Their similarities come from their experiences and their experiences shape their thought, and their thought is a solution to the crisis around them and the future ahead. We can say that  Reverend Gudina Tumsa’s belief and writings that the Church is a model for society is being manifested decades later through the leadership of Prime Minister Abiy Ahmed."
         ],
         pdf: [],
-               youtube : ""
+               youtube : "https://www.youtube.com/watch?v=5HweCxvs8NE"
     }, 
         {
             photo: bonhoeffer1,
@@ -74,7 +74,7 @@ export let relationData = [
            
         
             ],
-        youtube : "https://www.youtube.com/watch?v=5HweCxvs8NE"
+        youtube : ""
     }, 
        
 
