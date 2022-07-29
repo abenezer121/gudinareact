@@ -134,21 +134,15 @@ function shuffleArray(array) {
                           <h2 className="mt-[2%] font-bold text-5xl uppercase text-gray-300 ">Gallery</h2>
                    </div>
     <div class="flex">
-    <aside class="h-screen sticky top-[10px] md:ml-20 md:mr-10">
-        <div className='flex flex-col text-xl font-bold  mt-[10px] left-[10%]'>
-                        
-                      
-  
-  
- 
-   
-            <p className='-rotate-90 py-[40px]' onClick={()=>{setFilter("All");}}>All</p>
-            <p className='-rotate-90 py-[40px]' onClick={()=>{setFilter("Childhood");}}>Childhood</p>
-            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("Early Life");}}>Early Life</p>
-            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("EECMY");}}>EECMY</p>
-            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("Family");}}>Family</p>
-            <p className='-rotate-90 py-[40px]' onClick={()=>{setFilter("Evangelist");}}>Evangelist</p>
-            <p className='-rotate-90 py-[20px]' onClick={()=>{setFilter("Quote");}}>Quote</p>
+    <aside class="h-screen sticky top-[15px] md:ml-20 ">
+        <div className='flex flex-col text-xl font-bold  mt-[10px] uppercase9+ '>
+            <p className= { filter == "All" ? '-rotate-90 py-[40px]' : '-rotate-90 py-[40px] text-gray-400'} onClick={()=>{setFilter("All");}}>All</p>
+            <p className={ filter == "Childhood" ? '-rotate-90 py-[40px]' : '-rotate-90 py-[40px] text-gray-400'} onClick={()=>{setFilter("Childhood");}}>Childhood</p>
+            <p className={ filter == "Early Life" ? '-rotate-90 py-[20px]' : '-rotate-90 py-[20px] text-gray-400'} onClick={()=>{setFilter("Early Life");}}>Early Life</p>
+            <p className= { filter == "EECMY" ? '-rotate-90 py-[20px]' : '-rotate-90 py-[20px] text-gray-400'} onClick={()=>{setFilter("EECMY");}}>EECMY</p>
+            <p className= { filter == "Family" ? '-rotate-90 py-[20px]' : '-rotate-90 py-[20px] text-gray-400'} onClick={()=>{setFilter("Family");}}>Family</p>
+            <p className= { filter == "Evangelist" ? '-rotate-90 py-[40px]' : '-rotate-90 py-[40px] text-gray-400'} onClick={()=>{setFilter("Evangelist");}}>Evangelist</p>
+            <p className={ filter == "Quote" ? '-rotate-90 py-[20px]' : '-rotate-90 py-[20px] text-gray-400'} onClick={()=>{setFilter("Quote");}}>Quote</p>
          
 
       </div>
@@ -156,7 +150,7 @@ function shuffleArray(array) {
     
     <main>
             <section className=" text-gray-700 mt-[90px] ">
-                           <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+                           <div className="container px-1 py-2 mx-auto lg:pt-24 lg:px-32">
                                <div className="flex flex-wrap -m-1 md:-m-2">
                                   {data.map((item, index) => { 
                                      return (item);

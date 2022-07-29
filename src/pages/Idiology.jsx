@@ -1,5 +1,6 @@
 import { React, useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from 'react-redux'
+import { ArrowDownIcon, ArrowRightIcon } from "@heroicons/react/outline";
 import { useInView } from "react-intersection-observer";
 import { Link } from 'react-router-dom';
 import Footer from "../components/Footer/Footer";
@@ -118,9 +119,10 @@ const Idiology = () => {
                   
           <div className="w-full flex flex-col items-center bg-[#750085] pb-20  ">
             <div className="my-auto w-[80%] h-full mx-auto text-center relative bg-[#750085] ">
-              <div className=" text-center my-10   relative">
+                  <div className=" text-center my-10   relative">
+                    <ArrowDownIcon className="w-7 h-7 text-white absolute bottom-0 mb-20 left-1/2 text-center animate-bounce " />
                 <p
-                  className="text-lg text-center uppercase text-xm text-white font-bold mt-[100px] mb-[150px] md:mt-[1px]"
+                  className="text-lg text-center uppercase text-xm text-white font-bold mt-[100px] mb-[0px] md:mt-[1px]"
                   style={{
                     transform: `translateY(${offsetYOther}px) translateX(${offsetXOther}px)`,
                   }}
@@ -128,7 +130,8 @@ const Idiology = () => {
                   select topics
                 </p>
                
-                </div>
+                  </div>
+                   <ArrowDownIcon className="w-7 h-7 text-white absolute bottom-0 mb-20 left-1/2 text-center animate-bounce " />
                 <div className="space-x-3">
                   {
                   idiology.map((item, index) => {
