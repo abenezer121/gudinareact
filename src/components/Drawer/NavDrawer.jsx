@@ -75,7 +75,7 @@ const NavDrawer = (props) => {
                             <div className='text-center  my-[10%]  w-full '>
                                     
                                         <Link to='/'><h1 className='text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(home());  }}  > <span className=''>Home</span></h1></Link>
-                                        <Link to='/idiology'> <h1 className='text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(_idiology());  }}><span className=''> His Ideology</span> </h1></Link>
+                                        <Link to='/idiology'> <h1 className='text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(_idiology());  }}><span className=''>His Theology</span> </h1></Link>
                                         <Link to='/relationtoothers'><h1 className=' text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(relationtoothers());  }}  > <span className=''>In Relation to others</span></h1></Link>
                                         <Link to='/papers'><h1 className=' text-black text-center text-5xl font-bold  text-sm '  onClick={() => { props.setContact(false);  dispatch(papers());  }} > <span className=''>Papers</span></h1></Link>
                                         <Link to='/archive'><h1 className=' text-black text-center text-5xl font-bold  text-sm '  onClick={() => { props.setContact(false); dispatch(archive()); }}  > <span className=''>Archive</span></h1></Link>

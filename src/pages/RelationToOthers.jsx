@@ -45,7 +45,7 @@ const RelationToOthers = () => {
                   
                   <div className="w-full h-screen ">
                       <div className="w-[80%] mx-auto">
-                          <h2 className="mt-[50%] md:mt-[4%] font-bold text-5xl uppercase text-gray-300 ">In Relation With Others</h2>
+                          <h2 className="mt-[50%] md:mt-[4%] font-bold text-5xl uppercase text-gray-300 ">In Relation to Others</h2>
                    </div>
                       
             <div className="w-[80%] md:w-[100%] lg:w-[80%] h-[70%]  mx-auto flex items-center mt-[3%] justify-between mb-[500px] md:mb-[120px]">

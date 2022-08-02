@@ -118,9 +118,9 @@ export let idiology = [
     {
         title: 'Unbelief from Historical Perspective (Kairos)',
         quote: [
-            "The Biblical view of God demands an open understanding of the world and of man. The world is neither an arbitrary collection of atoms in a void, nor a closed system. Man is not just matter. He does not just have Consciousness, awareness. He has been created in the image of God (Genesis 1:26-27)",
-                  "Sometimes unbelief takes the form of denial of God's existence. At other times it takes the form of questioning the truth or wisdom of God's word, As when Eve accepted the Serpent's question concerning the truth or wisdom of what God had forbidden (Genesis 3:1-6)",
-            "Our response to unbelief should be based on a clear and full testimony to the nature of God, the world and man from the biblical perspective"
+            "“The Biblical view of God demands an open understanding of the world and of man. The world is neither an arbitrary collection of atoms in a void, nor a closed system. Man is not just matter. He does not just have Consciousness, awareness. He has been created in the image of God (Genesis 1:26-27)”",
+            "“Sometimes unbelief takes the form of denial of God's existence. At other times it takes the form of questioning the truth or wisdom of God's word, As when Eve accepted the Serpent's question concerning the truth or wisdom of what God had forbidden (Genesis 3:1-6)”",
+            "“Our response to unbelief should be based on a clear and full testimony to the nature of God, the world and man from the biblical perspective”"
 
         ],
         fadeAnimation: "fade-left",
@@ -154,7 +154,7 @@ export let idiology = [
     }, 
     {
                 title: 'African Theology/ Contextualization',
-                quote: ["African theology should develop a political theology relevant to African political life.” (Witness and Discipleship Pg.70)",
+                quote: ["“African theology should develop a political theology relevant to African political life.” (Witness and Discipleship Pg.70)”",
                     "To go even one step further, true biblical and evangelical theology must always allow for a contextual interpretation of the gospel and the action strategy of the church and priorities must be decided upon and faithfulness to this interpretation",
                     "The churches in Africa have so far not sufficiently taken upon themselves the task of seriously reviewing their ministry in the light of their cultural, social and political setting"
           
@@ -180,7 +180,7 @@ export let idiology = [
     {
         title: 'Youth',
         quote: [
-          "It is quite clear that young people in this country, perhaps as elsewhere, are not interested in denominational doctrine, but rather attracted by Bible study, prayers, and discussions with any Christian from any Christian denomination."
+          "“It is quite clear that young people in this country, perhaps as elsewhere, are not interested in denominational doctrine, but rather attracted by Bible study, prayers, and discussions with any Christian from any Christian denomination.”"
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -200,8 +200,8 @@ export let idiology = [
         title: 'Holistic Theology',
         quote: [
             "“In His ministry, we know that forgiveness of sins and healing of the body, feeding the hungry and spiritual nurture, opposing dehumanizing structures and identifying himself with the weak were never at any time divided or departmentalized. He saw as a whole and was always ready to give help where the need was most obvious.”",
-            "“The healing of the Brokenness in human life can therefore never be accomplished without the gospel message of forgiveness which has in itself the power to liberate man from the most dehumanizing power in his own life and his relationships with other men and God.” ",
-            "“We are not interested in creating medieval monasteries, and setting up ghettos (modern monasteries), but in being involved in the complex social life of our people as we find it daily, with full knowledge of our Christian responsibility.” (Witness and Discipleship Pg.70)"
+            "“The healing of the Brokenness in human life can therefore never be accomplished without the gospel message of forgiveness which has in itself the power to liberate man from the most dehumanizing power in his own life and his relationships with other men and God.”",
+            "“We are not interested in creating medieval monasteries, and setting up ghettos (modern monasteries), but in being involved in the complex social life of our people as we find it daily, with full knowledge of our Christian responsibility.” (Witness and Discipleship Pg.70)”"
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -222,8 +222,8 @@ export let idiology = [
     {
         title: 'GT on Politics/Economics',
         quote: [
-                "In our continent, what is prevalent is the basis to define economic policy, agricultural Development, foreign Relations – “Politics decides who should die and who should live.” (Witness and Discipleship Pg.70",
-            "“The democratic system being introduced in our country has been in practice in the ECMY for years. This must be appreciated and acted on.” (Witness and Discipleship Pg.79)"
+                "“In our continent, what is prevalent is the basis to define economic policy, agricultural Development, foreign Relations – “Politics decides who should die and who should live.” (Witness and Discipleship Pg.70”",
+            "“The democratic system being introduced in our country has been in practice in the ECMY for years. This must be appreciated and acted on.” (Witness and Discipleship Pg.79)”"
         ],
         fadeAnimation: "fade-left",
             paragraph: [
@@ -239,8 +239,8 @@ export let idiology = [
     {
         title: 'The Cost of Discipleship',
         quote: [
-            "In my opinion this is a cost of discipleship we have to pay for the sake of the gospel and for the sake of our country. “ (Witness and Discipleship Pg.74)",
-            "To pay the cost of discipleship is not to buy our Salvation; it is to demonstrate the quality of Love that led Jesus of Nazareth to the cross.” (Witness and Discipleship Pg.74)"
+            "“In my opinion this is a cost of discipleship we have to pay for the sake of the gospel and for the sake of our country. “ (Witness and Discipleship Pg.74)”",
+            "“To pay the cost of discipleship is not to buy our Salvation; it is to demonstrate the quality of Love that led Jesus of Nazareth to the cross.” (Witness and Discipleship Pg.74)”"
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -258,9 +258,9 @@ export let idiology = [
     {
         title: 'Integral Human Development',
         quote: [
-              "We submit that a fresh approach to development aid through Church channels would be to consider man and his needs as a totality. This would mean that the present artificial division between spiritual and physical needs would be done away with.” (Witness and Discipleship Pg.91)",
-              "In our view a one-sided material development is not only self-deceiving, in the sense that man needs more than that, but it is also a threat to the very values which make life meaningful, if carried without due attention to a simultaneous provision to meet spiritual needs.” (Witness and Discipleship Pg.88)",
-            "Unless our people are helped to the spiritual freedom and maturity which enables them responsibly to handle material development, we are afraid that what was intended to be a means of enhancing the well being of man can have the opposite effect and create new forms of evil to destroy him.” (Witness and Discipleship Pg.89)"
+              "“We submit that a fresh approach to development aid through Church channels would be to consider man and his needs as a totality. This would mean that the present artificial division between spiritual and physical needs would be done away with.” (Witness and Discipleship Pg.91)”",
+              "“In our view a one-sided material development is not only self-deceiving, in the sense that man needs more than that, but it is also a threat to the very values which make life meaningful, if carried without due attention to a simultaneous provision to meet spiritual needs.” (Witness and Discipleship Pg.88)”",
+            "“Unless our people are helped to the spiritual freedom and maturity which enables them responsibly to handle material development, we are afraid that what was intended to be a means of enhancing the well being of man can have the opposite effect and create new forms of evil to destroy him.” (Witness and Discipleship Pg.89)”"
         ],
         fadeAnimation: "fade-left",
           paragraph: [
@@ -272,18 +272,19 @@ export let idiology = [
             { "name" : "On_the_Interrelation_between_Proclamation_of_the_Godpel_and_Human",
                 "pdf": On_the_Interrelation_between_Proclamation_of_the_Godpel_and_Human
             },
-            {
-                "name": "The Cost of Discipleship",
-                "pdf" : TheCostofDiscipleship}
+            // {
+            //     "name": "The Cost of Discipleship",
+            //     "pdf" : TheCostofDiscipleship}
         ],
-        image : christianstewardship
+        image: christianstewardship,
+         youtube : ""
     },
     {
         title: 'Resources Amongst the Universal Church',
         quote: [
-          "We believe that the economy of the Christian community should be seen in a global perspective and the aim should be to arrange for a more fair distribution of resources. Here the Church should even lead the way towards this goal.” (Witness and Discipleship Pg.126) ",
-          "Mal-distribution of the world's resources on a scale where the developed countries are consuming about twenty-five times more of the resources per capita than the developing countries. Similar figures are probably also true for the churches within the Christian Community.” (Witness and Discipleship Pg.126)",
-        "In our opinion, it is irresponsible to just accept this mal-distribution of resources for God’s mission in this world. We should therefore like to advocate for completely new criteria for distribution of resources based not only on a balance within the ministry of a given church (the original concern of the ECMY), but also on a balance in the global distribution of spiritual care, with the aim of greater justice is serving the total man and of a more responsible Church ministry in today’s world. (Witness and Discipleship Pg.127)",
+          "“We believe that the economy of the Christian community should be seen in a global perspective and the aim should be to arrange for a more fair distribution of resources. Here the Church should even lead the way towards this goal.” (Witness and Discipleship Pg.126) ”",
+          "“Mal-distribution of the world's resources on a scale where the developed countries are consuming about twenty-five times more of the resources per capita than the developing countries. Similar figures are probably also true for the churches within the Christian Community.” (Witness and Discipleship Pg.126)”",
+        "“In our opinion, it is irresponsible to just accept this mal-distribution of resources for God’s mission in this world. We should therefore like to advocate for completely new criteria for distribution of resources based not only on a balance within the ministry of a given church (the original concern of the ECMY), but also on a balance in the global distribution of spiritual care, with the aim of greater justice is serving the total man and of a more responsible Church ministry in today’s world. (Witness and Discipleship Pg.127)”",
 
         ],
         fadeAnimation: "fade-left",
@@ -305,8 +306,8 @@ export let idiology = [
     {
         title: 'Chrisian Stewardship ',
         quote: [
-          "The steward is an apostle,  the one commissioned by Jesus Christ, to make Him known by proclaiming the Gospel message to the world, for whom it was intended in God's Plan of Salvation” (Witness and Discipleship Pg.152)",
-            "Christ made it possible for men through his death to be stewards of his Gospel.” (Witness and Discipleship Pg.153) "
+          "“The steward is an apostle,  the one commissioned by Jesus Christ, to make Him known by proclaiming the Gospel message to the world, for whom it was intended in God's Plan of Salvation” (Witness and Discipleship Pg.152)”",
+            "“Christ made it possible for men through his death to be stewards of his Gospel.” (Witness and Discipleship Pg.153)”"
 
         ],
         fadeAnimation: "fade-left",
@@ -325,9 +326,9 @@ export let idiology = [
     {
         title: 'Missions and Outreach ',
         quote: [
-                   "What we are and what we have cannot be a determining factor for carrying out the commission, ‘Go therefore and make disciples of all nations’.” (Witness and Discipleship 155)",
-                   "The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” (Witness and Discipleship Pg.160)",
-            "If our interests happen to coincide, we would be ready to work together, to serve the Ethiopian people as we understand it.” (Witness and Discipleship Pg.110)"
+                   "“What we are and what we have cannot be a determining factor for carrying out the commission, ‘Go therefore and make disciples of all nations’.” (Witness and Discipleship 155)”",
+                   "“The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” (Witness and Discipleship Pg.160)”",
+            "“If our interests happen to coincide, we would be ready to work together, to serve the Ethiopian people as we understand it.” (Witness and Discipleship Pg.110)”"
         ],
         fadeAnimation: "fade-left",
               paragraph: [
@@ -343,14 +344,13 @@ export let idiology = [
         ],
         image: missionandoutreach,
                youtube : ""
-    },
-    
+    },   
     {
         title: 'Nation Building ',
         quote: [
-                   "Christian love compels us to make as much contribution as possible, so that our country may be a beautiful and comfortable place to live in.” (Witness and Discipleship Pg.67)",
-                   "I have contended in the preceding paragraphs that the functional approach is preferable to the institutional approach, as far as the church is concerned, as regards to our contributions to nation building for various reasons. One reason is that the present government has declared that it would look after the welfare of its citizens, and the ECMY should not give any hint that she is competing.” (Witness and Discipleship Pg.67",
-            "Undertaking small scale industries to provide employment for urban and rural communities is something with the possibility of the ECMY.” (Witness and Discipleship Pg.68)"
+                   "“Christian love compels us to make as much contribution as possible, so that our country may be a beautiful and comfortable place to live in.” (Witness and Discipleship Pg.67)”",
+                   "“I have contended in the preceding paragraphs that the functional approach is preferable to the institutional approach, as far as the church is concerned, as regards to our contributions to nation building for various reasons. One reason is that the present government has declared that it would look after the welfare of its citizens, and the ECMY should not give any hint that she is competing.” (Witness and Discipleship Pg.67”",
+            "“Undertaking small scale industries to provide employment for urban and rural communities is something with the possibility of the ECMY.” (Witness and Discipleship Pg.68)”"
         ],
         fadeAnimation: "fade-left",
               paragraph: [

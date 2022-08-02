@@ -114,7 +114,10 @@ const Description = () => {
       <div className="w-full">
         <div className="w-[90%] md:w-[80%] mx-auto">
           <div className=" grid grid-cols-1 md:grid-cols-2">
-            <div className="hidden md:block  w-[50%]">
+            {
+              data.pdf.length > 0 ?
+                <div className="hidden md:block  w-[50%]">
+              
               <p className="text-sm font-medium uppercase border-b-2 pb-3">{data.sideText}</p>
               <div className="flex w-full">
                 <img src={bookgif} className="w-[250px] h-[150px] mr-5"/>
@@ -133,7 +136,9 @@ const Description = () => {
                     })}
               </div>
               </div>
-            </div>
+            </div> : <div className="hidden md:block  w-[50%]"></div>
+              }
+            
             <div className="w-[100%]">
               <h1 className="text-4xl font-medium">{data.title}</h1>
               <ReadMore paragraph={data.paragrah}></ReadMore>
@@ -156,7 +161,8 @@ const Description = () => {
                 backgroundRepeat: "no-repeat",
                 
               }}>
-                <div className="absolute hidden md:flex md:left-[68%] z-10 w-[600px] top-10  rounded bg-slate-100 ">
+                {data.quote.length > 0 ? 
+              <div className="absolute hidden md:flex md:left-[68%] z-10 w-[600px] top-10  rounded bg-slate-100 ">
                   <div className="mx-10">
                       <div className="w-full border-b-2 pb-2 ">
                         <div className="">
@@ -170,12 +176,12 @@ const Description = () => {
                         })
                       }
                     </div>
-                </div>
-               
-                
+              </div> : ("")}
+            
+          
               </div>
                <div className="hidden md:block  w-[30%]">
-              <p className="text-sm font-medium uppercase"></p>
+                  <p className="text-sm font-medium uppercase"></p>
               </div>
           </div>
         </div>
@@ -225,7 +231,7 @@ const Description = () => {
                           quote: _data[handleClick(-1, data.title)].quote,
                           paragrah: _data[handleClick(-1, data.title)].paragraph,
                           image : _data[handleClick(-1, data.title)].image,
-                          sideText: "OTHER TOPICS",
+                          sideText: "PDF",
                           youtube : _data[handleClick(-1, data.title)].youtube,
                           sideArray: [
                                   "Cost of Discipleship",
@@ -274,7 +280,7 @@ const Description = () => {
                           paragrah: _data[handleClick(1, data.title)].paragraph,
                           image: _data[handleClick(-1, data.title)].image,
                            youtube : _data[handleClick(1, data.title)].youtube,
-                          sideText: "OTHER TOPICS",
+                          sideText: "PDF",
                           sideArray: [
                                   "Cost of Discipleship",
                                   "GT on Politics/Economics",
