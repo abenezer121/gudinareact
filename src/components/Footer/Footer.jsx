@@ -93,7 +93,7 @@ const Footer = () => {
                         <Link to="/papers"><p className='text-white font-medium  hover:font-bold'>Papers</p></Link>
                         <Link to="/idiology"><p className='text-white font-medium  hover:font-bold'>Ideology</p></Link>
                         <Link to="/gallery"><p className='text-white font-medium  hover:font-bold'>Gallery</p></Link>
-                        <a href="https://gudinatumsafoundation.org/" className='text-white font-medium  hover:font-bold' arget="_blank" rel="noopener noreferrer">Visit Gundina Tumsa Foundation</a>
+                        <a href="https://gudinatumsafoundation.org/" className='text-white font-medium  hover:font-bold' arget="_blank" rel="noopener noreferrer">Visit Gudina Tumsa Foundation</a>
                 </div>
                 
 

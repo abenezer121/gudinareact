@@ -153,16 +153,17 @@ const Description = () => {
       <div className="mt-[5%] mb-[1%]">
          <div className="w-full">
         <div className="w-[90%] md:w-[70%] mx-auto">
-          <div className=" grid grid-cols-1 md:grid-cols-2">
+          <div className=" grid grid-cols-1 md:grid-cols-2 space-x-2">
            
               
-              <div className="w-[100%] md:ml-[30%] mb-[40px] h-[300px] md:h-[800px] relative" style={{
-                backgroundImage: `url(${data.image})`,
-                backgroundRepeat: "no-repeat",
-                
-              }}>
-                {data.quote.length > 0 ? 
-              <div className="absolute hidden md:flex md:left-[68%] z-10 w-[600px] top-10  rounded bg-slate-100 ">
+              <div className="  mb-[40px] h-[300px] md:h-[800px] relative">
+                <img src={data.image } className="w-full h-full"/>
+            
+          
+              </div>
+               <div className=" mb-[400px] md:mb-[40px] h-[300px] md:h-[800px] relative">
+                     {data.quote.length > 0 ? 
+              <div className="flex  z-10  top-10  rounded bg-slate-100 ">
                   <div className="mx-10">
                       <div className="w-full border-b-2 pb-2 ">
                         <div className="">
@@ -177,11 +178,6 @@ const Description = () => {
                       }
                     </div>
               </div> : ("")}
-            
-          
-              </div>
-               <div className="hidden md:block  w-[30%]">
-                  <p className="text-sm font-medium uppercase"></p>
               </div>
           </div>
         </div>

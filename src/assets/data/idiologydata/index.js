@@ -1,7 +1,7 @@
 import UnbelieffromHistoricalPerspective from './../../book/idiology/UnbelieffromHistoricalPerspective.pdf';
 import TheRoleofaChristianinaGivenSociety from './../../book/idiology/TheRoleofaChristianinaGivenSociety.pdf';
 import TheMoratoriumDebateandtheECMY from './../../book/idiology/TheMoratoriumDebateandtheECMY.pdf';
-import TheCostofDiscipleship from './../../book/idiology/TheCostofDiscipleship.pdf';
+
 import StewardshipoftheGospel from './../../book/idiology/StewardshipoftheGospel.pdf';
 import Scan2 from './../../book/idiology/Scan2.pdf';
 import Scan from './../../book/idiology/Scan2.pdf';
@@ -11,6 +11,9 @@ import FunctionalApproach from './../../book/idiology/FunctionalApproach.pdf';
 import ContributiontoNationBuilding from './../../book/idiology/ContributiontoNationBuilding.pdf';
 import AMoreReponsibleChurchMinistry from './../../book/idiology/AMoreReponsibleChurchMinistry.pdf';
 import AWholisticTheology from './../../book/idiology/AWholisticTheology.pdf';
+
+
+import TheCostofDiscipleship from './../../book/idiology/TheCostofDiscipleship.pdf';
 import african from "./../../image/ideology/african.png"
 import christianstewardship from "./../../image/ideology/christianstewardship.png"
 import costofdisciplesip from "./../../image/ideology/costofdiscipleship.png"
@@ -27,14 +30,30 @@ import unbeliefromhistoricalperspective from "./../../image/ideology/unbeliefrom
 import youth from "./../../image/ideology/youth.jpg"
 
 
+
+import ResponsibilityofaChristiantosociety1 from './../../image/id/ResponsibilityofaChristiantosociety.jpg'
+import EcumenicalHarmony1 from './../../image/id/EcumenicalHarmony.jpg'
+import UnbelieffromHistoricalPerspective1 from './../../image/id/ufhp.jpg'
+import AfricanTheology1 from './../../image/id/AfricanTheology.jpg'
+import youth1 from './../../image/id/youth.jpg'
+import polotics1 from './../../image/id/polotics.jpg'
+import IntegralHumanDevelopment1 from './../../image/id/IntegralHumanDevelopment.PNG'
+import ResourcesAmongsttheUniversalChurch1 from './../../image/id/ResourcesAmongsttheUniversalChurch.jpg'
+import christianstewardsip1 from './../../image/id/christianstewardsip.PNG'
+import missionandoutreach1 from './../../image/id/missionandoutreach.PNG'
+import nationbuilding1 from './../../image/id/nationbuilding.PNG'
+import TheCostofDiscipleship1 from './../../image/id/TheCostofDiscipleship.PNG'
+import aholistictheology from './../../image/id/aholistictheology.jpg'
+import responsibilityofchurchtosociety from './../../image/id/responsibilityofchurchtosociety.jpg'
+
+
 export let idiology = [
     {
         title: 'Responsibility of a Christian to society ',
         quote: [
-          "“We have not been given a choice as to where we should be born. We believe that God has placed us where we are to do His will.”",
-        "“In my opinion a Christian has to make a choice only when he's faced with the demand not to confess Christ as Lord, and when he / she is denied the right to teach in his name.”",
-        "“To be a Christian is not to be a hero to make a history for oneself. A Christian goes as a lamb to be slaughtered only when he / she knows that it is in the complete Accord with the will of God who has called him to his service.”"
-
+            "“We have not been given a choice as to where we should be born. We believe that God has placed us where we are to do His will.” -Gudina Tumsa" ,
+            "“In my opinion a Christian has to make a choice only when he's faced with the demand not to confess Christ as Lord, and when he / she is denied the right to teach in his name.” -Gudina Tumsa"  ,
+            "“To be a Christian is not to be a hero to make a history for oneself. A Christian goes as a lamb to be slaughtered only when he / she knows that it is in the complete Accord with the will of God who has called him to his service.” -Gudina Tumsa" 
         ],
         fadeAnimation: "fade-up",
         paragraph : [
@@ -54,16 +73,16 @@ export let idiology = [
             "pdf" : TheRoleofaChristianinaGivenSociety}
            
         ],
-        image: responsibilityofachristiantosociety,
+        image: ResponsibilityofaChristiantosociety1,
         youtube : "https://www.youtube.com/watch?v=u3rA3be_gNk"
     },
     {
             title: 'Responsibility of the Church to society  ',
         quote: [
-                     "“The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” ",
-              "“Ecclesia belongs to God because he has called it in to be, dwells within it, rules over it, and realizes his purpose through it.” ",
-            "“What makes the church is not the fund she has. No, what makes the church is the faith that she has in the Gospel of Jesus Christ, her confession of Jesus as her Lord and Savior, which liberates man.” "
-       
+          "“The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” -Gudina Tumsa ",
+            "“Ecclesia belongs to God because he has called it in to be, dwells within it, rules over it, and realizes his purpose through it.” -Gudina Tumsa" ,
+            "“What makes the church is not the fund she has. No, what makes the church is the faith that she has in the Gospel of Jesus Christ, her confession of Jesus as her Lord and Savior, which liberates man.” -Gudina Tumsa" 
+
         ],
         fadeAnimation: "fade-left",
           paragraph : [
@@ -82,14 +101,16 @@ export let idiology = [
               {"name" : "The Role of a Christian in a Given Society",
                 "pdf" : TheRoleofaChristianinaGivenSociety}
         ],
-        image: responsibilityofthechurchtosociety,
+        image: responsibilityofchurchtosociety,
+        
          youtube : "https://www.youtube.com/watch?v=dZq3Ow7PPcA"
     },
     {
         title: 'Ecumenical Harmony  ',
         quote: [
-            "“Ours is still the God of Miracles, and one of the miracles He may perform today is to bring about unity among His churches. Let us then talk about His church rather than our churches.” ",
-            "“A study on ecumenical movements to do away with prejudice and misunderstandings may be one way of discharging the ecumenical  responsibility of our church.”"
+            "“Ours is still the God of Miracles, and one of the miracles He may perform today is to bring about unity among His churches. Let us then talk about His church rather than our churches.” -Gudina Tumsa" ,
+            "“A study on ecumenical movements to do away with prejudice and misunderstandings may be one way of discharging the ecumenical  responsibility of our church.” -Gudina Tumsa "
+
         ],
         fadeAnimation: "fade-left",
           paragraph : [
@@ -112,15 +133,15 @@ export let idiology = [
                 "pdf" : Scan}
 
         ],
-        image: ecumenticalharmony,
-         youtube : "https://www.youtube.com/watch?v=Q2GVSyewiuc"
-    },  
+        image: EcumenicalHarmony1,
+         youtube : ""
+    },
     {
         title: 'Unbelief from Historical Perspective (Kairos)',
         quote: [
-            "“The Biblical view of God demands an open understanding of the world and of man. The world is neither an arbitrary collection of atoms in a void, nor a closed system. Man is not just matter. He does not just have Consciousness, awareness. He has been created in the image of God (Genesis 1:26-27)”",
-            "“Sometimes unbelief takes the form of denial of God's existence. At other times it takes the form of questioning the truth or wisdom of God's word, As when Eve accepted the Serpent's question concerning the truth or wisdom of what God had forbidden (Genesis 3:1-6)”",
-            "“Our response to unbelief should be based on a clear and full testimony to the nature of God, the world and man from the biblical perspective”"
+           "“The Biblical view of God demands an open understanding of the world and of man. The world is neither an arbitrary collection of atoms in a void, nor a closed system. Man is not just matter. He does not just have Consciousness, awareness. He has been created in the image of God.” -Gudina Tumsa"  , 
+            "“Sometimes unbelief takes the form of denial of God's existence. At other times it takes the form of questioning the truth or wisdom of God's word, As when Eve accepted the Serpent's question concerning the truth or wisdom of what God had forbidden.” -Gudina Tumsa " , 
+            "“Our response to unbelief should be based on a clear and full testimony to the nature of God, the world and man from the biblical perspective.” -Gudina Tumsa" 
 
         ],
         fadeAnimation: "fade-left",
@@ -149,15 +170,19 @@ export let idiology = [
             "pdf" : UnbelieffromHistoricalPerspective
             }
         ],
-        image: unbeliefromhistoricalperspective,
+        image: UnbelieffromHistoricalPerspective1,
          youtube : "https://www.youtube.com/watch?v=aeMocbe5rso"
-    }, 
+    },
+    
+
     {
                 title: 'African Theology/ Contextualization',
-                quote: ["“African theology should develop a political theology relevant to African political life.” (Witness and Discipleship Pg.70)”",
-                    "To go even one step further, true biblical and evangelical theology must always allow for a contextual interpretation of the gospel and the action strategy of the church and priorities must be decided upon and faithfulness to this interpretation",
-                    "The churches in Africa have so far not sufficiently taken upon themselves the task of seriously reviewing their ministry in the light of their cultural, social and political setting"
-          
+        quote: [
+            "“African theology should develop a political theology relevant to African political life.” -Gudina Tumsa ", 
+                "“To go even one step further, true biblical and evangelical theology must always allow for a contextual interpretation of the gospel and the action strategy of the church and priorities must be decided upon and faithfulness to this interpretation.” -Gudina Tumsa" ,
+                "“The churches in Africa have so far not sufficiently taken upon themselves the task of seriously reviewing their ministry in the light of their cultural, social and political setting.” -Gudina Tumsa" 
+
+        
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -174,13 +199,16 @@ export let idiology = [
 
         ],
         pdf: [],
-        image: african,
+        image: AfricanTheology1,
          youtube : ""
     },
+
+
+
     {
         title: 'Youth',
         quote: [
-          "“It is quite clear that young people in this country, perhaps as elsewhere, are not interested in denominational doctrine, but rather attracted by Bible study, prayers, and discussions with any Christian from any Christian denomination.”"
+        "“It is quite clear that young people in this country, perhaps as elsewhere, are not interested in denominational doctrine, but rather attracted by Bible study, prayers, and discussions with any Christian from any Christian denomination.” -Gudina Tumsa "
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -193,15 +221,19 @@ export let idiology = [
 
         ],
         pdf: [],
-        image: youth,
-         youtube : "https://www.youtube.com/watch?v=-TWNgc1Kvms"
+        image: youth1,
+         youtube : ""
     },
+
+
+
     {
         title: 'Holistic Theology',
         quote: [
-            "“In His ministry, we know that forgiveness of sins and healing of the body, feeding the hungry and spiritual nurture, opposing dehumanizing structures and identifying himself with the weak were never at any time divided or departmentalized. He saw as a whole and was always ready to give help where the need was most obvious.”",
-            "“The healing of the Brokenness in human life can therefore never be accomplished without the gospel message of forgiveness which has in itself the power to liberate man from the most dehumanizing power in his own life and his relationships with other men and God.”",
-            "“We are not interested in creating medieval monasteries, and setting up ghettos (modern monasteries), but in being involved in the complex social life of our people as we find it daily, with full knowledge of our Christian responsibility.” (Witness and Discipleship Pg.70)”"
+            "“In His ministry, we know that forgiveness of sins and healing of the body, feeding the hungry and spiritual nurture, opposing dehumanizing structures and identifying himself with the weak were never at any time divided or departmentalized. He saw as a whole and was always ready to give help where the need was most obvious.” -Gudina Tumsa"  ,
+"“The healing of the Brokenness in human life can therefore never be accomplished without the gospel message of forgiveness which has in itself the power to liberate man from the most dehumanizing power in his own life and his relationships with other men and God.” -Gudina Tumsa" ,
+"“We are not interested in creating medieval monasteries, and setting up ghettos (modern monasteries), but in being involved in the complex social life of our people as we find it daily, with full knowledge of our Christian responsibility.” -Gudina Tumsa "
+
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -216,14 +248,17 @@ export let idiology = [
             {"name" : "A Wholistic Theology",
                 "pdf" : AWholisticTheology }
         ],
-        image: youth,
+        image: aholistictheology,
          youtube : ""
-    },  
+    }, 
+    
+
     {
         title: 'GT on Politics/Economics',
         quote: [
-                "“In our continent, what is prevalent is the basis to define economic policy, agricultural Development, foreign Relations – “Politics decides who should die and who should live.” (Witness and Discipleship Pg.70”",
-            "“The democratic system being introduced in our country has been in practice in the ECMY for years. This must be appreciated and acted on.” (Witness and Discipleship Pg.79)”"
+            "“In our continent, what is prevalent is the basis to define economic policy, agricultural Development, foreign Relations –Politics decides who should die and who should live.” -Gudina Tumsa", 
+            "“The democratic system being introduced in our country has been in practice in the ECMY for years. This must be appreciated and acted on.” -Gudina Tumsa "
+
         ],
         fadeAnimation: "fade-left",
             paragraph: [
@@ -233,14 +268,17 @@ export let idiology = [
                 "Gudina was a man who saw Christ as the Alpha and the Omega, not only in the spiritual sense but also on Earth. Gudina understood that the Earth was Christ's dominion meaning God’s Kingdom led and still leads earthly kingdoms. This is seen when Gudina applies his holistic approach and called on Churches and Christian’s to build and develop the economy of their country as the Churches (God’s Kingdom) and countries (Earth’s Kingdom) economies are intertwined, “It is a well-known fact that the economic life of any church is tied up with the economic life of the country where the church is placed.” (Witness and Discipleship Pg.139). Gudina was raised by poor farmers in an imperial system. An oppressive system that preyed on the so called “peasants”. His stance on landrefrom and the letter he along with ECMY members wrote to the Ethiopian parliament in 1973 was a plea to better the economic lives of the Ethiopian people. To conclude, Gudina knew that a prosperous economy could only be developed if it was developed in a model that mirrored a Christian or Church economy, and the Christian economy is based on God’s will for the people within it; that will is  justice and equality. Thus, he made it his mission and the Churches to begin involving themselves in economic development and become the necessary paradigm for society so that there can be balanced economic growth. "
         ],
         pdf: [],
-        image: gtonpolotics,
+        image: polotics1,
          youtube : ""
     },
+
+
     {
         title: 'The Cost of Discipleship',
         quote: [
-            "“In my opinion this is a cost of discipleship we have to pay for the sake of the gospel and for the sake of our country. “ (Witness and Discipleship Pg.74)”",
-            "“To pay the cost of discipleship is not to buy our Salvation; it is to demonstrate the quality of Love that led Jesus of Nazareth to the cross.” (Witness and Discipleship Pg.74)”"
+            "“In my opinion this is a cost of discipleship we have to pay for the sake of the gospel and for the sake of our country.” -Gudina Tumsa", 
+            "“To pay the cost of discipleship is not to buy our Salvation; it is to demonstrate the quality of Love that led Jesus of Nazareth to the cross.” -Gudina Tumsa "
+
         ],
         fadeAnimation: "fade-left",
         paragraph: [
@@ -252,15 +290,18 @@ export let idiology = [
             {"name" : "A Wholistic Theology",
             "pdf" : AWholisticTheology }
         ],
-        image: costofdisciplesip,
-         youtube : ""
+        image: TheCostofDiscipleship1,
+         youtube : "https://www.youtube.com/watch?v=-TWNgc1Kvms"
     },
+
+
     {
         title: 'Integral Human Development',
         quote: [
-              "“We submit that a fresh approach to development aid through Church channels would be to consider man and his needs as a totality. This would mean that the present artificial division between spiritual and physical needs would be done away with.” (Witness and Discipleship Pg.91)”",
-              "“In our view a one-sided material development is not only self-deceiving, in the sense that man needs more than that, but it is also a threat to the very values which make life meaningful, if carried without due attention to a simultaneous provision to meet spiritual needs.” (Witness and Discipleship Pg.88)”",
-            "“Unless our people are helped to the spiritual freedom and maturity which enables them responsibly to handle material development, we are afraid that what was intended to be a means of enhancing the well being of man can have the opposite effect and create new forms of evil to destroy him.” (Witness and Discipleship Pg.89)”"
+                "“We submit that a fresh approach to development aid through Church channels would be to consider man and his needs as a totality. This would mean that the present artificial division between spiritual and physical needs would be done away with.” -Gudina Tumsa",
+                "“In our view a one-sided material development is not only self-deceiving, in the sense that man needs more than that, but it is also a threat to the very values which make life meaningful, if carried without due attention to a simultaneous provision to meet spiritual needs.” -Gudina Tumsa", 
+                "Unless our people are helped to the spiritual freedom and maturity which enables them responsibly to handle material development, we are afraid that what was intended to be a means of enhancing the well being of man can have the opposite effect and create new forms of evil to destroy him.” -Gudina Tumsa "
+
         ],
         fadeAnimation: "fade-left",
           paragraph: [
@@ -276,15 +317,17 @@ export let idiology = [
             //     "name": "The Cost of Discipleship",
             //     "pdf" : TheCostofDiscipleship}
         ],
-        image: christianstewardship,
+        image: IntegralHumanDevelopment1,
          youtube : ""
     },
+
+
     {
         title: 'Resources Amongst the Universal Church',
         quote: [
-          "“We believe that the economy of the Christian community should be seen in a global perspective and the aim should be to arrange for a more fair distribution of resources. Here the Church should even lead the way towards this goal.” (Witness and Discipleship Pg.126) ”",
-          "“Mal-distribution of the world's resources on a scale where the developed countries are consuming about twenty-five times more of the resources per capita than the developing countries. Similar figures are probably also true for the churches within the Christian Community.” (Witness and Discipleship Pg.126)”",
-        "“In our opinion, it is irresponsible to just accept this mal-distribution of resources for God’s mission in this world. We should therefore like to advocate for completely new criteria for distribution of resources based not only on a balance within the ministry of a given church (the original concern of the ECMY), but also on a balance in the global distribution of spiritual care, with the aim of greater justice is serving the total man and of a more responsible Church ministry in today’s world. (Witness and Discipleship Pg.127)”",
+          "“We believe that the economy of the Christian community should be seen in a global perspective and the aim should be to arrange for a more fair distribution of resources. Here the Church should even lead the way towards this goal.” -Gudina Tumsa ",
+"“Mal-distribution of the world's resources on a scale where the developed countries are consuming about twenty-five times more of the resources per capita than the developing countries. Similar figures are probably also true for the churches within the Christian Community.” -Gudina Tumsa", 
+"“In our opinion, it is irresponsible to just accept this mal-distribution of resources for God’s mission in this world. We should therefore like to advocate for completely new criteria for distribution of resources based not only on a balance within the ministry of a given church (the original concern of the ECMY), but also on a balance in the global distribution of spiritual care, with the aim of greater justice is serving the total man and of a more responsible Church ministry in today’s world.” -Gudina Tumsa "
 
         ],
         fadeAnimation: "fade-left",
@@ -300,14 +343,16 @@ export let idiology = [
             {"name" : "The Moratorium Debate and the ECMY",
             "pdf" : TheMoratoriumDebateandtheECMY}
         ],
-        image: resourcesamongsttheuniversalchurch,
+        image: ResourcesAmongsttheUniversalChurch1,
          youtube : ""
     },  
+
+
     {
         title: 'Chrisian Stewardship ',
         quote: [
-          "“The steward is an apostle,  the one commissioned by Jesus Christ, to make Him known by proclaiming the Gospel message to the world, for whom it was intended in God's Plan of Salvation” (Witness and Discipleship Pg.152)”",
-            "“Christ made it possible for men through his death to be stewards of his Gospel.” (Witness and Discipleship Pg.153)”"
+            "“The steward is an apostle,  the one commissioned by Jesus Christ, to make Him known by proclaiming the Gospel message to the world, for whom it was intended in God's Plan of Salvation” -Gudina Tumsa ",
+            "“Christ made it possible for men through his death to be stewards of his Gospel.” -Gudina Tumsa "
 
         ],
         fadeAnimation: "fade-left",
@@ -320,15 +365,18 @@ export let idiology = [
        {"name" : "Stewrdship of the Gospel",
             "pdf" : StewardshipoftheGospel}
         ],
-        image: christianstewardship,
+        image: christianstewardsip1,
          youtube : ""
     },
+
+
     {
         title: 'Missions and Outreach ',
         quote: [
-                   "“What we are and what we have cannot be a determining factor for carrying out the commission, ‘Go therefore and make disciples of all nations’.” (Witness and Discipleship 155)”",
-                   "“The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” (Witness and Discipleship Pg.160)”",
-            "“If our interests happen to coincide, we would be ready to work together, to serve the Ethiopian people as we understand it.” (Witness and Discipleship Pg.110)”"
+            "“What we are and what we have cannot be a determining factor for carrying out the commission, Go therefore and make disciples of all nations’.” -Gudina Tumsa", 
+            "“The Church is alive when it fulfills its God given commision, the evangelization of the world, the sole purpose for which it exits, [doing so] after the pattern of the life of its Lord in the form of a suffering servant.” -Gudina Tumsa ",
+            "“If our interests happen to coincide, we would be ready to work together, to serve the Ethiopian people as we understand it.” -Gudina Tumsa "
+
         ],
         fadeAnimation: "fade-left",
               paragraph: [
@@ -342,15 +390,17 @@ export let idiology = [
                     "pdf" : Scan2},
                     
         ],
-        image: missionandoutreach,
+        image: missionandoutreach1,
                youtube : ""
     },   
+
     {
         title: 'Nation Building ',
         quote: [
-                   "“Christian love compels us to make as much contribution as possible, so that our country may be a beautiful and comfortable place to live in.” (Witness and Discipleship Pg.67)”",
-                   "“I have contended in the preceding paragraphs that the functional approach is preferable to the institutional approach, as far as the church is concerned, as regards to our contributions to nation building for various reasons. One reason is that the present government has declared that it would look after the welfare of its citizens, and the ECMY should not give any hint that she is competing.” (Witness and Discipleship Pg.67”",
-            "“Undertaking small scale industries to provide employment for urban and rural communities is something with the possibility of the ECMY.” (Witness and Discipleship Pg.68)”"
+        "“Christian love compels us to make as much contribution as possible, so that our country may be a beautiful and comfortable place to live in.” -Gudina Tumsa", 
+"“I have contended in the preceding paragraphs that the functional approach is preferable to the institutional approach, as far as the church is concerned, as regards to our contributions to nation building for various reasons. One reason is that the present government has declared that it would look after the welfare of its citizens, and the ECMY should not give any hint that she is competing.” -Gudina Tumsa ",
+"“Undertaking small scale industries to provide employment for urban and rural communities is something with the possibility of the ECMY.” -Gudina Tumsa "
+
         ],
         fadeAnimation: "fade-left",
               paragraph: [
@@ -362,7 +412,7 @@ export let idiology = [
                 "name": "Contribution to Nation Building",
                 "pdf" : ContributiontoNationBuilding},
             { name: "Functional Approach", "pdf": FunctionalApproach }],
-        image: nationbuilding,
+        image: nationbuilding1,
                youtube : ""
     }, 
         
