@@ -13,6 +13,7 @@ import Papers from './pages/Papers';
 import Aos from 'aos'
 import RelationToOthers from './pages/RelationToOthers';
 import Page2 from './pages/Page2';
+import RelationDescription from './pages/RelationDescription';
 //fdg
 import Description from './pages/Description';
 const pageVariant = {
@@ -140,6 +141,22 @@ const location = useLocation()
                className='w-full h-full'
               transition={pageTransition}>
               <Papers />
+              </motion.div>
+            
+        } />
+        
+         
+        
+
+        <Route path="/relationdescription" element={
+            <motion.div
+                  initial="out"
+                  animate="in"
+                  exit="out"
+              variants={pageVariant}
+               className='w-full h-full'
+              transition={pageTransition}>
+               <RelationDescription />
               </motion.div>
             
           } />

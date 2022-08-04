@@ -121,7 +121,7 @@ const RelationToOthers = () => {
 
                     <p>{relationData[position].paragraph[0]}</p>
                     <Link
-                      to="/description"
+                      to="/relationdescription"
                       state={{
                         data: JSON.stringify({
                           title: relationData[position].title,
@@ -132,7 +132,9 @@ const RelationToOthers = () => {
                           image: relationData[position].image,
                           paragrah: relationData[position].paragraph,
                           sideText: "OTHER PEOPLE",
-                          youtube : relationData[position].youtube,
+                          youtube: relationData[position].youtube,
+                          image1: relationData[position].image1,
+                          image2: relationData[position].image2,
                           sideArray: [
                             "Prime minster Dr Abiy",
                             "Dietrich Bonhoeffer",
