@@ -3,9 +3,9 @@ import { React, useState, useEffect, useRef } from "react";
 import { useSelector , useDispatch} from 'react-redux'
 import Choice from "../components/Filter/Choice/Choice";
 
-import {bookdata , category} from "./../assets/data/archivedata/index"
+import { _bookdata, _category } from "./../assets/data/archivedata/index"
+import {getCategory , getArchive} from "./../helper/api" 
 import {
-
   ArrowDownIcon,
   SearchIcon,
   AdjustmentsIcon,
@@ -22,16 +22,50 @@ const Archive = () => {
   const child = { width: `300em`, height: `100%` };
   const [offsetX, setOffsetX] = useState(0);
   const [offsetY, setoffsetY] = useState(0);
-  
+  const [category, setCategory] = useState([])
+  const [bookdata , setBookData] = useState([])
   const [search, setSearch] = useState("")
   const [searchFilter , setSearchFilter] = useState("All")
   const [value, setValue] = useState(false);
   const [filter, setFilter] = useState("");
   const dispatch = useDispatch()
   const authorState = useSelector(state => state.author)
-  useEffect(() => {
+  useEffect( () => {
     window.scrollTo(0, 0);
     dispatch(archive())
+    setCategory(_category)
+    setBookData(_bookdata)
+    
+    // // // get category
+    getCategory().then((res) => {
+      let _onlineCategory = []
+         for (let i = 0; i < res.length; i++){
+           _onlineCategory.push(res[i].name)
+      }
+      var joined = _category.concat(_onlineCategory);
+  
+      setCategory(joined)
+    })
+
+      getArchive().then((res) => {
+      let _onlineCategory = []
+         for (let i = 0; i < res.length; i++){
+           _onlineCategory.push({
+              author: "Gudina Tumsa",
+          
+              uploadDate: "2020-01-04",
+              bookName: res[i].title,
+              category: res[i].category,
+              book: "http://localhost:8080"+res[i].fileLocation,
+              popular: 2.8,
+      
+           })
+      }
+      var joined = _bookdata.concat(_onlineCategory);
+      setBookData(joined)
+    })
+
+
   }, []);
   
  

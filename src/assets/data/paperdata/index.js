@@ -11,7 +11,7 @@ import bookdata3 from "./../../book/paper/TseganeshAyele_Gudina.pdf";
 import bookdata4 from "./../../book/paper/TarressaQannoo_Gudina.pdf";
 
 
-export let paperdata = [
+export let _paperdata = [
     
     //Gudina Tumsa's Short Biography and different report papers by Gudina Tumsa
     {
