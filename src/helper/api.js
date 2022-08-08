@@ -15,3 +15,8 @@ export async function getPaperData() {
     const paper = await fetch(`http://localhost:${port}/api/v1/paper`)
     return paper.json()
 }
+
+export async function getBlogData() { 
+    const blog = await fetch(`http://localhost:${port}/api/v1/blog`)
+    return blog.json()
+}
