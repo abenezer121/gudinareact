@@ -56,7 +56,7 @@ const Archive = () => {
               uploadDate: "2020-01-04",
               bookName: res[i].title,
               category: res[i].category,
-              book: "http://localhost:8080"+res[i].fileLocation,
+              book: "http://44.201.88.37"+res[i].fileLocation,
               popular: 2.8,
       
            })
@@ -133,8 +133,9 @@ const Archive = () => {
                   <DropDown className="" text={"Filter"} authors={ category} />
               </div>  */}
             </div>
-    </div>
-      <div className="w-full h-full flex flex-col mt-[20px] pb-10 ">
+      </div>
+      <div className="flex flex-col">
+              <div className="w-full h-full flex flex-col mt-[20px] pb-10 ">
             <div className=" w-[100%] md:w-[90%]  mx-auto  ">
               <div className="flex">
                 
@@ -183,6 +184,9 @@ const Archive = () => {
           </div>
       
             <Footer/>
+
+      </div>
+
         </>
    
   );

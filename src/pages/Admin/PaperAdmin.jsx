@@ -40,7 +40,7 @@ const PaperAdmin = () => {
 
   const deleteColumn = async (id) => {
     const port = 8080
-      const category = await fetch(`http://localhost:${port}/api/v1/paper/`+id , {
+      const category = await fetch(`http://44.201.88.37/api/v1/paper/`+id , {
         method: 'DELETE',
       })
     window.location.reload(false);
@@ -57,7 +57,7 @@ const PaperAdmin = () => {
       
             formData.append("file", file);
               const port = 8080
-                const category = await fetch(`http://localhost:${port}/api/v1/paper/` , {
+                const category = await fetch(`http://44.201.88.37/api/v1/paper/` , {
                     method: 'POST',
                     headers: {},
                     body: formData,

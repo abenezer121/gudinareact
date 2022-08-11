@@ -73,7 +73,7 @@ const columns = [
   const deleteColumn = async (id) => {
     
     const port = 8080
-      const category = await fetch(`http://localhost:${port}/api/v1/blog/`+id , {
+      const category = await fetch(`http://44.201.88.37/api/v1/blog/`+id , {
         method: 'DELETE',
        
       })
@@ -84,7 +84,7 @@ const columns = [
   const addColumn = async () => {
    
      const port = 8080
-      const category = await fetch(`http://localhost:${port}/api/v1/blog/` , {
+      const category = await fetch(`http://44.201.88.37/api/v1/blog/` , {
           method: 'POST',
           headers: {
             'Accept': 'application/json, text/plain, */*',

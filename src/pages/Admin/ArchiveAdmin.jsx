@@ -55,7 +55,7 @@ const ArchiveAdmin = () => {
 
   const deleteColumn = async (id) => {
     const port = 8080
-      const category = await fetch(`http://localhost:${port}/api/v1/archive/`+id , {
+      const category = await fetch(`http://44.201.88.37/api/v1/archive/`+id , {
         method: 'DELETE',
       })
     window.location.reload(false);
@@ -72,7 +72,7 @@ const ArchiveAdmin = () => {
             formData.append("category", seelectedCategory);
             formData.append("file", file);
               const port = 8080
-                const category = await fetch(`http://localhost:${port}/api/v1/archive/` , {
+                const category = await fetch(`http://44.201.88.37/api/v1/archive/` , {
                     method: 'POST',
                     headers: {
                      

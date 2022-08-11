@@ -15,7 +15,7 @@ const handleUserName = (event) => { setUserName(event.target.value) };
     const handleLogin = async () => {
         //make the api call here
           const port = 8080
-            const login = await fetch(`http://localhost:${port}/api/v1/admin/login` , {
+            const login = await fetch(`http://44.201.88.37/api/v1/admin/login` , {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
@@ -31,8 +31,9 @@ const handleUserName = (event) => { setUserName(event.target.value) };
             alert("Invalid Credentials")
         }
         else {
-            window.location.replace("http://localhost:3000/home");
+            window.location.replace("https://www.gudinatumsalegacy.org/home");
         }
+        
     }
     return (
  <div class="flex flex-col h-screen bg-gradient-to-b from-[#063970] to-blue-200">
