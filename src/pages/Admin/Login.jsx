@@ -1,7 +1,39 @@
-import React from 'react'
-
-
+import { React, useState, useEffect, useRef } from "react";
+import { useSelector , useDispatch} from 'react-redux'
+import {adminlogin} from "./../../redux/actions/navigation"
 const Login = () => { 
+    const dispatch = useDispatch()
+    const [username, setUserName] = useState("")
+    const [password , setPassword] = useState("")
+    useEffect(() => {
+        dispatch(adminlogin())
+    }, [])
+    
+
+const handleUserName = (event) => { setUserName(event.target.value) };
+    const handlePassword = (event) => { setPassword(event.target.value) };
+    const handleLogin = async () => {
+        //make the api call here
+          const port = 8080
+            const login = await fetch(`http://localhost:${port}/api/v1/admin/login` , {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username : username,
+                    password : password
+                })
+            
+            })
+        if (login.status != 200) {
+            alert("Invalid Credentials")
+        }
+        else {
+            window.location.replace("http://localhost:3000/home");
+        }
+    }
     return (
  <div class="flex flex-col h-screen bg-gradient-to-b from-[#063970] to-blue-200">
         <div class="grid place-items-center mx-2 my-20 sm:my-auto" x-data="{ showPass: true }">
@@ -16,14 +48,20 @@ const Login = () => {
                         <input id="email" type="email" class="block w-full py-3 px-3 mt-2
                             text-gray-800 appearance-none
                             border-2 border-gray-100
-                            focus:text-gray-500 focus:outline-none focus:border-gray-200 rounded-md" />
+                            focus:text-gray-500 focus:outline-none focus:border-gray-200 rounded-md"
+                                value={username}
+                            onChange={handleUserName}
+                            />
                     </div>
 
                     <div class="relative w-full">
                         <input type="showPass ? 'password' : 'text'" id="password" class="block w-full py-3 px-3 mt-2 mb-4
                             text-gray-800 appearance-none
                             border-2 border-gray-100
-                            focus:text-gray-500 focus:outline-none focus:border-gray-200 rounded-md" />
+                            focus:text-gray-500 focus:outline-none focus:border-gray-200 rounded-md"
+                                value={password}
+                            onChange={handlePassword}
+                            />
                             <div class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
                                 <p class="font-semibold" x-text ="showPass ? 'Show' : 'Hide'">Show</p>
                             </div>
@@ -31,7 +69,9 @@ const Login = () => {
 
                     <button type="submit" class="w-full py-3 mt-10 bg-[#063970] rounded-md
                         font-medium text-white uppercase
-                        focus:outline-none hover:shadow-none">
+                        focus:outline-none hover:shadow-none"
+                        onClick={handleLogin}
+                        >
                         Login
                     </button>
                 </form>

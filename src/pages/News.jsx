@@ -25,9 +25,7 @@ const News = () => {
             <div class="flex flex-wrap justify-center -mx-4">
                 <div class="w-full px-4">
                     <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                    <span class="font-semibold text-lg text-primary mb-2 block">
-                    Our Blogs
-                    </span>
+                
                     <h2
                         class="
                         font-bold
@@ -40,10 +38,8 @@ const News = () => {
                         >
                         Our Recent News
                     </h2>
-                    <p class="text-base text-body-color">
-                        There are many variations of passages of Lorem Ipsum available
-                        but the majority have suffered alteration in some form.
-                    </p>
+                    
+                            
                     </div>
                 </div>
             </div>
@@ -95,7 +91,11 @@ const News = () => {
                                     </h3>
                                     <p class="text-base text-body-color">
                                         {blog.content}
-                                    </p>
+                                        </p>
+                                        {
+                                            blog.link == undefined || blog.link == null || blog.link == "" ? <div></div> : <a href={blog.link}>Visit Link</a>
+                                        }
+                                        
                                 </div>
                                 </div>
                             </div>

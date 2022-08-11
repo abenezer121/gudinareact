@@ -31,7 +31,27 @@ const navigationReducer = (state = initialState, action) => {
         case 'Gallery':
             return Object.assign({}, state, {
                 navLocation : "Gallery"
-            } )
+            })
+        case 'AdminArchive':
+            return Object.assign({}, state, {
+                        navLocation : "AdminArchive" 
+                    })
+        case 'AdminHome':
+            return Object.assign({}, state, {
+                        navLocation : "AdminHome" 
+                    })
+        case 'AdminLogin':
+            return Object.assign({}, state, {
+                        navLocation : "AdminLogin" 
+                    })
+        case 'AdminBlog':
+            return Object.assign({}, state, {
+                        navLocation : "AdminBlog" 
+                    })
+        case 'AdminPaper':
+            return Object.assign({}, state, {
+                        navLocation : "AdminPaper" 
+                    })
         default:
             return state;
     }

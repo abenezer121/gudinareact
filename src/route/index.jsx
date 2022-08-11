@@ -16,13 +16,18 @@ import News from '../pages/News'
 import HomeAdmin from "../pages/Admin/HomeAdmin"
 import Description from '../pages/Description';
 import SideBar from '../components/SideBar/SideBar';
-
+import AdminSwitcher from '../pages/AdminSwitcher';
 
 
 import ArchiveAdmin from "../pages/Admin/ArchiveAdmin"
 import PaperAdmin  from "../pages/Admin/PaperAdmin"
 import BlogAdmin from "../pages/Admin/BlogAdmin"
 import CategoryAdmin from "../pages/Admin/CategoryAdmin"
+import Login from "../pages/Admin/Login"
+import UserAdmin  from "../pages/Admin/UserAdmin"
+
+import { useSelector, useDispatch } from 'react-redux'
+
 const pageVariant = {
   in: {
     opacity: 1,
@@ -39,7 +44,8 @@ const pageTransition = {
 }
 
 const RootPage = () => {
-// const navState = useSelector((state) => state.usertype);
+  const userState = useSelector((state) => state.usertype);
+  console.log(userState)
   const location = useLocation()
   const userRouter = () => {
     return (
@@ -59,6 +65,7 @@ const RootPage = () => {
         <NavBar />
 
         <Routes location={location} keys={location.pathname}>
+          <Route path="/admin" element={<AdminSwitcher />} />
           <Route path="/page2" element={<Page2 />} />
           <Route path="/detailthesis" element={<DetailThesis />} />
           <Route
@@ -163,6 +170,7 @@ const RootPage = () => {
               </motion.div>
             }
           />
+          
           <Route
             path="/description"
             element={
@@ -184,6 +192,8 @@ const RootPage = () => {
   };
 
   const adminRouter = () => {
+      console.log("index ", userState)
+  console.log(userState.usertype == "Admin")
     return (
       <>
         <AnimatedCursor
@@ -203,11 +213,14 @@ const RootPage = () => {
           </div>
           <div className="w-full h-screen">
             <Routes>
-              <Route path="/" element={<HomeAdmin />} />
+              <Route path="/admin" element={<Login />} />
+              <Route path="/home" element={<HomeAdmin />} />
               <Route path="/category" element={<CategoryAdmin />} />
               <Route path="/archive" element={<ArchiveAdmin />} /> 
               <Route path="/paper" element={<PaperAdmin />} />
               <Route path="/blog" element={<BlogAdmin />} />
+              <Route path="/user" element={<UserAdmin />} />
+              
               
 
             </Routes>
@@ -219,7 +232,10 @@ const RootPage = () => {
 
     );
   };
-  return (<div className="w-full h-screen ">{ adminRouter()}</div>);
+console.log()
+  return (
+    (userState.usertype == "Admin" || localStorage.getItem('admin') == "true") ?  <div className="w-full h-screen ">{adminRouter()}</div> :  <div className="w-full h-screen ">{userRouter()}</div>
+   );
 };
 
 export default RootPage

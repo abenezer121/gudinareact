@@ -1,11 +1,15 @@
 import React from "react";
 import { Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux'
 
 const { Sider } = Layout;
 const SideBar = () => {
-    return (
-    <Sider className="bg-white" collapsible>
+    const navigation = useSelector(state => state.navigation)
+
+  return (
+    
+        navigation.navLocation != "AdminLogin" ?  <Sider className="bg-white" collapsible>
       <Menu
         mode="inline"
         className=" h-screen"
@@ -39,8 +43,24 @@ const SideBar = () => {
             <span>Paper</span>
           </Link>
         </Menu.Item>
+        {/* <Menu.Item key="6">
+          <Link to={"/user"}>
+            <span>User</span>
+          </Link>
+        </Menu.Item> */}
+        <Menu.Item key="7">
+          
+          <span onClick={() => {
+             localStorage.removeItem("admin")
+            window.location.href = "/"
+
+            }}>Logout</span>
+          
+        </Menu.Item>
       </Menu>
-    </Sider>
+    </Sider> : ("")
+      
+   
     );
 }
 

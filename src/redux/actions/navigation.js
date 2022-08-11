@@ -37,3 +37,39 @@ export const gallery = () => {
         type : "Gallery"
     }
 }
+//admin
+
+export const adminlogin = () => { 
+    return {
+        type : "AdminLogin"
+    }
+}
+
+
+export const adminHome = () => { 
+    return {
+        type : "AdminHome"
+    }
+}
+
+
+export const adminArchive = () => { 
+    return {
+        type : "AdminArchive"
+    }
+}
+
+export const adminBlog = () => { 
+    return {
+        type : "AdminBlog"
+    }
+}
+
+export const adminPaper = () => { 
+    return {
+        type : "AdminPaper"
+    }
+}
+
+
+

@@ -3,18 +3,25 @@
 
 import {Button, Form, Input, Popconfirm , Table} from "antd"
 import React , { useState , useEffect} from "react";
-import {getCategory } from "./../../helper/api" 
+import {getBlogData } from "./../../helper/api" 
 
 const BlogAdmin = () => {
 
-  const [category, setCategory] = useState([])
-  const [newCategory, setNewCategory] = useState("")
+  const [blog, setBlog] = useState([])
+
+
+
+  const [title, setTitle] = useState("")
+  const [content, setContent] = useState("")
+  const [video, setVideo] = useState("")
+  const [link, setLink] = useState("")
+  
   
   useEffect(() => {
     window.scrollTo(0, 0);   
-    getCategory().then((res) => {
+    getBlogData().then((res) => {
       
-      setCategory(res)
+      setBlog(res)
     })
   }, [])
   
@@ -22,8 +29,29 @@ const BlogAdmin = () => {
 
 const columns = [
   {
-    title: 'Name',
-    dataIndex: 'name',
+    title: 'Title',
+    dataIndex: 'title',
+    key: 'name',
+     editable: true,
+   
+  },
+  {
+    title: 'Content',
+    dataIndex: 'content',
+    key: 'name',
+     editable: true,
+   
+  },
+  {
+    title: 'Video',
+    dataIndex: 'video',
+    key: 'name',
+     editable: true,
+   
+  },
+  {
+    title: 'Link',
+    dataIndex: 'link',
     key: 'name',
      editable: true,
    
@@ -44,28 +72,33 @@ const columns = [
 
   const deleteColumn = async (id) => {
     
-    
     const port = 8080
-      const category = await fetch(`http://localhost:${port}/api/v1/category/`+id , {
+      const category = await fetch(`http://localhost:${port}/api/v1/blog/`+id , {
         method: 'DELETE',
        
       })
+    window.location.reload(false);
       return category.json()
   }
 
   const addColumn = async () => {
    
      const port = 8080
-      const category = await fetch(`http://localhost:${port}/api/v1/category/` , {
+      const category = await fetch(`http://localhost:${port}/api/v1/blog/` , {
           method: 'POST',
           headers: {
             'Accept': 'application/json, text/plain, */*',
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({name : newCategory})
+        body: JSON.stringify({
+          title: title,
+          content: content,
+          video: video,
+          link: link,
+        })
        
       })
-    
+      window.location.reload(false);
       return category.json()
 
   }
@@ -75,28 +108,66 @@ const columns = [
 
 
 
-  const onInputchange = (event) => {
-     setNewCategory(event.target.value)
+
+
+  const onTitleChange = (event) => {
+     setTitle(event.target.value)
   
   }
+
+    const onContentChange = (event) => {
+     setContent(event.target.value)
+  
+  }
+
+
+    const onVideoChange = (event) => {
+     setVideo(event.target.value)
+  
+  }
+
+
+    const onLinkChange = (event) => {
+     setLink(event.target.value)
+  
+  }
+
 
   return (
     <>
       <div className="w-full h-full">
         <div className="w-[70%] mx-auto relative mt-20">
-          <div className="flex space-x-5 ml-[70%] mb-10">
+          <div className=" mb-10">
               <div className="my-auto">        
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name</label>
-              <input type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Category 1"
-                value={newCategory}
-              onChange={onInputchange}/>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Title</label>
+              <input type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Title"
+                value={title}
+              onChange={onTitleChange}/>
+            </div>
+            <div className="my-auto">        
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Content</label>
+              <textarea type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Content"
+                value={content}
+              onChange={onContentChange}/>
+            </div>
+             <div className="my-auto">        
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Video</label>
+              <input type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Video"
+                value={video}
+              onChange={onVideoChange}/>
+            </div>
+            <div className="my-auto">        
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Link</label>
+              <input type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Link"
+                value={link}
+              onChange={onLinkChange}/>
               </div>
               
             <div className="my-auto">
                 <span type="button" className="text-white rounded-lg px-4 py-2  mt-7 text-sm bg-blue-600 " onClick={()=> addColumn()}>Add</span>
           </div>
           </div>
-            <Table dataSource={category} columns={columns} />;
+            <Table dataSource={blog} columns={columns} />;
         </div>
       </div>
     
