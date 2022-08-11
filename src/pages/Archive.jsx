@@ -56,7 +56,7 @@ const Archive = () => {
               uploadDate: "2020-01-04",
               bookName: res[i].title,
               category: res[i].category,
-              book: "http://44.201.88.37"+res[i].fileLocation,
+              book: "https://44.201.88.37"+res[i].fileLocation,
               popular: 2.8,
       
            })
