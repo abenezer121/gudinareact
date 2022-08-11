@@ -15,7 +15,7 @@ const handleUserName = (event) => { setUserName(event.target.value) };
     const handleLogin = async () => {
         //make the api call here
           const port = 8080
-            const login = await fetch(`https://44.201.88.37/api/v1/admin/login` , {
+            const login = await fetch(`http://44.201.88.37/api/v1/admin/login` , {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
