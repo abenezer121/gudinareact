@@ -114,7 +114,10 @@ const Description = () => {
       <div className="w-full">
         <div className="w-[90%] md:w-[80%] mx-auto">
           <div className=" grid grid-cols-1 md:grid-cols-2">
-            <div className="hidden md:block  w-[50%]">
+            {
+              data.pdf.length > 0 ?
+                <div className="hidden md:block  w-[50%]">
+              
               <p className="text-sm font-medium uppercase border-b-2 pb-3">{data.sideText}</p>
               <div className="flex w-full">
                 <img src={bookgif} className="w-[250px] h-[150px] mr-5"/>
@@ -133,7 +136,9 @@ const Description = () => {
                     })}
               </div>
               </div>
-            </div>
+            </div> : <div className="hidden md:block  w-[50%]"></div>
+              }
+            
             <div className="w-[100%]">
               <h1 className="text-4xl font-medium">{data.title}</h1>
               <ReadMore paragraph={data.paragrah}></ReadMore>
@@ -148,15 +153,17 @@ const Description = () => {
       <div className="mt-[5%] mb-[1%]">
          <div className="w-full">
         <div className="w-[90%] md:w-[70%] mx-auto">
-          <div className=" grid grid-cols-1 md:grid-cols-2">
+          <div className=" grid grid-cols-1 md:grid-cols-2 space-x-2">
            
               
-              <div className="w-[100%] md:ml-[30%] mb-[40px] h-[300px] md:h-[800px] relative" style={{
-                backgroundImage: `url(${data.image})`,
-                backgroundRepeat: "no-repeat",
-                
-              }}>
-                <div className="absolute hidden md:flex md:left-[68%] z-10 w-[600px] top-10  rounded bg-slate-100 ">
+              <div className="  mb-[40px] h-[300px] md:h-[800px] relative">
+                <img src={data.image } className="w-full h-full"/>
+            
+          
+              </div>
+               <div className=" mb-[400px] md:mb-[40px] h-[300px] md:h-[800px] relative">
+                     {data.quote.length > 0 ? 
+              <div className="flex  z-10  top-10  rounded bg-slate-100 ">
                   <div className="mx-10">
                       <div className="w-full border-b-2 pb-2 ">
                         <div className="">
@@ -170,12 +177,7 @@ const Description = () => {
                         })
                       }
                     </div>
-                </div>
-               
-                
-              </div>
-               <div className="hidden md:block  w-[30%]">
-              <p className="text-sm font-medium uppercase"></p>
+              </div> : ("")}
               </div>
           </div>
         </div>
@@ -225,7 +227,7 @@ const Description = () => {
                           quote: _data[handleClick(-1, data.title)].quote,
                           paragrah: _data[handleClick(-1, data.title)].paragraph,
                           image : _data[handleClick(-1, data.title)].image,
-                          sideText: "OTHER TOPICS",
+                          sideText: "PDF",
                           youtube : _data[handleClick(-1, data.title)].youtube,
                           sideArray: [
                                   "Cost of Discipleship",
@@ -274,7 +276,7 @@ const Description = () => {
                           paragrah: _data[handleClick(1, data.title)].paragraph,
                           image: _data[handleClick(-1, data.title)].image,
                            youtube : _data[handleClick(1, data.title)].youtube,
-                          sideText: "OTHER TOPICS",
+                          sideText: "PDF",
                           sideArray: [
                                   "Cost of Discipleship",
                                   "GT on Politics/Economics",

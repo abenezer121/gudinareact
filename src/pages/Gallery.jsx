@@ -60,37 +60,37 @@ function shuffleArray(array) {
       <>
         <div className="flex flex-wrap md:w-1/2">
         <div className="w-1/2 p-1 md:p-2">
-          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+          <img alt="gallery" className="block  w-full h-full rounded-lg"
             src={one} />
         </div>
 
         <div className="w-1/2 p-1 md:p-2">
-          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+          <img alt="gallery" className="block  w-full h-full rounded-lg"
             src={two} />
         </div>
 
         <div className="w-full p-1 md:p-2">
-          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+          <img alt="gallery" className="block  w-full h-full rounded-lg"
             src={three} />
         </div>
       </div>
         <div className="flex flex-wrap md:w-1/2">
             <div className="w-full p-1 md:p-2">
-              <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+              <img alt="gallery" className="block  w-full h-full rounded-lg"
                 src={four} />
             </div>
             <div className="w-1/2 p-1 md:p-2">
-              <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+              <img alt="gallery" className="block  w-full h-full rounded-lg"
                 src={five} />
             </div>
             <div className="w-1/2 p-1 md:p-2">
-              <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+              <img alt="gallery" className="block  w-full h-full rounded-lg"
                 src={six} />
             </div>
         </div>
         {
           putdata == true ? <div className='w-[100%] h-[100%] mt-[30px]  '>
-            <img alt="gallery" className="block object-cover object-center w-full  h-full rounded-lg"
+            <img alt="gallery" className="block  w-full  h-full rounded-lg"
                 src={six} />
           </div> : ("")
       }

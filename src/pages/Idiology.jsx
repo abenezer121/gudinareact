@@ -94,7 +94,7 @@ const Idiology = () => {
                    fontFamily: "Odibee Sans" 
                   }}
                 >
-                  His Ideology and Theology
+                  His Theology and Ideology
                 </h3>
                 {/* <h3   data-aos="fade-up"
                   className="text-4xl md:text-6xl font-bold py-6 text-center text-white "
@@ -106,12 +106,12 @@ const Idiology = () => {
                   spiritually.” - H.E Emmanuel Abraham
                 </h3> */}
                 <h2   data-aos="fade-up" className="text-base  text-slate-400  text-center mt-4">
-                  <ReadMore>
+                  <p>
                         This section was inspired by the writing of Gudina Tumsa from his compiled writings—Witness and Discipleship. The section is meant to analyze Gudina’s
                         thought pattern, make it contextual to the present day and use his deep insight to minister to the future. Gudina’s thought is based on his theology but
                         his theology ministers in a holistic way to the world and with the issues that mankind faces today. We hope that those who read can find new insight and
                         solutions to build a modern and integral society
-                  </ReadMore>
+                  </p>
                 </h2>
               </div>
             </div>
@@ -144,7 +144,7 @@ const Idiology = () => {
                           backToLink : "/idiology", 
                           quote: item.quote,
                           paragrah: item.paragraph,
-                          sideText: "OTHER TOPICS",
+                          sideText: "PDF",
                           image: item.image,
                           youtube : item.youtube,
                           sideArray: [

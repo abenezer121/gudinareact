@@ -1,7 +1,7 @@
 import { React, useState, useEffect, useRef } from "react";
 import Choice from "../components/Filter/Choice/Choice";
 
-import { paperdata  } from "./../assets/data/paperdata/index"
+import { _paperdata  } from "./../assets/data/paperdata/index"
 import {
   SearchIcon,
 } from "@heroicons/react/outline";
@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
 import DropDown from "../components/DropDown/DropDown";
 import { useSelector , useDispatch} from 'react-redux'
-
+import { getPaperData} from "./../helper/api" 
 import {papers } from "./../redux/actions/navigation"
 
 const Papers = () => {
@@ -22,15 +22,32 @@ const Papers = () => {
   const child = { width: `300em`, height: `100%` };
   const [offsetX, setOffsetX] = useState(0);
   const [offsetY, setoffsetY] = useState(0);
-  
+  const [paperdata , setPaperData] = useState([])
   const [search , setSearch] = useState("")
   const [value, setValue] = useState(false);
   const [filter, setFilter] = useState("");
   const dispatch = useDispatch()
   const authorState = useSelector(state => state.author)
   useEffect(() => {
-    window.scrollTo(0, 0);
-    dispatch(papers())
+      window.scrollTo(0, 0);
+      dispatch(papers())
+      setPaperData(_paperdata)
+      getPaperData().then((res) => {
+            let _onlineCategory = []
+            for (let i = 0; i < res.length; i++){
+              _onlineCategory.push({
+                  author: "Gudina Tumsa",
+                  uploadDate: "2020-01-04",
+                  bookName: res[i].title,
+                  category: "category",
+                  book: "http://44.201.88.37"+res[i].fileLocation,
+                  popular: 2.8,
+          
+              })
+          }
+          var joined = _paperdata.concat(_onlineCategory);
+          setPaperData(joined)
+      })
     }, []);
  
 

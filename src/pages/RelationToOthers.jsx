@@ -45,7 +45,7 @@ const RelationToOthers = () => {
                   
                   <div className="w-full h-screen ">
                       <div className="w-[80%] mx-auto">
-                          <h2 className="mt-[50%] md:mt-[4%] font-bold text-5xl uppercase text-gray-300 ">In Relation With Others</h2>
+                          <h2 className="mt-[50%] md:mt-[4%] font-bold text-5xl uppercase text-gray-300 ">In Relation to Others</h2>
                    </div>
                       
             <div className="w-[80%] md:w-[100%] lg:w-[80%] h-[70%]  mx-auto flex items-center mt-[3%] justify-between mb-[500px] md:mb-[120px]">
@@ -121,7 +121,7 @@ const RelationToOthers = () => {
 
                     <p>{relationData[position].paragraph[0]}</p>
                     <Link
-                      to="/description"
+                      to="/relationdescription"
                       state={{
                         data: JSON.stringify({
                           title: relationData[position].title,
@@ -132,7 +132,9 @@ const RelationToOthers = () => {
                           image: relationData[position].image,
                           paragrah: relationData[position].paragraph,
                           sideText: "OTHER PEOPLE",
-                          youtube : relationData[position].youtube,
+                          youtube: relationData[position].youtube,
+                          image1: relationData[position].image1,
+                          image2: relationData[position].image2,
                           sideArray: [
                             "Prime minster Dr Abiy",
                             "Dietrich Bonhoeffer",

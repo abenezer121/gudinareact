@@ -3,16 +3,30 @@ import abiy from "./../../image/other/drabiy2.jpg"
 import martin from "./../../image/other/martin.jpg"
 import bonhoeffer1 from "./../../image/other/bonhoeffer1.jpg"
 import Bonhoeffer from "./../../book/relation/Bonhoeffer.pdf" 
-export let relationData = [
 
-       
+import abiy1 from "./../../image/relation/abiy.jpg"
+import abiy2 from "./../../image/relation/abiy1.jpg"
+
+import martin1 from "./../../image/relation/martin.jpg"
+import martin2 from "./../../image/relation/martin1.jpg"
+
+import Bonoeffer1 from "./../../image/relation/Bonoeffer.jpg"
+import Bonoeffer2 from "./../../image/relation/Bonoeffer1.jpg"
+
+
+
+
+
+export let relationData = [
 
     {
         photo: martin,
-        image : martin,
+        image: martin,
+        image1: martin1,
+        image2: martin2,
         title: 'Gudina Tumsa and Dr. Martin Luther King Jr.', quote: [
-            '“I have decided to stick with love. Hate is too great a burden to bear.”',
-            "“The church must be reminded that it is not the master or the servant of the state, but rather the conscience of the state. It must be the guide and the critic of the state, and never its tool. If the church does not recapture its prophetic zeal, it will become an irrelevant social club without moral or spiritual authority.”"
+            // '“I have decided to stick with love. Hate is too great a burden to bear.”',
+            // "“The church must be reminded that it is not the master or the servant of the state, but rather the conscience of the state. It must be the guide and the critic of the state, and never its tool. If the church does not recapture its prophetic zeal, it will become an irrelevant social club without moral or spiritual authority.”"
             
             ],
         fadeAnimation: "fade-left",
@@ -31,10 +45,13 @@ export let relationData = [
         
     {
         photo: abiy,
-        image : abiy,
+        image: abiy,
+          image1: abiy1,
+        image2: abiy2,
+        
         title: 'Gudina Tumsa and Dr.Abiy Ahmed', quote: [
-
-            "When we see his life and work, we can confirm that he was rightly compared with Dietrich Bonhoeffer of Germany, who boldly opposed the ideology of Hitler and spoke publicly against it. He was then murdered by the Hitler regime, ready to sacrifice his life for the cause of the gospel. He was unselfish, bold, and prepared to help others up to the point of self-sacrifice. Rev.Gudina came in contact with the theology of Bonhoeffer during his stay at Luther Seminary in St. Paul,MN, USA"
+            // "“When we see his life and work, we can confirm that he was rightly compared with Dietrich Bonhoeffer of Germany, who boldly opposed the ideology of Hitler and spoke publicly against it. He was then murdered by the Hitler regime, ready to sacrifice his life for the cause of the gospel. He was unselfish, bold, and prepared to help others up to the point of self-sacrifice. Rev.Gudina came in contact with the theology of Bonhoeffer during his stay at Luther Seminary in St. Paul,MN, USA”"
+       
         ],
         fadeAnimation: "fade-left",
               paragraph: [
@@ -55,11 +72,13 @@ export let relationData = [
     }, 
         {
             photo: bonhoeffer1,
-            image : bonhoeffer1,
+            image: bonhoeffer1,
+            
+              image1: Bonoeffer1,
+        image2: Bonoeffer2,
         title: 'Gudina Tumsa and Dietrich Bonhoeffer', quote: [
 
-            "“When we see his life and work, we can confirm that he was rightly compared with Dietrich Bonhoeffer of Germany, who boldly opposed the ideology of Hitler and spoke publicly against it. He was then murdered by the Hitler regime, ready to sacrifice his life for the cause of the gospel. He was unselfish, bold, and prepared to help others up to the point of self-sacrifice. Rev.Gudina came in contact with the theology of Bonhoeffer during his stay at Luther Seminary in St. Paul,MN, USA”"
-        ],
+            ],
         fadeAnimation: "fade-left",
               paragraph: [
                 "Ditrech Bonhoffer was a German theologian and church leader that ministerd during the Nazi regime. He is famous for being apart of the July 20th conspiracy to overthrow Hitler, writing many theological writtings that still resonate with Christians today such as the Cost of Discipeship and being executed by the armed wing of the Nazi regime.",

@@ -82,21 +82,9 @@ const Navbar = () => {
                     <div id="menu_text_bar"></div>
                   </label>
                 </div>
-            
-                          
-
-
-              
-
               </div>
-              
-
             </div>
-           
-               
-          
-              
-
+   
                 <NavDrawer visible={contactVisible} setContact = {()=>{handleContactVisible()}} />
             </div>
           )

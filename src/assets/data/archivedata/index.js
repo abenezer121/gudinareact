@@ -49,7 +49,7 @@ import bookdata30 from "./../../book/archive/Missiological_Seminar.pdf"
 import bookdata31 from "./../../book/archive/Wittenberg_Seminar.pdf"
 import bookdata32 from "./../../book/archive/Missiological_Seminary_On_Life_and_ministry.pdf"
 
-export let category = [
+export let _category = [
     "All",
     "News Articles on Gudina Tumsa and Tsehay Tolessa",
     "Newsletter on the disappearance of Rev.Gudina Tumsa",
@@ -65,17 +65,18 @@ export let category = [
 
 
 
-export let bookdata = [
+export let _bookdata = [
     
     //Gudina Tumsa's Short Biography and different report papers by Gudina Tumsa
     {
         author: "Gudina Tumsa",
         image: book1,
         uploadDate: "2020-01-04",
-        book: bookdata1,
         bookName: "Church Growth Report By Rev.Gudina Tumsa",
+        category: "Gudina Tumsa's Short Biography and different report papers by Gudina Tumsa",
+        book: bookdata1,
         popular: 2.8,
-        category : "Gudina Tumsa's Short Biography and different report papers by Gudina Tumsa"
+        
     },
     {
         author: "Gudina Tumsa",

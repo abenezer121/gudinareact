@@ -142,7 +142,7 @@ const Home = () => {
                       data-aos="fade-up"
                       className="text-base  text-slate-400  text-center mt-4"
                     >
-                      <ReadMore>
+                      <p className="mb-[100px]">
                         Gudina Tumsa was an Ethiopian, evangelist and Church
                         leader who lived from 1929-1979. Gudina is one of the
                         most famous figures in the history of Protestant
@@ -158,7 +158,7 @@ const Home = () => {
                         Gudina Tumsa?Well, Gudina’s historical life story offers
                         topics of interest such as truth, faith, love, and
                         persecution. 
-                      </ReadMore>
+                      </p>
                     </h2>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ const Home = () => {
                           data-aos="fade-up"
                           data-aos-delay="1000"
                         >
-                          <button class="btn btn1"> Read Paper</button>
+                         
                         </div>
                       </div>
 
@@ -477,8 +477,8 @@ const Home = () => {
 
             <HomePageQuote
               quotes={[
-                "“Gudina Tumsa is “our St.Paul.” He and his wife “showed our people Jesus Christ  they shared our hunger and suffering.” -Rev. Girma Kassa",
-                "“Gudina was not afraid of anything.” -Tsheay Tolesa",
+                "“Gudina Tumsa is “our St.Paul.” He and his wife “showed our people Jesus Christ  they shared our hunger and suffering.” -Rev. Girma Kassa”",
+                "“Gudina was not afraid of anything.” -Tsheay Tolesa”",
                 "“On 28 July 1979 Gudina Tumsa was abducted and killed by strangulation. His murder brought to an end the possiblity of creative and visionary theological reflection in the church.” - Øyvind M. Eide ",
               ]}
             />
@@ -502,7 +502,7 @@ const Home = () => {
                       data-aos="fade-up"
                       style={{}}
                     >
-                      Along The Way Since 1929
+                      Gudina Tumsa from 1929-1979
                     </h3>
                     <div className="ml-[40px] md:ml-[80px]">
                       <div className=" w-full   grid   grid-cols-2 md:grid-cols-6  gap-y-4  ">
