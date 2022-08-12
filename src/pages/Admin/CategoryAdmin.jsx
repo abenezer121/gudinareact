@@ -43,7 +43,7 @@ const columns = [
     
     
     const port = 8080
-      const category = await fetch(`http://44.204.78.162/api/v1/category/`+id , {
+      const category = await fetch(`https://44.204.78.162/api/v1/category/`+id , {
         method: 'DELETE',
        
       })
@@ -54,7 +54,7 @@ const columns = [
   const addColumn = async () => {
    
      const port = 8080
-      const category = await fetch(`http://44.204.78.162/api/v1/category/` , {
+      const category = await fetch(`https://44.204.78.162/api/v1/category/` , {
           method: 'POST',
           headers: {
             'Accept': 'application/json, text/plain, */*',
