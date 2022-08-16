@@ -120,7 +120,7 @@ const Home = () => {
               {visitNews ?
               
                 blogdata.length > 0 ? 
-                  <div class="hidden lg:flex flex-col w-[40%] md:w-[30%] h-[40%] rounded overflow-hidden bg-white shadow-lg absolute bottom-0 mb-[1%]">
+                  <div class="flex flex-col w-[40%] md:w-[30%] h-[40%] rounded overflow-hidden bg-white shadow-lg absolute bottom-0 mb-[1%]">
               {!(
                 blogdata[0].video == undefined ||
                 blogdata[0].video == null ||
