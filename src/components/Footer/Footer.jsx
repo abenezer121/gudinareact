@@ -3,7 +3,8 @@ import {
     FaFacebook,
     FaInstagram,
     FaTwitter,
-    FaYoutube
+    FaYoutube,
+    
     
 } from 'react-icons/fa'
 import { idiology } from "./../../assets/data/idiologydata/index"

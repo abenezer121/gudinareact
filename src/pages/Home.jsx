@@ -1,6 +1,5 @@
 import { React, useState, useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
-
 import "./../assets/css/homepagegallery.css";
 import Footer from "../components/Footer/Footer";
 import years from "./../assets/data/year.json";
@@ -18,6 +17,7 @@ import homepage6 from "../assets/image/HomePagePictures/homepage6.jpg";
 import gudinatumsa1 from "../assets/image/HomePagePictures/gudinatumsa1.png";
 import homepagecover from "../assets/image/other/qw.png";
 import { Link } from 'react-router-dom';
+import { BeakerIcon , NewspaperIcon } from '@heroicons/react/solid'
 const ReadMore = ({ children }) => {
   const text = children;
   const [isReadMore, setIsReadMore] = useState(true);
@@ -49,8 +49,13 @@ const Home = () => {
   const [offsetYOther, setoffYOther] = useState(0);
   const [value, setValue] = useState(true);
   const [blogdata, setBlogData] = useState([]);
+  const [visitNews , setVisitNews] = useState(false);
 
   const navigation = useSelector((state) => state.navigation);
+
+  const handleNewsView = () => { 
+    setVisitNews(!visitNews);
+  }
   const settings = {
     dots: false,
     infinite: true,
@@ -112,7 +117,8 @@ const Home = () => {
           transition={pageTransition}
         >
             <div className="w-full h-full ">
-              {
+              {visitNews ?
+              
                 blogdata.length > 0 ? 
                   <div class="hidden lg:flex flex-col w-[40%] md:w-[30%] h-[40%] rounded overflow-hidden bg-white shadow-lg absolute bottom-0 mb-[1%]">
               {!(
@@ -170,7 +176,17 @@ const Home = () => {
                     <Link to='/news'><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded"> View All News </button></Link>
             </div>
                 : ("")
-              }
+              
+                : 
+                  <div className="flex items-center absolute bottom-0 mb-[1%] w-full">
+                  <NewspaperIcon className=" w-14 mr-[1%] ml-[1%]"/>
+                  <div class="px-[1%] pt-[0.5%]  rounded overflow-hidden  shadow-lg bg-white  hover:text-blue-700 "  onClick={()=>{ handleNewsView()}}>
+                    
+                        <p className="font-bold">Click View Recent News</p>
+                  </div>
+                        
+                </div>}
+              
             
             <HomeIntro />
             <div className="flex flex-col">
