@@ -11,14 +11,13 @@ import TimeLineElement from "../components/timeline/TimeLineElement";
 import Intro from "./Intro";
 import { motion } from "framer-motion";
 import "./../assets/css/style.css";
-import FlexImage from "../components/Flex/FlexImage";
-
+import { getBlogData } from "../helper/api";
 import ministry from "../assets/image/HomePagePictures/ministry.jpg";
 import funeral from "../assets/image/HomePagePictures/homepage5.jpg";
 import homepage6 from "../assets/image/HomePagePictures/homepage6.jpg";
 import gudinatumsa1 from "../assets/image/HomePagePictures/gudinatumsa1.png";
 import homepagecover from "../assets/image/other/qw.png";
-
+import { Link } from 'react-router-dom';
 const ReadMore = ({ children }) => {
   const text = children;
   const [isReadMore, setIsReadMore] = useState(true);
@@ -49,6 +48,8 @@ const Home = () => {
   const [offsetXOther, setoffXOther] = useState(0);
   const [offsetYOther, setoffYOther] = useState(0);
   const [value, setValue] = useState(true);
+  const [blogdata, setBlogData] = useState([]);
+
   const navigation = useSelector((state) => state.navigation);
   const settings = {
     dots: false,
@@ -79,6 +80,14 @@ const Home = () => {
 
   useEffect(() => {
     // window.scrollTo(0, 0);
+    getBlogData().then((res) => {
+      let _onlineCategory = [];
+      for (let i = 0; i < res.length; i++) {
+        _onlineCategory.push(res[i]);
+      }
+
+      setBlogData(_onlineCategory);
+    });
   }, []);
 
   const dash = (color) => {
@@ -102,7 +111,67 @@ const Home = () => {
           variants={pageVariant}
           transition={pageTransition}
         >
-          <div className="w-full h-full ">
+            <div className="w-full h-full ">
+              {
+                blogdata.length > 0 ? 
+                  <div class="hidden lg:flex flex-col w-[40%] md:w-[30%] h-[40%] rounded overflow-hidden bg-white shadow-lg absolute bottom-0 mb-[1%]">
+              {!(
+                blogdata[0].video == undefined ||
+                blogdata[0].video == null ||
+                blogdata[0].video == ""
+              ) ? (
+                <div class="rounded overflow-hidden mb-8">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src={`https://www.youtube.com/embed/${getYouTubeID(
+                      blogdata[0].video
+                    )}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                  />
+                </div>
+              ) : (
+                <div className=""></div>
+              )}
+              <div class="px-6 py-4 h-[30%] overflow-y-auto">
+                <div>
+                  <h3>
+                    <a
+                      href="javascript:void(0)"
+                      class="
+                                            font-semibold
+                                            text-xl
+                                            sm:text-2xl
+                                            lg:text-xl
+                                            xl:text-xl
+                                            mb-4
+                                            inline-block
+                                            text-dark
+                                            hover:text-primary
+                                            "
+                    >
+                      {blogdata[0].title}
+                    </a>
+                  </h3>
+                  <p class="text-base text-body-color">{blogdata[0].content}</p>
+                  {blogdata[0].link == undefined ||
+                  blogdata[0].link == null ||
+                  blogdata[0].link == "" ? (
+                    <div></div>
+                  ) : (
+                    <a href={blogdata[0].link}>Visit Link</a>
+                  )}
+                </div>
+                    </div>
+                    
+                    <Link to='/news'><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded"> View All News </button></Link>
+            </div>
+                : ("")
+              }
+            
             <HomeIntro />
             <div className="flex flex-col">
               <div className="w-full h-full flex flex-col items-center bg-[#321473] ">
@@ -202,9 +271,7 @@ const Home = () => {
                           className="mt-10"
                           data-aos="fade-up"
                           data-aos-delay="1000"
-                        >
-                         
-                        </div>
+                        ></div>
                       </div>
 
                       <div
@@ -521,7 +588,6 @@ const Home = () => {
                     </div>
                     <div className="w-[60%]  mx-auto ">
                       <div className="grid grid-cols-1 md:grid-cols-2 mt-20">
-                    
                         <div className="ml-[3%]">
                           <p className="text-white text-3xl font-bold border-b-[2px] pb-6">
                             June 1, 1979
