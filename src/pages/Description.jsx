@@ -9,11 +9,9 @@ import getYouTubeID from "get-youtube-id";
 import background from "./../assets/image/ideology/image.jpg";
 import { idiology } from "./../assets/data/idiologydata/index"
 import "./../assets/css/style.css";
-import bookgif from "./../assets/image/other/bbbook.gif"
+import bookgif from "./../assets/image/other/bbbook.gif"                                        
 
-                                          
-import { relationData } from './../assets/data/relationdata/index'
-import styled from "styled-components";
+
 const ReadMore = (props) => {
   const [isReadMore, setIsReadMore] = useState(true);
   const toggleReadMore = () => {
@@ -37,8 +35,11 @@ const ReadMore = (props) => {
   );
 };
 const Description = () => {
+  
+  
   const location = useLocation();
-  const data = JSON.parse(location.state.data);
+  const itemposition =  localStorage.getItem('position');
+ 
   const images = importAll(
     require.context(
       "../assets/image/SectionsPictures/",
@@ -46,54 +47,58 @@ const Description = () => {
       /\.(png|jpe?g|svg)$/
     )
   );
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   console.log("asdf")
+  // },[]);
+  
+
   var res = [];
   for (var i in images) res.push(images[i]);
-  const _data = data.backToLink == "/idiology" ? idiology : relationData;
+  const _data =   idiology ;
 
-  console.log(_data);
+  
   const searchPosition = (text) => {
+    
     let position = 0;
     
-    for (let i = 0; i < _data.length; i++) {
-      if (_data[i].title === text) {
+    for (let i = 0; i < idiology.length; i++) {
+      if (idiology[i].title === text) {
         position = i;
       }
     }
     return position;
   };
   const handleClick = (i, text) => {
-    const position = searchPosition(text);
     
+    let position = searchPosition(text);
     if (i == 1) {
-      if (position == 0) {
-        return position + 1;
-      } else if (position == _data.length - 1) {
-        return 0;
-      } else {
-        return position + 1;
-      }
-    } else {
-      if (position == 0) {
-        return _data.length - 1;
-      } else if (position == _data.length - 1) {
-        return 0;
-      } else {
-        return position - 1;
-      }
+        if (position == 0) {
+           position = position + 1;
+        } else if (position == idiology.length - 1) {
+         position = 0;
+        } else {
+          position = position + 1;
+        }
     }
+    else {
+        if (position == 0) {
+          position = idiology.length - 1;
+        } else if (position == idiology.length - 1) {
+          position = 0;
+        } else {
+          position = position - 1;
+        }
+    }
+    localStorage.setItem('position', position);
+    window.location.reload();
+      window.scrollTo(0, 0);
+ 
+   
   };
 
-   const dash = (color) => {
-    return (
-      <div
-        className={`w-[30px] h-[4px]  -rotate-12  ${color} m-auto mt-4 mb-4`}
-      ></div>
-    );
-  };
-
+  
+  
 
   return (
     <div className="w-full h-full mt-10">
@@ -104,25 +109,25 @@ const Description = () => {
           style={{ width: "50px", height: "50px" }}
         /> */}
         <p></p>
-        <Link to={data.backToLink}>
+        <Link to="/idiology">
             <p className="uppercase mr-10 text-center align-center    md:ml-[1%] mt-[30%] font-medium text-black hover:text-[#321473] flex">
-              {data.backToText}{" "}
+              Back To Ideology
             <ArrowLeftIcon className="ml-2 md:ml-10 mr-10 md:mr-20 w-5 h-5 font-medium  hover:text-[#321473]" />
             </p>
         </Link>
       </div>
-      <div className="w-full">
+     <div className="w-full">
         <div className="w-[90%] md:w-[80%] mx-auto">
           <div className=" grid grid-cols-1 md:grid-cols-2">
             {
-              data.pdf.length > 0 ?
+              idiology[itemposition].pdf.length > 0 ?
                 <div className="hidden md:block  w-[50%]">
               
-              <p className="text-sm font-medium uppercase border-b-2 pb-3">{data.sideText}</p>
+              <p className="text-sm font-medium uppercase border-b-2 pb-3">{idiology[itemposition].sideText}</p>
               <div className="flex w-full">
                 <img src={bookgif} className="w-[250px] h-[150px] mr-5"/>
                 <div className="flex flex-col space-y-3">
-                    {data.pdf.map((item, index) => {
+                    {idiology[itemposition].pdf.map((item, index) => {
                       return (
                         <a
                           href={item.pdf}
@@ -139,17 +144,17 @@ const Description = () => {
             </div> : <div className="hidden md:block  w-[50%]"></div>
               }
             
-            <div className="w-[100%]">
-              <h1 className="text-4xl font-medium">{data.title}</h1>
-              <ReadMore paragraph={data.paragrah}></ReadMore>
-            </div>
+           <div className="w-[100%]">
+              <h1 className="text-4xl font-medium">{idiology[itemposition].title}</h1>
+               <ReadMore paragraph={idiology[itemposition].paragraph}></ReadMore> 
+            </div> 
           </div>
         </div>
       </div>
       <div>
     </div>
 
-
+ 
       <div className="mt-[5%] mb-[1%]">
          <div className="w-full">
         <div className="w-[90%] md:w-[70%] mx-auto">
@@ -157,12 +162,12 @@ const Description = () => {
            
               
               <div className="  mb-[40px] h-[300px] md:h-[800px] relative">
-                <img src={data.image } className="w-full h-full"/>
+                <img src={idiology[itemposition].image } className="w-full h-full"/>
             
           
               </div>
                <div className=" mb-[400px] md:mb-[40px] h-[300px] md:h-[800px] relative">
-                     {data.quote.length > 0 ? 
+                     {idiology[itemposition].quote.length > 0 ? 
               <div className="flex  z-10  top-10  rounded bg-slate-100 ">
                   <div className="mx-10">
                       <div className="w-full border-b-2 pb-2 ">
@@ -172,7 +177,7 @@ const Description = () => {
                       </div>
                       <div className="mt-10"></div>
                       { 
-                        data.quote.map((item, index) => { 
+                        idiology[itemposition].quote.map((item, index) => { 
                           return <p className="" >{item}</p>
                         })
                       }
@@ -182,17 +187,15 @@ const Description = () => {
           </div>
         </div>
       </div>
-      </div>
+      </div> 
       {
-        data.youtube != "" ?  <div className="w-full h-[500px] ">
-              {/* <p  data-aos="fade-up" className="text-lg text-center text-black "> The Importance of the Man, Reverend and Martyr Gudina Tumsa </p>
-               {dash("bg-black")}
-                    <p className="mb-[4 0px]"></p> */}
+        idiology[itemposition].youtube != "" ?  <div className="w-full h-[500px] ">
+              
           <iframe
                                   width="100%"
                                   height="100%"
                                   src={`https://www.youtube.com/embed/${getYouTubeID(
-                                    data.youtube
+                                    idiology[itemposition].youtube
                                   )}`}
                                   frameBorder="0"
                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -204,11 +207,9 @@ const Description = () => {
       }
      
 
-      <div
-        className="w-full h-[60%]  pb-10"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
+       <div
+        className="w-full h-[60%]  pb-10 bg-[#321473]"
+        
       >
         <div id="animation-carousel" class="relative" data-carousel="static">
           <div class="overflow-hidden relative h-30 rounded-lg md:h-96 text-center ">
@@ -218,29 +219,17 @@ const Description = () => {
           </div>
 
           {
-          //"/idiology"
-          <Link to="/description" state={{
-                        data: JSON.stringify({
-                          title: _data[handleClick(-1, data.title)].title,
-                          backToText:  _data[handleClick(-1, data.title)].backToText,
-                          backToLink :  _data[handleClick(-1, data.title)].backToLink, 
-                          quote: _data[handleClick(-1, data.title)].quote,
-                          paragrah: _data[handleClick(-1, data.title)].paragraph,
-                          image : _data[handleClick(-1, data.title)].image,
-                          sideText: "PDF",
-                          youtube : _data[handleClick(-1, data.title)].youtube,
-                          sideArray: [
-                                  "Cost of Discipleship",
-                                  "GT on Politics/Economics",
-                                  "Holistic Theology"
-                          ],
-                          pdf :  _data[handleClick(-1, data.title)].pdf,
-                        })
-                        
-                        
-          }}>
+          
+    
              <button
-            type="button"
+                type="button"
+                onClick={(e) => {
+                   
+              handleClick(-1, idiology[itemposition].title);
+                
+                  
+              
+            }}
             class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
         
           >
@@ -264,35 +253,18 @@ const Description = () => {
             </span>
           </button>
           
-          </Link>
+ 
          }
           {
-             <Link to="/description" state={{
-                        data: JSON.stringify({
-                          title: _data[handleClick(1, data.title)].title,
-                             backToText:  data.backToText,
-                          backToLink :  data.backToLink, 
-                          quote: _data[handleClick(1, data.title)].quote,
-                          paragrah: _data[handleClick(1, data.title)].paragraph,
-                          image: _data[handleClick(-1, data.title)].image,
-                           youtube : _data[handleClick(1, data.title)].youtube,
-                          sideText: "PDF",
-                          sideArray: [
-                                  "Cost of Discipleship",
-                                  "GT on Politics/Economics",
-                                  "Holistic Theology"
-                          ],
-                          pdf :  _data[handleClick(1, data.title)].pdf,
-                        })
-                        
-                        
-            }}>
+            
                <button
             type="button"
             class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            onClick={() => {
-              const pos = handleClick(1, data.title);
-              console.log(pos);
+            onClick={(e) => {
+              
+              handleClick(1, idiology[itemposition].title);
+              
+
             }}
           >
             <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -315,11 +287,11 @@ const Description = () => {
             </span>
           </button>
 
-          </Link>
+   
           }
          
         </div>
-      </div>
+      </div> 
 
       <Footer />
     </div>

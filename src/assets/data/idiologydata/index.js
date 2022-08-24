@@ -13,21 +13,6 @@ import AMoreReponsibleChurchMinistry from './../../book/idiology/AMoreReponsible
 import AWholisticTheology from './../../book/idiology/AWholisticTheology.pdf';
 
 
-import TheCostofDiscipleship from './../../book/idiology/TheCostofDiscipleship.pdf';
-import african from "./../../image/ideology/african.png"
-import christianstewardship from "./../../image/ideology/christianstewardship.png"
-import costofdisciplesip from "./../../image/ideology/costofdiscipleship.png"
-import ecumenticalharmony from "./../../image/ideology/ecumenicalharmony.png"
-import gtonpolotics from "./../../image/ideology/gtonpolotics.png"
-import holistictheology from "./../../image/ideology/holistictheology.png"
-import humandevelopment from "./../../image/ideology/humandevelopment.png"
-import missionandoutreach from "./../../image/ideology/missionandoutreach.png"
-import nationbuilding from "./../../image/ideology/nationbuilding.png"
-import resourcesamongsttheuniversalchurch from "./../../image/ideology/resourcesamongsttheuniversalchurch.png"
-import responsibilityofachristiantosociety from "./../../image/ideology/responsibilityofachristiantosociety.png"
-import responsibilityofthechurchtosociety from "./../../image/ideology/responsibilityofthechurchtosociety.png"
-import unbeliefromhistoricalperspective from "./../../image/ideology/unbeliefromhistoricalperspective.jpg"
-import youth from "./../../image/ideology/youth.jpg"
 
 
 
@@ -173,8 +158,6 @@ export let idiology = [
         image: UnbelieffromHistoricalPerspective1,
          youtube : "https://www.youtube.com/watch?v=aeMocbe5rso"
     },
-    
-
     {
                 title: 'African Theology/ Contextualization',
         quote: [
@@ -202,9 +185,6 @@ export let idiology = [
         image: AfricanTheology1,
          youtube : ""
     },
-
-
-
     {
         title: 'Youth',
         quote: [
@@ -224,9 +204,6 @@ export let idiology = [
         image: youth1,
          youtube : ""
     },
-
-
-
     {
         title: 'Holistic Theology',
         quote: [
@@ -251,8 +228,6 @@ export let idiology = [
         image: aholistictheology,
          youtube : ""
     }, 
-    
-
     {
         title: 'GT on Politics/Economics',
         quote: [
@@ -271,8 +246,6 @@ export let idiology = [
         image: polotics1,
          youtube : ""
     },
-
-
     {
         title: 'The Cost of Discipleship',
         quote: [
@@ -293,8 +266,6 @@ export let idiology = [
         image: TheCostofDiscipleship1,
          youtube : "https://www.youtube.com/watch?v=-TWNgc1Kvms"
     },
-
-
     {
         title: 'Integral Human Development',
         quote: [
@@ -320,8 +291,6 @@ export let idiology = [
         image: IntegralHumanDevelopment1,
          youtube : ""
     },
-
-
     {
         title: 'Resources Amongst the Universal Church',
         quote: [
@@ -346,8 +315,6 @@ export let idiology = [
         image: ResourcesAmongsttheUniversalChurch1,
          youtube : ""
     },  
-
-
     {
         title: 'Chrisian Stewardship ',
         quote: [
@@ -368,8 +335,6 @@ export let idiology = [
         image: christianstewardsip1,
          youtube : ""
     },
-
-
     {
         title: 'Missions and Outreach ',
         quote: [
@@ -393,7 +358,6 @@ export let idiology = [
         image: missionandoutreach1,
                youtube : ""
     },   
-
     {
         title: 'Nation Building ',
         quote: [

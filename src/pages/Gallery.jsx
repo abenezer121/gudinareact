@@ -39,8 +39,9 @@ function shuffleArray(array) {
       const EECMY = importAll(require.context("../assets/image/Gallery/EECMY", false, /\.(png|jpe?g|svg)$/));
       const Evangelist = importAll(require.context("../assets/image/Gallery/Evangelist", false, /\.(png|jpe?g|svg)$/));
       const GTFamily = importAll(require.context("../assets/image/Gallery/GTFamily", false, /\.(png|jpe?g|svg)$/));
-      const quote = importAll(require.context("../assets/image/Gallery/quote", false, /\.(png|jpe?g|svg)$/));
-      
+    const quote = importAll(require.context("../assets/image/Gallery/quote", false, /\.(png|jpe?g|svg)$/));
+    console.log("the family image is " + GTFamily)
+      console.log("the gallery image is " + quote)
       var res = []
       for (var image in Childhood) res.push( { category:"Childhood" , image:Childhood[image]  });
       for (var image in EarlyLife) res.push( { category:"Early Life" , image:EarlyLife[image]  });

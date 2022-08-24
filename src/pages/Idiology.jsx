@@ -143,6 +143,7 @@ const Idiology = () => {
                           backToText: "Back To Ideology",
                           backToLink : "/idiology", 
                           quote: item.quote,
+                          position : index,
                           paragrah: item.paragraph,
                           sideText: "PDF",
                           image: item.image,
@@ -156,7 +157,10 @@ const Idiology = () => {
                         })
                         
                         
-                    }}><div data-aos={item.fadeAnimation}>{titleText(item.title)}</div></Link>
+                      }}><div data-aos={item.fadeAnimation} onClick={() => {
+                          
+                          localStorage.setItem('position', index);
+                    }}>{titleText(item.title)}</div></Link>
                     
                     )
                   })

@@ -193,7 +193,7 @@ const RelationDescription = () => {
       }
      
 
-      <div
+      {/* <div
         className="w-full h-[60%]  pb-10"
         style={{
           backgroundImage: `url(${background})`,
@@ -312,7 +312,7 @@ const RelationDescription = () => {
           }
          
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
