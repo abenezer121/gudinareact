@@ -17,9 +17,9 @@ const RelationToOthers = () => {
 
   const images = [martin, abiy2, bonhoeffer1];
   const title = [
-    "Relation With Martin Luther King",
-    "Relation With Prime Minster Dr. Abiy Ahmed",
-    "Relation With Dr. Bonhoeffer",
+    "In Relation to Martin Luther King",
+    "In Relation to Prime Minster Dr. Abiy Ahmed",
+    "In Relation to Dr. Bonhoeffer",
   ];
   const cutImage = [abiy2, bonhoeffer1, martin];
   const dispatch = useDispatch();

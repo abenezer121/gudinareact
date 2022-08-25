@@ -46,7 +46,7 @@ const handleUserName = (event) => { setUserName(event.target.value) };
                 </div>
                 <form class="space-y-5" method="POST">
                     <div>
-                        <input id="email" type="email" class="block w-full py-3 px-3 mt-2
+                        <input id="email" type="text" class="block w-full py-3 px-3 mt-2
                             text-gray-800 appearance-none
                             border-2 border-gray-100
                             focus:text-gray-500 focus:outline-none focus:border-gray-200 rounded-md"
@@ -56,16 +56,14 @@ const handleUserName = (event) => { setUserName(event.target.value) };
                     </div>
 
                     <div class="relative w-full">
-                        <input type="showPass ? 'password' : 'text'" id="password" class="block w-full py-3 px-3 mt-2 mb-4
+                        <input type="password" id="password" class="block w-full py-3 px-3 mt-2 mb-4
                             text-gray-800 appearance-none
                             border-2 border-gray-100
                             focus:text-gray-500 focus:outline-none focus:border-gray-200 rounded-md"
                                 value={password}
                             onChange={handlePassword}
                             />
-                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
-                                <p class="font-semibold" x-text ="showPass ? 'Show' : 'Hide'">Show</p>
-                            </div>
+                            
                     </div>
 
                     <button type="submit" class="w-full py-3 mt-10 bg-[#063970] rounded-md
