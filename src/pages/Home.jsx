@@ -120,7 +120,7 @@ const Home = () => {
               {visitNews ?
               
                 blogdata.length > 0 ? 
-                  <div class="flex flex-col w-[40%] md:w-[30%] h-[40%] rounded overflow-hidden bg-white shadow-lg absolute bottom-0 mb-[1%]">
+                  <div class="ml-[2%] flex flex-col w-[40%] md:w-[22%] h-[40%] rounded overflow-hidden bg-white shadow-lg absolute bottom-0 mb-[1%]">
               {!(
                 blogdata[0].video == undefined ||
                 blogdata[0].video == null ||
@@ -173,14 +173,16 @@ const Home = () => {
                 </div>
                     </div>
                     
-                    <Link to='/news'><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded"> View All News </button></Link>
+                    <Link to='/news'><button class="bg-[#3a0aa3] text-white font-bold py-2 px-4 w-full rounded"> View All News </button></Link>
+                    
             </div>
                 : ("")
               
                 : 
-                  <div className="flex items-center absolute bottom-0 mb-[1%] w-full">
-                  <NewspaperIcon className=" w-14 mr-[1%] ml-[1%]"/>
-                  <div class="px-[1%] pt-[0.5%]  rounded overflow-hidden  shadow-lg bg-white  hover:text-blue-700 "  onClick={()=>{ handleNewsView()}}>
+                  <div className="flex items-center absolute bottom-0 mb-[1%] ml-[1%] w-full ">
+                  
+                  
+                  <div class="px-[1%] pt-[0.5%]  rounded overflow-hidden  shadow-lg bg-white  hover:text-blue-700  "  onClick={()=>{ handleNewsView()}}>
                     
                         <p className="font-bold">Click View Recent News</p>
                   </div>

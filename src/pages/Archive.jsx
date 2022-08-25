@@ -15,7 +15,13 @@ import { useInView } from "react-intersection-observer";
 import DropDown from "../components/DropDown/DropDown";
 
 import {home  , relationtoothers , papers , archive , gallery} from "./../redux/actions/navigation"
-
+const dash = (color) => {
+    return (
+      <div
+        className={`w-[30px] h-[4px]  -rotate-12  ${color} m-auto mt-4 mb-4`}
+      ></div>
+    );
+  };
 const Archive = () => {
 
 
@@ -105,11 +111,29 @@ const Archive = () => {
              
          <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50  bg-[#3a0aa3]  mb-10 relative overflow-hidden   ">
         {/* */}
-         <div className="w-[80%] mx-auto">
-                          <h2 className="mt-[4%] font-bold text-5xl uppercase  text-white " style={{
+          <div className="w-[80%] mx-auto">
+                          {/* <h2 className="mt-[4%] font-bold text-5xl uppercase  text-white " style={{
                    fontFamily: "Odibee Sans" 
-                  }}>Archive</h2>
-                   </div>
+          }}>Archive</h2>
+           */}
+          <h3   
+                  className="text-4xl md:text-6xl  font-bold  text-center text-white pt-[5%] "
+                  style={{
+                   fontFamily: "Odibee Sans" 
+                  }}
+                >
+                  Archive
+            </h3>
+            
+            {dash("bg-white")}
+                <p  data-aos="fade-up"
+                  className="text-lg text-center text-white mb-[5%]"
+                  
+                >
+A compilation of information the study of Gudina Tumsa                </p>
+        </div> 
+        
+        
         {/*  md:ml-[40px] my-auto ml-[10%] */}
         
             <div className=" h-full w-full  flex flex-col md:flex-row      md:items-center justify-between  mt-[30px] ">
