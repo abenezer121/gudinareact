@@ -4,16 +4,17 @@ import TheMoratoriumDebateandtheECMY from './../../book/idiology/TheMoratoriumDe
 
 import StewardshipoftheGospel from './../../book/idiology/StewardshipoftheGospel.pdf';
 import Scan2 from './../../book/idiology/Scan2.pdf';
-import Scan from './../../book/idiology/Scan2.pdf';
+import Scan from './../../book/idiology/Ecumenical_Harmony.pdf';
 import On_the_Interrelation_between_Proclamation_of_the_Godpel_and_Human from './../../book/idiology/On_the_Interrelation_between_Proclamation_of_the_Godpel_and_Human.pdf';
 import Moratorium from './../../book/idiology/Moratorium.pdf';
 import FunctionalApproach from './../../book/idiology/FunctionalApproach.pdf';
 import ContributiontoNationBuilding from './../../book/idiology/ContributiontoNationBuilding.pdf';
 import AMoreReponsibleChurchMinistry from './../../book/idiology/AMoreReponsibleChurchMinistry.pdf';
 import AWholisticTheology from './../../book/idiology/AWholisticTheology.pdf';
+import costofdiscple from './../../book/idiology/The_Cost_of_Discipleship.pdf'
 
-
-
+import Anationalchurch from './../../book/idiology/A_national_church.pdf'
+import Manandhisneeds from './../../book/idiology/Man_and_his_needs.pdf'
 
 
 import ResponsibilityofaChristiantosociety1 from './../../image/id/ResponsibilityofaChristiantosociety.jpg'
@@ -83,8 +84,11 @@ export let idiology = [
                 "“The ECMY will continue to contribute her share to the economic development of Ethiopia, to improve the living conditions of the people, to the political orientation of the people in being useful to society, in knowing their rights and obligations of citizens.” (Witness and Discipleship Pg.67). Gudina Tumsa’s thought on the responsibility of the Church to society can be summed up by saying he pleaded for the Church to have a balanced approach and minister to the spiritual, social, political and economic factors of life. In other words he desired total involvement of the Church. "
         ],
         pdf: [
-              {"name" : "The Role of a Christian in a Given Society",
-                "pdf" : TheRoleofaChristianinaGivenSociety}
+            //   {"name" : "The Role of a Christian in a Given Society",
+            //     "pdf": TheRoleofaChristianinaGivenSociety
+            // },
+             {"name" : "A More Reponsible Church Ministry",
+                "pdf" : AMoreReponsibleChurchMinistry} ,
         ],
         image: responsibilityofchurchtosociety,
         
@@ -112,10 +116,9 @@ export let idiology = [
         
         ],
         pdf: [
-               {"name" : "A More Reponsible Church Ministry",
-                "pdf" : AMoreReponsibleChurchMinistry} ,
-                {"name" : "Scan",
-                "pdf" : Scan}
+              
+                {"name" : "Ecumenical Harmony",
+                "pdf" : Scan}   
 
         ],
         image: EcumenicalHarmony1,
@@ -260,12 +263,19 @@ export let idiology = [
             "Gudina understood the body of Christ and how each part has a different function, but all the parts have one thing in common: they all serve the same body. Gudina defines the bases of discipleship as servanthood to the body of Christ (Matthew 23:11). To become a disciple is to serve one’s Lord and country, give up luxury and personal interests for the purpose of the Gospel. Gudina’s writings on the cost of discipleship should influence believers today to make a decision to completely follow the call of their Lord Jesus Christ, and make the necessary sacrifices to become His disciples. We conclude in giving an example of what truly following Christ looks like according to Gudina Tumsa,  “In this matter, which is so personal to every one of us, we have to make decisions affecting our personal interest, our living standard, the luxury that we enjoy, thereby setting an example for the government as for others concerned, not by words but by actions of sacrificial nature. This is what it means to be the church for others. Jesus Christ lived and sacrificed himself for us.” (Witness and Discipleship Pg.73)"
         ],
         pdf: [
-            {"name" : "A Wholistic Theology",
-            "pdf" : AWholisticTheology }
+            {"name" : "The Cost of Discipleship",
+                "pdf": costofdiscple
+            }
+            
+            
+
+
         ],
         image: TheCostofDiscipleship1,
          youtube : "https://www.youtube.com/watch?v=-TWNgc1Kvms"
     },
+
+
     {
         title: 'Integral Human Development',
         quote: [
@@ -281,7 +291,7 @@ export let idiology = [
               "The development occurring in the present day is extremely fascinating, as new developments such as artificial intelligence, the internet, mobile phones, self-driving cars, etc… are becoming integral parts to daily life. This has led people to call the present age the information age, an era of extreme advancement. This advancement is leading many to claim that society is as developed as it has ever been, but Gudina Tumsa would differ in his opinion this is seen when he writes, “Looking at the so-called developed societies we realize that in the midst of their affluence man is still suffering from all kinds of evil.” (Witness and Discipleship Pg.89). Although society is developing at an unprecedented pace, many people are beginning to fear what the power of development is doing to society, as global phenomena such as climate change, pandemics, economic crises and moral perversions are becoming recurrent. Gudina Tumsa can be seen predicting this when he writes, “True, man can organize the world apart from God, but without God we can organize it, in the end, only against man.” (Witness and Discipleship Pg.89. It is not an exaggeration to say that these words from Gudina are a prophetic utterance, an example of this is the fear many people have of robots replacing them in their jobs, risks of nuclear and biological warfare and extreme natural disasters. Society has developed itself without God and now it is facing the consequences for its imbalance growth. Gudina found himself with one conclusion to fix this problem and that is to turn to the creator of the creation we are abusing."
         ],
         pdf: [
-            { "name" : "On_the_Interrelation_between_Proclamation_of_the_Godpel_and_Human",
+            { "name" : "The Ghospel and Human Development",
                 "pdf": On_the_Interrelation_between_Proclamation_of_the_Godpel_and_Human
             },
             // {
@@ -291,6 +301,8 @@ export let idiology = [
         image: IntegralHumanDevelopment1,
          youtube : ""
     },
+
+
     {
         title: 'Resources Amongst the Universal Church',
         quote: [
@@ -351,8 +363,18 @@ export let idiology = [
                   "To understand Gudina’s writings on missions we must know the context of the time the missions were working in Africa. This was during the colonial and post colonial era and many of the missions took on a similar attitude to their home countries, and that was an attitude of “paternalism” or “colonialism.” Gudina was influenced by the heavy pan-African movement at that time, as can be seen in his desire to develop an African theology, and that theology was affected by the experiences that all Afircan’s were experiencing through colonialism and underdevelopment. Gudina saw this in the Church based on his belief that the Church cannot be separated from its surroundings. “This kind of paternalistic, colonial attitude can never be tolerated, can never be accepted.” (Witness and Discipleship Pg.109). This quote shows how Gudina related the events going on between Western Countries and Africa to relationships of the Western Churches and African Churches. Gudina specifically wrote this when he was referring to how MAH, a German mission, was trying to tell the ECMY how to interpret their own constitution on an issue related to a synod of the ECMY. Gudina strongly disagreed with this and addressed the Western missions in the way they thought of the third world Churches as immature. Because of this, Gudina rebuked the MAH saying, “The MAH did not act only against the law of the Country, the MAH acted contrary to the letter and the spirit of the Constitution of The ECMY.” (Witness and Discipleship Pg.104). As for the third world countries Gudina gave them this message, “As I have stated already, we would not like to be, we can never be, an agent for rich missions organizations, donor agencies and churches. Let it be clear to all that the ECMY is not an agent to carry out policies and decisions taken in Europe or America, nor is the ECMY willing to fulfill the purpose of international organizations, which appears to be contrary to what she holds to be right. We want to be ourselves.” (Witness and Discipleship Pg.109). Addressing that the Churches should be a paradigm, and set an example for how African governments should respond to Western pressure.",
                   " In conclusion, Gudina did not only identify the problems that the Church was facing in relation to missions and donors, but he also presented solutions, for both the Church and the nation. And for both the solution was “self-reliance”. In the case of the Church Gudina advocated for self-reliance but interdependence with the universal Church. Gudina writes about how self-reliance should be approached, while maintaining the biblical understanding of the body of Christ. “Chirstian responsibility demands that we should march towards self-reliance in a planned manner, while at the same time maintaining Chirstian integrity.” (Witness and Discipleship Pg.64). For the nation Gudina understood that nationalism and sovereignty were of utmost importance. Gudina understood that a nation's independence was necessary for that nation to be seen as equal to other nations. His opinion on the self-reliance in a nation is made clear when he wrote, “Independence is a legitimate national political aim.” (Witness and Discipleship Pg.49). Gudina was able to apply his theological understanding of a situation at a Church and National level. Showing his ability for deep thought and showing that the Church is directly affected by its surroundings. And that society can be modeled after the Church, if the Church does minister in a Biblical and holistic approach."
         ],
-              pdf : [{"name" : "SCAN 2",
-                    "pdf" : Scan2},
+              pdf : 
+                  [
+                        {"name" : "Man and his needs",
+                  "pdf": Manandhisneeds
+              },{
+                          "name": "A National Church",
+                  "pdf": Anationalchurch
+              },
+                
+                  
+                  
+
                     
         ],
         image: missionandoutreach1,

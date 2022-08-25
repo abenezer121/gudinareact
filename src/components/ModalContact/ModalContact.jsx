@@ -81,9 +81,9 @@ const ModalContact = (props) => {
                     <p className=' text-center text-sm font-medium uppercase'>social</p>
                     <div className='mx-auto text-center  flex  space-x-5 '>
                     
-                        <a href="https://m.facebook.com/GudinaTumsaLegacy/?ref=py_c" target="_blank" rel="noopener noreferrer"><FaFacebook className='text-2xl hover:text-3xl' /></a>
-                        <a href="https://et.linkedin.com/company/gudina-tumsa-foundation" target="_blank" rel="noopener noreferrer"><FaLinkedin className='text-2xl hover:text-3xl' /></a>
-                        <a href="https://www.youtube.com/channel/UCTNekwzaIGOvMYhfMAJprgA" target="_blank" rel="noopener noreferrer"><FaYoutube className='text-2xl hover:text-3xl'/></a>
+                        <a href="https://m.facebook.com/GudinaTumsaLegacy/?ref=py_c" target="_blank" rel="noopener noreferrer"><FaFacebook className='text-2xl hover:text-3xl text-[#3a0aa3] ' /></a>
+                        <a href="https://et.linkedin.com/company/gudina-tumsa-foundation" target="_blank" rel="noopener noreferrer"><FaLinkedin className='text-2xl hover:text-3xl text-[#3a0aa3]' /></a>
+                        <a href="https://www.youtube.com/channel/UCTNekwzaIGOvMYhfMAJprgA" target="_blank" rel="noopener noreferrer"><FaYoutube className='text-2xl hover:text-3xl text-[#3a0aa3]'/></a>
                     </div>
                 </div>
                 </div>

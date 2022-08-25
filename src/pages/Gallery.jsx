@@ -132,10 +132,12 @@ function shuffleArray(array) {
   return (
     <>
       <div className="w-[80%] mx-auto mt-[36%] md:mt-[5%]">
-                          <h2 className="mt-[2%] font-bold text-5xl uppercase text-gray-300 ">Gallery</h2>
+                          <h2 className="mt-[1%] font-bold text-5xl uppercase text-[#3a0aa3] " style={{
+                   fontFamily: "Odibee Sans" 
+                  }}>Gallery</h2>
                    </div>
     <div class="flex">
-    <aside class="h-screen sticky top-[15px] md:ml-20 ">
+    <aside class="h-screen sticky top-[20px] md:ml-[7%] ">
         <div className='flex flex-col text-xl font-bold  mt-[10px] uppercase9+ '>
             <p className= { filter == "All" ? '-rotate-90 py-[40px]' : '-rotate-90 py-[40px] text-gray-400'} onClick={()=>{setFilter("All");}}>All</p>
             <p className={ filter == "Childhood" ? '-rotate-90 py-[40px]' : '-rotate-90 py-[40px] text-gray-400'} onClick={()=>{setFilter("Childhood");}}>Childhood</p>
@@ -150,7 +152,7 @@ function shuffleArray(array) {
     </aside>
     
     <main>
-            <section className=" text-gray-700 mt-[90px] ">
+            <section className=" text-gray-700 mt-[20px] ">
                            <div className="container px-1 py-2 mx-auto lg:pt-24 lg:px-32">
                                <div className="flex flex-wrap -m-1 md:-m-2">
                                   {data.map((item, index) => { 

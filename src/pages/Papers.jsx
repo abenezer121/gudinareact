@@ -83,10 +83,12 @@ const Papers = () => {
 
 
       
-         <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50    mb-10 relative overflow-hidden   ">
+         <div className="w-full py-[15px] z-10 bg-slate-100 sticky top-0 z-50   bg-[#3a0aa3]  mb-10 relative overflow-hidden   ">
         {/* */}
-         <div className="w-[80%] mx-auto">
-                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-gray-300 ">Papers</h2>
+         <div className="w-[80%] mx-auto ">
+                          <h2 className="mt-[4%] font-bold text-5xl uppercase text-white " style={{
+                   fontFamily: "Odibee Sans" 
+                  }}>Papers</h2>
                    </div>
         {/*  md:ml-[40px] my-auto ml-[10%] */}
         

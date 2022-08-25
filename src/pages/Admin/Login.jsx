@@ -14,7 +14,8 @@ const handleUserName = (event) => { setUserName(event.target.value) };
     const handlePassword = (event) => { setPassword(event.target.value) };
     const handleLogin = async () => {
         //make the api call here
-          const port = 8080
+        const port = 8080
+        try {
             const login = await fetch(`https://44.204.78.162/api/v1/admin/login` , {
                 method: 'POST',
                 headers: {
@@ -27,12 +28,18 @@ const handleUserName = (event) => { setUserName(event.target.value) };
                 })
             
             })
-        if (login.status != 200) {
+
+            if (login.status != 200) {
             alert("Invalid Credentials")
         }
         else {
             window.location.replace("https://www.gudinatumsalegacy.org/home");
         }
+        } catch (err) {
+            console.log("the error is " + err)
+        }
+            
+        
         
     }
     return (

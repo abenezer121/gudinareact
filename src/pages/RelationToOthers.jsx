@@ -88,7 +88,7 @@ const RelationToOthers = () => {
                     }}
                   >
                     <Dash
-                      color={position == 0 ? "bg-[#321473]" : "bg-slate-500"}
+                      color={position == 0 ? "bg-[#3a0aa3]" : "bg-gray-200"}
                     />
                   </div>
                   <div
@@ -97,7 +97,7 @@ const RelationToOthers = () => {
                     }}
                   >
                     <Dash
-                      color={position == 1 ? "bg-[#321473]" : "bg-slate-500"}
+                      color={position == 1 ? "bg-[#3a0aa3]" : "bg-gray-200"}
                       onClick={() => {
                         setPosition(1);
                       }}
@@ -109,7 +109,7 @@ const RelationToOthers = () => {
                     }}
                   >
                     <Dash
-                      color={position == 2 ? "bg-[#321473]" : "bg-slate-500"}
+                      color={position == 2 ? "bg-[#3a0aa3]" : "bg-gray-200"}
                       onClick={() => {
                         setPosition(2);
                       }}
@@ -117,7 +117,7 @@ const RelationToOthers = () => {
                   </div>
                 </div>
                   <div className="md:ml-[60px]  my-auto w-[90%] md:w-[30%] bg-transparent ">
-                    <h2 className="font-bold text-5xl mt-[50px] md:mt-[10px]">{title[position]}</h2>
+                    <h2 className="font-bold text-5xl mt-[50px] md:mt-[10px] text-[#3a0aa3]">{title[position]}</h2>
 
                     <p>{relationData[position].paragraph[0]}</p>
                     <Link
@@ -154,7 +154,7 @@ const RelationToOthers = () => {
                     }}
                   >
                     <Dash
-                      color={position == 0 ? "bg-[#321473]" : "bg-slate-500"}
+                      color={position == 0 ? "bg-[#321473]" : "bg-gray-200"}
                     />
                   </div>
                   <div
@@ -163,7 +163,7 @@ const RelationToOthers = () => {
                     }}
                   >
                     <Dash
-                      color={position == 1 ? "bg-[#321473]" : "bg-slate-500"}
+                      color={position == 1 ? "bg-[#321473]" : "bg-gray-200"}
                       onClick={() => {
                         setPosition(1);
                       }}
@@ -175,7 +175,7 @@ const RelationToOthers = () => {
                     }}
                   >
                     <Dash
-                      color={position == 2 ? "bg-[#321473]" : "bg-slate-500"}
+                      color={position == 2 ? "bg-[#321473]" : "bg-gray-200"}
                       onClick={() => {
                         setPosition(2);
                       }}

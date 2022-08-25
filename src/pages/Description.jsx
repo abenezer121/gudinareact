@@ -145,7 +145,7 @@ const Description = () => {
               }
             
            <div className="w-[100%]">
-              <h1 className="text-4xl font-medium">{idiology[itemposition].title}</h1>
+              <h1 className="text-4xl font-medium text-[#321473]">{idiology[itemposition].title}</h1>
                <ReadMore paragraph={idiology[itemposition].paragraph}></ReadMore> 
             </div> 
           </div>

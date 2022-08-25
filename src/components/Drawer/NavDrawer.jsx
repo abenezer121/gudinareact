@@ -74,15 +74,15 @@ const NavDrawer = (props) => {
                             <div className='flex flex-col w-full'>
                             <div className='text-center  my-[10%]  w-full '>
                                     
-                                        <Link to='/'><h1 className='text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false);  dispatch(home());  }}  > <span className=''>Home</span></h1></Link>
-                                        <Link to='/idiology'> <h1 className='text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(_idiology());  }}><span className=''>His Theology</span> </h1></Link>
-                                        <Link to='/relationtoothers'><h1 className=' text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(relationtoothers());  }}  > <span className=''>In Relation to others</span></h1></Link>
-                                        <Link to='/papers'><h1 className=' text-black text-center text-5xl font-bold  text-sm '  onClick={() => { props.setContact(false);  dispatch(papers());  }} > <span className=''>Papers</span></h1></Link>
-                                <Link to='/archive'><h1 className=' text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(archive()); }}  > <span className=''>Archive</span></h1></Link>
-                                <Link to='/news'><h1 className=' text-black text-center text-5xl font-bold  text-sm '  onClick={() => { props.setContact(false);  }}  > <span className=''>News</span></h1></Link>
-                                <Link to='/gallery'><h1 className=' text-black text-center text-5xl font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(gallery()); }}><span className=''>Gallery</span></h1></Link>
+                                        <Link to='/'><h1 className='text-black text-center text-5xl font-bold text-[#3a0aa3]  text-sm ' onClick={() => { props.setContact(false);  dispatch(home());  }}  > <span className=''>Home</span></h1></Link>
+                                        <Link to='/idiology'> <h1 className='text-black text-center text-5xl text-[#3a0aa3] font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(_idiology());  }}><span className=''>His Theology</span> </h1></Link>
+                                        <Link to='/relationtoothers'><h1 className=' text-black text-center text-5xl text-[#3a0aa3] font-bold  text-sm ' onClick={() => { props.setContact(false); dispatch(relationtoothers());  }}  > <span className=''>In Relation to others</span></h1></Link>
+                                        <Link to='/papers'><h1 className=' text-black text-center text-5xl font-bold text-[#3a0aa3]  text-sm '  onClick={() => { props.setContact(false);  dispatch(papers());  }} > <span className=''>Papers</span></h1></Link>
+                                <Link to='/archive'><h1 className=' text-black text-center text-5xl font-bold  text-sm text-[#3a0aa3] ' onClick={() => { props.setContact(false); dispatch(archive()); }}  > <span className=''>Archive</span></h1></Link>
+                                <Link to='/news'><h1 className=' text-black text-center text-5xl font-bold  text-sm text-[#3a0aa3] '  onClick={() => { props.setContact(false);  }}  > <span className=''>News</span></h1></Link>
+                                <Link to='/gallery'><h1 className=' text-black text-center text-5xl font-bold text-[#3a0aa3]  text-sm ' onClick={() => { props.setContact(false); dispatch(gallery()); }}><span className=''>Gallery</span></h1></Link>
                                 
-                                        <h1 className=' text-black text-center text-5xl font-bold  text-sm '   onClick={() => setContactVisible(true)}><span className=''>Contact Us</span></h1>
+                                        <h1 className=' text-black text-center text-5xl font-bold  text-sm text-[#3a0aa3] '   onClick={() => setContactVisible(true)}><span className=''>Contact Us</span></h1>
                         
                                     </div>
                             </div>

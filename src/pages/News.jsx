@@ -22,9 +22,9 @@ const News = () => {
        
         <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20">
         <div class="container">
-            <div class="flex flex-wrap justify-center -mx-4">
-                <div class="w-full px-4">
-                    <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+            <div class="flex flex-wrap">
+                <div class="w-full ">
+                    <div class="ml-[3%]  mb-[60px] lg:mb-20 max-w-[510px] ">
                 
                     <h2
                         class="
@@ -32,11 +32,16 @@ const News = () => {
                         text-3xl
                         sm:text-4xl
                         md:text-[40px]
-                        text-dark
+                        
                         mb-4
+                        text-[#3a0aa3]
                         "
+                                
+                                style={{
+                   fontFamily: "Odibee Sans" 
+                  }}
                         >
-                        Our Recent News
+                        Recent News
                     </h2>
                     
                             
