@@ -1,20 +1,25 @@
 import { React, useState, useEffect, useRef } from "react";
 import { useSelector , useDispatch} from 'react-redux'
-import {adminlogin} from "./../../redux/actions/navigation"
+import { adminlogin } from "./../../redux/actions/navigation"
+import { Link } from "react-router-dom";
 const Login = () => { 
     const dispatch = useDispatch()
     const [username, setUserName] = useState("")
-    const [password , setPassword] = useState("")
+    const [password, setPassword] = useState("")
+    const [go , setGo] = useState(false)
     useEffect(() => {
         dispatch(adminlogin())
     }, [])
     
-
+const ConditionalLink = ({ children, to, condition }) => (!!condition && to)
+      ? <Link to={to}>{children}</Link>
+      : <>{children}</>;
 const handleUserName = (event) => { setUserName(event.target.value) };
     const handlePassword = (event) => { setPassword(event.target.value) };
-    const handleLogin = async () => {
+    const handleLogin = async (event) => {
+        event.preventDefault()
         //make the api call here
-        const port = 8080
+       
         try {
             const login = await fetch(`https://api.gudinatumsalegacy.org/api/v1/admin/login` , {
                 method: 'POST',
@@ -30,9 +35,13 @@ const handleUserName = (event) => { setUserName(event.target.value) };
             })
 
             if (login.status != 200) {
-            alert("Invalid Credentials")
-        }
-        else {
+                alert("Invalid Credentials")
+            }
+            else {
+              const data = await login.json()
+                localStorage.setItem("adminid", data.id)
+                
+                //
             window.location.replace("https://www.gudinatumsalegacy.org");
         }
         } catch (err) {
@@ -73,13 +82,16 @@ const handleUserName = (event) => { setUserName(event.target.value) };
                             
                     </div>
 
-                    <button type="submit" class="w-full py-3 mt-10 bg-[#063970] rounded-md
+                    
+                        <ConditionalLink to="/" condition={go}>
+                        <button type="submit" class="w-full py-3 mt-10 bg-[#063970] rounded-md
                         font-medium text-white uppercase
                         focus:outline-none hover:shadow-none"
                         onClick={handleLogin}
                         >
                         Login
-                    </button>
+                        </button>
+                        </ConditionalLink>
                 </form>
             </div>
     </div>
