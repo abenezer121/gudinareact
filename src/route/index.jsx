@@ -214,7 +214,7 @@ const RootPage = () => {
           <div className="w-full h-screen">
             <Routes>
               <Route path="/admin" element={<Login />} />
-              <Route path="/home" element={<HomeAdmin />} />
+              <Route path="/" element={<HomeAdmin />} />
               <Route path="/category" element={<CategoryAdmin />} />
               <Route path="/archive" element={<ArchiveAdmin />} /> 
               <Route path="/paper" element={<PaperAdmin />} />
